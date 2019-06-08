@@ -294,7 +294,9 @@ class Graph extends React.Component {
     var event = d3_event;
     event.preventDefault();
     event.stopPropagation();
-    this.unSelectComponents();
+    if (!(event.which === 1 && (event.ctrlKey || event.shiftKey))) {
+      this.unSelectComponents();
+    }
   }
 
   handleKeyDownDocument(d, i, nodes) {
@@ -453,7 +455,7 @@ class Graph extends React.Component {
     this.props.onFocus();
     document.activeElement.blur();
     var event = d3_event;
-    if (event.which !== 1) {
+    if (event.which !== 1 || event.ctrlKey || event.shiftKey) {
       return;
     }
     event.preventDefault();
