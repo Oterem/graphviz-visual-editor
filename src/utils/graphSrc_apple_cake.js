@@ -95,7 +95,7 @@ export const graphDot =`digraph "graph_apple_cake407_1_1_25_abbrsum.gv" {
 	4404 -> 1 [penwidth=1.1058823529411765]
 	4416 -> 1 [penwidth=1.811764705882353]
 	labelloc="t"
-	label="Apple cake (12 servings)\n\n"
+	label="Apple cake (12 servings)\\n\\n"
 	fontsize=50
 }
 `

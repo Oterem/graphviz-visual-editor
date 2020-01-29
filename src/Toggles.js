@@ -8,7 +8,6 @@ import List from '@material-ui/core/List';
 import TextField from '@material-ui/core/TextField';
 import ListItem from '@material-ui/core/ListItem';
 import { createMuiTheme  } from '@material-ui/core/styles';
-import { uncommonIngrList } from './utils/graph_dict'      /*uncomment when the uncommonIngerList is ready*/
 import { Typography } from '@material-ui/core';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -17,6 +16,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Select from '@material-ui/core/Select';
 import Checkbox from '@material-ui/core/Checkbox';
 import Chip from '@material-ui/core/Chip';
+import { graphIngrList, graphToolList, uncommonIngrList } from './utils/graph_dict_apple_cake'
 
 const styles = {
     root: {
@@ -108,6 +108,8 @@ class TogglesPanel extends React.Component{
             timeMaxMinute:null,
             leastCommonIngredients:[],
             selectedLeastCommon:[],
+            listOfIngredients:[],
+            listOfTools:[],
 
             unUsedIngredients:["a","b","c","d"],
             selectedUnusedIngredients:[],
@@ -124,11 +126,13 @@ class TogglesPanel extends React.Component{
         this.findNodesByIngredients = props.findNodesByIngredients.bind(this);
     }
 
-/*uncomment below function when the uncommonIngerList is ready*/
+
 componentDidMount(){                                                      
     const leastCommonList = uncommonIngrList.slice(0, 10) //.map(obj=>obj.ingr_name);
     this.setState({
-        leastCommonIngredients:leastCommonList
+        leastCommonIngredients:leastCommonList,
+        listOfIngredients:[...new Set(graphIngrList.sort())],
+        listOfTools:[...new Set(graphToolList.sort())]
     })
 }
 
@@ -303,7 +307,7 @@ componentDidUpdate(prevProps, prevState){
                             control={<Switch checked={this.state.showIngredientsConstraint} size="medium"  onChange={this.handleChangeSwitchChange('showIngredientsConstraint')}/>}
                             label="Add Ingredients Constraint"
                             labelPlacement="top"
-                            style={{width:127, justifyContent:"center"}}
+                            style={{width:127, justifyContent:"flex-end", paddingTop:15}}
                             />
                             {this.state.showIngredientsConstraint && <div style={{display:"flex", flexDirection:"row"}}>
                             <div className={classes.ingredientConstraintContainer}>
@@ -328,8 +332,8 @@ componentDidUpdate(prevProps, prevState){
                                   )}
                                 MenuProps={MenuProps}
                                 >
-                                {this.state.unUsedIngredients.map(ingredient => (
-                                    <MenuItem key={ingredient} value={ingredient}>
+                                {this.state.listOfIngredients.map((ingredient,index) => (
+                                    <MenuItem key={ingredient+index} value={ingredient}>
                                     <Checkbox checked={this.state.selectedUnusedIngredients.includes(ingredient)} />
                                     <ListItemText primary={ingredient} />
                                     </MenuItem>
@@ -361,7 +365,7 @@ componentDidUpdate(prevProps, prevState){
                                   )}
                                 MenuProps={MenuProps}
                                 >
-                                {this.state.ingredientsToAppear.map(ingredient => (
+                                {this.state.listOfIngredients.map(ingredient => (
                                     <MenuItem key={ingredient} value={ingredient}>
                                     <Checkbox checked={this.state.selectedIngredientsToAppear.includes(ingredient)} />
                                     <ListItemText primary={ingredient} />
@@ -382,7 +386,7 @@ componentDidUpdate(prevProps, prevState){
                             control={<Switch checked={this.state.showToolConstraint} size="medium"  onChange={this.handleChangeSwitchChange('showToolConstraint')}/>}
                             label="Add Tool Constraint"
                             labelPlacement="top"
-                            style={{width:127, justifyContent:"center"}}
+                            style={{width:127, justifyContent:"flex-end", paddingTop:15}}
                             />
                             {this.state.showToolConstraint && <div style={{display:"flex", flexDirection:"row"}}>
                             <div className={classes.ingredientConstraintContainer}>
@@ -407,7 +411,7 @@ componentDidUpdate(prevProps, prevState){
                                   )}
                                 MenuProps={MenuProps}
                                 >
-                                {this.state.unUsedTools.map(tool => (
+                                {this.state.listOfTools.map(tool => (
                                     <MenuItem key={tool} value={tool}>
                                     <Checkbox checked={this.state.selectedUnusedTools.includes(tool)} />
                                     <ListItemText primary={tool} />
@@ -440,7 +444,7 @@ componentDidUpdate(prevProps, prevState){
                                   )}
                                 MenuProps={MenuProps}
                                 >
-                                {this.state.preferedTools.map(tool => (
+                                {[...new Set(this.state.listOfTools)].map(tool => (
                                     <MenuItem key={tool} value={tool}>
                                     <Checkbox checked={this.state.selectedPreferedTools.includes(tool)} />
                                     <ListItemText primary={tool} />
