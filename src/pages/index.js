@@ -34,6 +34,7 @@ const styles = theme => ({
   },
   paper: {
     height: "calc(100vh - 64px - 2 * 12px)",
+    marginRight:15
   }
 });
 
@@ -706,14 +707,11 @@ class Index extends React.Component {
         // }
         // const timePart = (time === "") ? "" : time
         let leftovers = ` style=filled fillcolor="` + nodeColor + `"`
-        if(a.includes("penwidth=5")){
+        if(a.includes("penwidth")){
           leftovers = leftovers + " color=springgreen4, penwidth=5";
-        }else if(a.includes("penwidth=2")){
-          leftovers = leftovers + " color=darkorange, penwidth=2";
-
         }
-        if(a.includes(`fillcolor="#ffe4b5"`)){
-          leftovers = leftovers + ` fillcolor="#ffe4b5"`
+        if(a.includes("fillcolor=gold")){
+          leftovers = leftovers + " fillcolor=gold"
         }
         leftovers = leftovers + "]"
         nodeString = startPart + nodeContent + leftovers;
@@ -746,11 +744,7 @@ class Index extends React.Component {
       console.log("enlarge!")
       console.log(specialId)
       // this.changeNodeLabel(specialId, graphDict[specialId].verb, graphDict[specialId].ingredients, graphDict[specialId].tool, graphDict[specialId].time, graphDict[specialId].color)
-      let nodeColor = "#ffffff" // white 
-      if(graphDict[specialId].color){
-        nodeColor = graphDict[specialId].color
-      }
-      this.changeNodeLabel(specialId, graphDict[specialId].summary, nodeColor)
+      this.changeNodeLabel(specialId, graphDict[specialId].summary, graphDict[specialId].color)
     }
     else{ // in this case we want to shrink the node that in prevArray and not in curArray
       prevArrayOfIds.forEach(node=>{
@@ -759,11 +753,7 @@ class Index extends React.Component {
       console.log("shrink!")
       console.log(specialId)
       // this.changeNodeLabel(specialId, graphDict[specialId].verb, graphDict[specialId].ingredients_abbr, graphDict[specialId].tool_abbr, graphDict[specialId].time, graphDict[specialId].color)
-      let nodeColor = "#ffffff" // white 
-      if(graphDict[specialId].color){
-        nodeColor = graphDict[specialId].color
-      }
-      this.changeNodeLabel(specialId, graphDict[specialId].summary_abbr, nodeColor)
+      this.changeNodeLabel(specialId, graphDict[specialId].summary_abbr, graphDict[specialId].color)
     }
   }
 
@@ -788,71 +778,49 @@ class Index extends React.Component {
     })
     // console.log("nodeIds:")
     // console.log(nodeIds)
-
-    this.addSpecialPaths(leastCommonIngredients, nodeIds)
-    // this.updateFillColorByNodeIds(nodeIds)  
-    // this.updateCurGraphDict(leastCommonIngredients, nodeIds) // TODO: uncomment
+    // this.addSpecialPaths(leastCommonIngredients)
+    this.updateFillColorByNodeIds(nodeIds)
+    this.updateCurGraphDict(leastCommonIngredients, nodeIds)
     
+
+    // const nodesIds = Object.keys(graphDict);
+    // const nodesContainingIngredients = nodesIds && nodesIds.map(nodeId=>{
+    //   const ingredientsPerNode = graphDict[nodeId] && graphDict[nodeId].instruments_full_info;
+    //   if(!ingredientsPerNode){
+    //     return null;
+    //   }
+    //   const nodeActualIngredients = Object.keys(ingredientsPerNode);
+    //   const intersection = this.intersect(leastCommonIngredients,nodeActualIngredients);
+    //   if(!(intersection && intersection.length)){
+    //     return null;
+    //   }
+    //   return nodeId;
+    // }).filter(id=>id);
+    // return nodesContainingIngredients
   }
 
-  addSpecialPaths = (uncommonIngredients, nodeIds)=>{
+  addSpecialPaths = (uncommonIngredients)=>{
     console.log("add special paths")
     let fullString = "";
     fullString = this.state.dotSrc;
     //remove START_SPECIAL ... END_SPECIAL part from dot source:
-    const specialStartInx = fullString.search(new RegExp("\\n\\t#START_SPECIAL\\n"));
-    const specialEndInx = fullString.search(new RegExp("\\t#END_SPECIAL\\n\\n")); //length: 15 chars.
-    fullString = fullString.split(fullString.slice(specialStartInx, specialEndInx + 15)).join("")
 
     //add START_SPEACIAL ... END_SPECIAL to dot source:
-    const regex = new RegExp(`\\tlabelloc="t"`);
-    const startInx = fullString.search(regex) 
-    const srcStart = fullString.slice(0,startInx)
-    let middle = "\n\t#START_SPECIAL\n"
-    const srcEnd = fullString.slice(startInx)
+    const regex = new RegExp(`labelloc="t"`);
+    const startInx = fullString.search(regex)
+    console.log(startInx) 
+    // const srcStart = fullString.slice(0,startInx)
+    // let middle = "\n#START_SPECIAL\n"
+    // const srcEnd = fullString.slice(startInx)
 
-    let lastNodeId = ""
-
-    uncommonIngredients && uncommonIngredients.forEach(ingr=>{
-      const paths = graphIngrDict[ingr].paths
-      // paths && paths.forEach(path=>{
-      if (paths){
-        const path = paths[0];
-        console.log(path)
-        path && path.forEach(nodeId=>{
-          // if node is hidden we want to add it and the edge for it in path:
-          if(graphDict[nodeId].hidden){
-            const nodeContent = graphDict[nodeId].summary_abbr
-            middle = middle + "\t" + `${nodeId}` + " [label=" + nodeContent + " style=filled fillcolor=white color=darkorange penwidth=2]\n"; // adding node
-            const edgeRegex = new RegExp(`${lastNodeId}` + "\s\-\>\s" + `${nodeId}`);
-            const startEdgeReg = middle.search(edgeRegex)
-            if (startEdgeReg === -1){
-              middle = middle + "\t" + `${lastNodeId}` + " -> " + `${nodeId}` + " [color=darkorange penwidth=2]\n"; // adding edge
-            }
-          }else{
-            if(lastNodeId && graphDict[lastNodeId].hidden){
-              const edgeRegex = new RegExp(`${lastNodeId}` + "\s\-\>\s" + `${nodeId}`);
-              const startEdgeReg = middle.search(edgeRegex)
-              if (startEdgeReg === -1){
-                middle = middle + "\t" + `${lastNodeId}` + " -> " + `${nodeId}` + " [color=darkorange penwidth=2]\n"; // adding edge
-              }
-            }
-          }
-          lastNodeId = nodeId;
-        })
-      }
-    })
-
-    middle = middle + "\t#END_SPECIAL\n\n"
-    fullString = srcStart.concat(middle.concat(srcEnd))
-    // console.log(fullString)
-
-    this.setState({
-      dotSrc : fullString
-    }, () => {
-      this.updateFillColorByNodeIds(nodeIds)
-      this.updateCurGraphDict(uncommonIngredients, nodeIds)
-     })
+    // uncommonIngredients && uncommonIngredients.forEach(ingr=>{
+    //   console.log(graphIngrDict[ingr].paths);
+    //   uncommonIngredients && uncommonIngredients.forEach(ingr=>{
+    // })
+    
+    // this.setState({
+    //   dotSrc : fullString
+    // })
   }
 
   updateFillColorByNodeIds = (arrayOfIds)=>{
@@ -860,9 +828,7 @@ class Index extends React.Component {
     console.log(arrayOfIds)
     let fullString = "";
     fullString =  this.state.dotSrc;
-    console.log(fullString)
-
-    fullString = fullString.split(` fillcolor="#ffe4b5"`).join("");
+    fullString = fullString.split(" fillcolor=gold").join("");
 
     arrayOfIds && arrayOfIds.forEach(id=>{
       const regex = new RegExp("\\t"+`${id}`+"\\s\\[");
@@ -873,10 +839,10 @@ class Index extends React.Component {
           const a = fullString.substring(startIndex,closingIndex);
           let nodeString = ""
           // console.log(a) 
-          if(a.includes(`fillcolor="#ffe4b5"`)){
+          if(a.includes("fillcolor=gold")){
             return
           }else{
-            nodeString = a + ` fillcolor="#ffe4b5"]`;
+            nodeString = a + " fillcolor=gold]";
           }
           const firstPart = fullString.substring(0,startIndex);
           const lastPart = fullString.substring(closingIndex+1);
@@ -922,7 +888,7 @@ class Index extends React.Component {
             if(direction.constraint && direction.constraint === "UNCOMMON"){
               delete  direction.constraint;
             }
-          })
+            })
         }
 
       })
@@ -1133,14 +1099,14 @@ class Index extends React.Component {
         {/*  />*/}
         {/*}*/}
         <Grid container
-          spacing={24}
+          spacing={3}
           style={{
             margin: 0,
             width: '100%',
           }}
         >
-          <Grid item xs={columns.textEditor}>
-            <Paper elevation={leftPaneElevation} className={classes.paper}>
+          {/* <Grid item xs={columns.textEditor}>
+            <Paper elevation={leftPaneElevation} className={classes.paper}> */}
 
 
               {/*{this.state.nodeFormatDrawerIsOpen &&*/}
@@ -1167,7 +1133,7 @@ class Index extends React.Component {
               {/*}*/}
 
 
-              <div style={{display: editorIsOpen ? 'block' : 'none'}}>
+              {/* <div style={{display: editorIsOpen ? 'block' : 'none'}}>
                 <TextEditor
                   // allocated viewport width - 2 * padding
                   width={`calc(${columns.textEditor * 100 / 12}vw - 2 * 12px)`}
@@ -1184,28 +1150,17 @@ class Index extends React.Component {
                   registerRedo={this.registerRedo}
                   registerUndoReset={this.registerUndoReset}
                 />
-              </div>
-            </Paper>
-          </Grid>
-          {this.state.insertPanelsAreOpen && this.state.graphInitialized && (
-              <Grid item xs={columns.insertPanels}>
-                <Paper elevation={midPaneElevation} className={classes.paper}>
-                  <InsertPanels
-                    onClick={this.handleInsertPanelsClick}
-                    onNodeShapeClick={this.handleNodeShapeClick}
-                    onNodeShapeDragStart={this.handleNodeShapeDragStart}
-                    onNodeShapeDragEnd={this.handleNodeShapeDragEnd}
-                  />
-                </Paper>
-              </Grid>
-          )}
-          <Grid item xs={columns.graph}>
+              </div> */}
+            {/* </Paper>
+          </Grid> */}
+
+          <Grid item xs={12}>
             
             <Grid container  direction="row" justify="flex-start" alignItems="flex-start" spacin={1}>
-              <Grid item xs={3}>
+              <Grid item xs={4}>
               <TogglesPanel findNodesByIngredients={this.findNodesByIngredients}/>
               </Grid>
-              <Grid item xs={9}>
+              <Grid item xs={8} >
               <Paper elevation={rightPaneElevation} className={classes.paper}>
               <Graph
                 updateColorByNodeIds = {this.updateColorByNodeIds}
