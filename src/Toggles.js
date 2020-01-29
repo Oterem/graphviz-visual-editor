@@ -48,7 +48,8 @@ const styles = {
       },
       timeConstraintContainer:{
           display:"flex",
-          flexDirection:"row"
+          flexDirection:"row",
+          marginBottom:25
       },
       timeConstraintItem:{
           margin:5
@@ -238,8 +239,9 @@ componentDidUpdate(prevProps, prevState){
                             control={<Switch checked={this.state.showTimeConstraint} size="medium"  onChange={this.handleChangeSwitchChange('showTimeConstraint')}/>}
                             label="Add Time Constraint"
                             labelPlacement="top"
+                            style={{justifyContent:"flex-end", paddingTop:15}}
                             />
-                            {this.state.showTimeConstraint && <div style={{display:"flex", flexDirection:"row"}}>
+                            {this.state.showTimeConstraint && <div style={{display:"flex", flexDirection:"row", flexWrap:"wrap"}}>
                            <div className={classes.timeConstraintContainer}>
                                 <Typography variant="body2" style={{padding:15}}>Min Time:</Typography>
                                 <div className={classes.timeConstraintItem}>
@@ -249,6 +251,7 @@ componentDidUpdate(prevProps, prevState){
                                     style = {{width: 75}}
                                     onChange={this.handleTimeChange("timeMinHour")}
                                     value={this.state.timeMinHour}
+                                    inputProps={{ min: "0" }}
                                    
                                     />
                                 </div>
@@ -259,7 +262,7 @@ componentDidUpdate(prevProps, prevState){
                                     style = {{width: 75}}
                                     onChange={this.handleTimeChange("timeMinMinute")}
                                     value={this.state.timeMinMinute}
-
+                                    inputProps={{ min: "0" }}
                                     />
                                 </div>
                             </div>
@@ -272,6 +275,7 @@ componentDidUpdate(prevProps, prevState){
                                     style = {{width: 75}}
                                     onChange={this.handleTimeChange("timeMaxHour")}
                                     value={this.state.timeMaxHour}
+                                    inputProps={{ min: "0" }}
                                     />
                                 </div>
                                 <div className={classes.timeConstraintItem}>
@@ -281,6 +285,7 @@ componentDidUpdate(prevProps, prevState){
                                     style = {{width: 75}}
                                     onChange={this.handleTimeChange("timeMaxMinute")}
                                     value={this.state.timeMaxMinute}
+                                    inputProps={{ min: "0" }}
                                     />
                                 </div>
                             
