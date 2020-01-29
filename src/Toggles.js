@@ -96,7 +96,7 @@ class TogglesPanel extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            showConstraints:true,
+            showConstraints:false,
             showLeastCommon:false,
             showTimeConstraint:false,
             showIngredientsConstraint:false,
