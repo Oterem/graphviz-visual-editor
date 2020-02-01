@@ -17,7 +17,7 @@ import { event as d3_event} from 'd3-selection';
 import { mouse as d3_mouse} from 'd3-selection';
 import 'd3-graphviz';
 import DotGraph from './dot'
-import { graphDict } from './utils/graph_dict_apple_cake'
+// import { graphDict } from './utils/graph_dict_apple_cake'
 
 const styles = {
   root: {
@@ -40,6 +40,7 @@ function isNumeric(n) {
 class Graph extends React.Component {
   constructor(props) {
     super(props);
+    debugger
     console.log('contsructor!!!') // TODO: remove
     this.state = {
       busy: false,
@@ -49,7 +50,8 @@ class Graph extends React.Component {
       pathDrawingMode: false,
       markedVertices: [],
       markedEdges: [],
-      enlargedVertices: []
+      enlargedVertices: [],
+      graphDict:props.updatedGraphDict
     };
 
     this.updatePathColor = props.updateColorByNodeIds.bind(this);
@@ -446,8 +448,8 @@ class Graph extends React.Component {
       marked = [...new Set(marked)]
       let edges = []
       if (this.state.pathDrawingMode){
-        if (graphDict[d.key].in_edges){
-          for(var node_name in graphDict[d.key].in_edges){
+        if (this.state.graphDict[d.key].in_edges){
+          for(var node_name in this.state.graphDict[d.key].in_edges){
             if (node_name == marked[marked.length-2]){
               let curEdge = {first: marked[marked.length-2], second: d.key}
               edges.push(curEdge)
@@ -529,8 +531,9 @@ class Graph extends React.Component {
     //   this.selectComponents(d3_select(nodes[i]), extendSelection);
     // }
 
-    const matchingObj = graphDict[d.key]; // TODO: changed
-    console.log(this.props.updatedGraphDict) //updatedGraphDict) // TODO: added
+    debugger
+    const matchingObj = this.state.graphDict && this.state.graphDict[d.key]; // TODO: changed
+    console.log(this.props.graphDict) //updatedGraphDict) // TODO: added
     // const matchingObj = this.props.updatedGraphDict[d.key]; // TODO: added.
 
     //show popup

@@ -91,6 +91,10 @@ class Index extends React.Component {
     };
   }
 
+  componentDidUpdate(prevProps,prevState){
+    console.log('');
+  }
+
   componentDidMount() {
     const urlParams = qs_parse(window.location.search.slice(1));
     if (urlParams.dot) {
@@ -711,8 +715,14 @@ class Index extends React.Component {
           leftovers = leftovers + " color=darkorange, penwidth=2";
 
         }
-        if(a.includes(`fillcolor="#ffe4b5"`)){
+        if(a.includes(`fillcolor="#ffe4b5"`)){//orange
           leftovers = leftovers + ` fillcolor="#ffe4b5"`
+        }
+        if(a.includes(`fillcolor="#afcfaf"`)){//green
+          leftovers = leftovers + ` fillcolor="#afcfaf"`
+        }
+        if(a.includes(`fillcolor="#db8a8a"`)){//red
+          leftovers = leftovers + ` fillcolor="#db8a8a"`
         }
         leftovers = leftovers + "]"
         nodeString = startPart + nodeContent + leftovers;
@@ -746,10 +756,10 @@ class Index extends React.Component {
       console.log(specialId)
       // this.changeNodeLabel(specialId, graphDict[specialId].verb, graphDict[specialId].ingredients, graphDict[specialId].tool, graphDict[specialId].time, graphDict[specialId].color)
       let nodeColor = "#ffffff" // white 
-      if(graphDict[specialId].color){
-        nodeColor = graphDict[specialId].color
+      if(this.state.updatedGraphDict[specialId].color){
+        nodeColor = this.state.updatedGraphDict[specialId].color
       }
-      this.changeNodeLabel(specialId, graphDict[specialId].summary, nodeColor)
+      this.changeNodeLabel(specialId, this.state.updatedGraphDict[specialId].summary, nodeColor)
     }
     else{ // in this case we want to shrink the node that in prevArray and not in curArray
       prevArrayOfIds.forEach(node=>{
@@ -759,10 +769,10 @@ class Index extends React.Component {
       console.log(specialId)
       // this.changeNodeLabel(specialId, graphDict[specialId].verb, graphDict[specialId].ingredients_abbr, graphDict[specialId].tool_abbr, graphDict[specialId].time, graphDict[specialId].color)
       let nodeColor = "#ffffff" // white 
-      if(graphDict[specialId].color){
-        nodeColor = graphDict[specialId].color
+      if(this.state.updatedGraphDict[specialId].color){
+        nodeColor = this.state.updatedGraphDict[specialId].color
       }
-      this.changeNodeLabel(specialId, graphDict[specialId].summary_abbr, nodeColor)
+      this.changeNodeLabel(specialId, this.state.updatedGraphDict[specialId].summary_abbr, nodeColor)
     }
   }
 
@@ -770,13 +780,45 @@ class Index extends React.Component {
       return [...new Set(a)].filter(x => new Set(b).has(x));
   }
 
+  markDirections = (updatedDict,constraintStr,nodeId, item)=>{
+    updatedDict[nodeId] && updatedDict[nodeId].directions && updatedDict[nodeId].directions.forEach(direction=>{
+      console.log(direction);
+      console.log(direction.title);
+      if (direction.title.includes(item)){
+      direction.constraint = constraintStr;
+      }
+    })
+    return updatedDict;
+  }
+
+  deleteConstraints = (updatedDict, colorsToDelete)=>{
+      const nodeIds = Object.keys(updatedDict);
+      nodeIds && nodeIds.forEach(nodeId=>{
+        const obj = updatedDict[nodeId];
+        if(obj && obj.directions){
+          obj.directions.forEach(direction=>{
+            if(direction.constraint && colorsToDelete.includes(direction.constraint)){
+              delete  direction.constraint;
+            }
+          })
+        }
+
+      })
+  }
+
   handleConstraints = (prevConstraints, currentConstraints) => {
     console.log("HANDLE CONSTRAINTS!!!!")
 
-    var goodIngrNodeIds = [] 
-    var badIngrNodeIds = []
-    var goodToolNodeIds = [] 
-    var badToolNodeIds = []
+    const goodIngrNodeIds = [] 
+    const badIngrNodeIds = []
+    const goodToolNodeIds = [] 
+    const badToolNodeIds = []
+    let updatedDict = {...this.state.updatedGraphDict};
+    let optionalBadNodes = []
+
+    this.deleteConstraints(updatedDict,["GOOD","BAD"]);
+
+    const nodesWithColor = [];
 
     // if (currentConstraints.timeMinHour || currentConstraints.timeMinMinute){
     //   console.log(currentConstraints.timeMinHour)
@@ -785,21 +827,9 @@ class Index extends React.Component {
     if (currentConstraints.timeMaxHour || currentConstraints.timeMaxMinute){
       console.log(currentConstraints.timeMaxHour)
       console.log(currentConstraints.timeMaxMinute)
+      this.handleTime(currentConstraints.timeMaxHour, currentConstraints.timeMaxMinute, updatedDict)
+    }
 
-    }
-    if (currentConstraints.selectedUnusedIngredients.length !== 0){
-      console.log(currentConstraints.selectedUnusedIngredients) 
-      currentConstraints.selectedUnusedIngredients && currentConstraints.selectedUnusedIngredients.forEach(ingr=>{
-        // console.log(graphIngrDict[ingr]);
-        // console.log(graphIngrDict[ingr].in_nodes);
-        const inNodes = graphIngrDict[ingr].in_nodes;
-        inNodes && inNodes.forEach(node=>{
-          if(badIngrNodeIds.indexOf(node) === -1){
-            badIngrNodeIds.push(node)
-          }
-        })
-      })
-    }
     if (currentConstraints.selectedIngredientsToAppear.length !== 0){
       console.log(currentConstraints.selectedIngredientsToAppear)
 
@@ -807,52 +837,86 @@ class Index extends React.Component {
         // console.log(graphIngrDict[ingr]);
         // console.log(graphIngrDict[ingr].in_nodes);
         const inNodes = graphIngrDict[ingr].in_nodes;
-        inNodes && inNodes.forEach(node=>{
-          if(goodIngrNodeIds.indexOf(node) === -1){
-            goodIngrNodeIds.push(node)
+        inNodes && inNodes.forEach(nodeId=>{
+          if(!nodesWithColor.find(obj=>obj.id===nodeId)){
+            nodesWithColor.push({id:nodeId, color:`"#afcfaf"`})
           }
+          updatedDict = this.markDirections(updatedDict,"GOOD", nodeId,ingr);
         })
       })
     }
-    if (currentConstraints.selectedUnusedTools.length !== 0){
-      console.log(currentConstraints.selectedUnusedTools)
-      currentConstraints.selectedUnusedTools && currentConstraints.selectedUnusedTools.forEach(tool=>{
-        const inNodes = graphToolDict[tool].in_nodes;
-        inNodes && inNodes.forEach(node=>{
-          if(badToolNodeIds.indexOf(node) === -1){
-            badToolNodeIds.push(node)
-          }
-        })
-      })
-    }
+
     if (currentConstraints.selectedPreferedTools.length !== 0){
       console.log(currentConstraints.selectedPreferedTools)
       currentConstraints.selectedPreferedTools && currentConstraints.selectedPreferedTools.forEach(tool=>{
         const inNodes = graphToolDict[tool].in_nodes;
-        inNodes && inNodes.forEach(node=>{
-          if(goodToolNodeIds.indexOf(node) === -1){
-            goodToolNodeIds.push(node)
+        inNodes && inNodes.forEach(nodeId=>{
+          if(!nodesWithColor.find(obj=>obj.id===nodeId)){
+            nodesWithColor.push({id:nodeId, color:`"#afcfaf"`})
           }
+          updatedDict = this.markDirections(updatedDict,"GOOD", nodeId,tool);
         })
       })
     }
 
+    if (currentConstraints.selectedUnusedIngredients.length !== 0){
+      console.log(currentConstraints.selectedUnusedIngredients) 
+      currentConstraints.selectedUnusedIngredients && currentConstraints.selectedUnusedIngredients.forEach(ingr=>{
+        // console.log(graphIngrDict[ingr]);
+        // console.log(graphIngrDict[ingr].in_nodes);
+        const inNodes = graphIngrDict[ingr].in_nodes;
+        inNodes && inNodes.forEach(nodeId=>{
+          updatedDict = this.markDirections(updatedDict,"BAD", nodeId,ingr);
+        })
+      })
+    }
+
+    if (currentConstraints.selectedUnusedTools.length !== 0){
+      console.log(currentConstraints.selectedUnusedTools)
+      currentConstraints.selectedUnusedTools && currentConstraints.selectedUnusedTools.forEach(tool=>{
+        const inNodes = graphToolDict[tool].in_nodes;
+        inNodes && inNodes.forEach(nodeId=>{
+          updatedDict = this.markDirections(updatedDict,"BAD", nodeId,tool);
+        })
+      })
+    }
+
+
+    const allDirectionAreBadNodes = this.allDirectionsAreBad(updatedDict)
+    nodesWithColor.push(...allDirectionAreBadNodes);
+
+
+    // const combinedToolsNIngredients = [
+    //   ...currentConstraints.selectedPreferedTools,
+    //   ...currentConstraints.selectedIngredientsToAppear,
+    //   ...currentConstraints.selectedUnusedTools,
+    //   ...currentConstraints.selectedUnusedIngredients
+    // ];
+
+    // this.updateCurGraphDict(combinedTollsNIngredients,nodesWithColor);
     // update good constraints:
     // this.updateCurGraphDict(currentConstraints.selectedIngredientsToAppear, goodIngrNodeIds, "GOOD") // update good ingredients
-    // this.updateFillColorByNodeIds(goodIngrNodeIds, `"#afcfaf"`) // color nodes that contain good constraints
+    // this.updateFillColorByNodeIds(nodesWithColor) // color nodes that contain good constraints
     // this.updateCurGraphDict(currentConstraints.selectedPreferedTools, goodToolNodeIds, "GOOD") //update good tools.
     // this.updateFillColorByNodeIds(goodToolNodeIds, `"#afcfaf"`) // color nodes that contain good tools.
     
     // update bad constraints:
-    this.handleTime(currentConstraints.timeMaxHour, currentConstraints.timeMaxMinute)
+    // 
     // this.updateCurGraphDict(currentConstraints.selectedUnusedIngredients, badIngrNodeIds, "BAD") 
     // this.updateCurGraphDict(currentConstraints.selectedUnusedTools, badToolNodeIds, "BAD")
-    // const allDirectionAreBadNodes = this.allDirectionsAreBad(badNodeIds)
+    
+    let fullString = this.state.dotSrc;
+    fullString = fullString.split(` fillcolor="#afcfaf"`).join(""); // reset all good colors
+    fullString = fullString.split(` fillcolor="#db8a8a"`).join(""); // reset all bad colors
+    this.setState({
+      dotSrc:fullString,
+      updatedGraphDict:updatedDict
+    },()=>{this.updateFillColorByNodeIds(nodesWithColor)})
     // this.updateFillColorByNodeIds(allDirectionAreBadNodes, `"#db8a8a"`)
 
   }
 
-  handleTime = (maxHour, maxMinute) => {
+  handleTime = (maxHour, maxMinute, updatedDict) => {
     
     console.log("handleTime")
     
@@ -867,7 +931,7 @@ class Index extends React.Component {
     }
     console.log(totalTimeMinutes)
 
-    var updatedDict = {...this.state.updatedGraphDict}
+    // const updatedDict = {...this.state.updatedGraphDict}
     const keys = Object.keys(updatedDict);
     console.log(keys)
 
@@ -883,40 +947,32 @@ class Index extends React.Component {
         updatedDict[nodeId].directions && updatedDict[nodeId].directions.forEach(direction=>{
           const directionMinTimeMinutes = direction.min_time_unit==="minute" ? direction.min_time: (direction.min_time_unit==="hour"? 60*direction.min_time: 0)
           if (totalTimeMinutes < directionMinTimeMinutes){
-            console.log(direction.title)
+            // console.log(direction.title)
             direction.constraint = "BAD";
           }
         })          
       }
     })
     
-    this.setState({
-      updateCurGraphDict : updatedDict
-    })
   }
 
-  allDirectionsAreBad = (nodeIds) => {
-    var badNodeIds = []
-    console.log("all directions are bad")
+ allBad = (nodeObj) =>{
+   return nodeObj && nodeObj.directions && nodeObj.directions.every(direction=>{
+     return direction.constraint === 'BAD';
+   })
+ }
 
-    nodeIds && nodeIds.forEach(nodeId=>{
-      const obj = this.state.updatedGraphDict[nodeId];
-      console.log(obj)
-      var flag = true
-      if(obj && obj.directions){
-        obj.directions.forEach(direction=>{
-          if(!direction.constraint){
-            flag = false
-          } else if (direction.constraint !== "BAD"){
-            flag = false 
-          }
-        })
+  allDirectionsAreBad = (updatedDict) => {
+    const ids = Object.keys(updatedDict);
+    const badIds = ids && ids.filter(id=>{
+      const nodeObj = updatedDict[id];
+      if(nodeObj && !nodeObj.hidden && nodeObj.directions && this.allBad(nodeObj)){
+        return nodeObj;
       }
-      if (flag){
-        badNodeIds.push(nodeId)
-      }
+    });
+    return badIds.map(id=>{
+      return {id, color:`"#db8a8a"`}
     })
-    return badNodeIds;
   }
 
   findNodesByIngredients = (leastCommonIngredients) =>{
@@ -937,6 +993,7 @@ class Index extends React.Component {
     // console.log("nodeIds:")
     // console.log(nodeIds)
 
+    
     this.addSpecialPaths(leastCommonIngredients, nodeIds)
     // this.updateFillColorByNodeIds(nodeIds)  
     // this.updateCurGraphDict(leastCommonIngredients, nodeIds) 
@@ -995,25 +1052,32 @@ class Index extends React.Component {
     fullString = srcStart.concat(middle.concat(srcEnd))
     // console.log(fullString)
 
+    const test = nodeIds && nodeIds.map(id=>{
+      return {
+        id: id,
+        color:`"#ffe4b5"`
+      };
+    })
+
     this.setState({
       dotSrc : fullString
     }, () => {
-      this.updateFillColorByNodeIds(nodeIds, `"#ffe4b5"`)
+      this.updateFillColorByNodeIds(test)
       this.updateCurGraphDict(uncommonIngredients, nodeIds, "UNCOMMON")
      })
   }
 
-  updateFillColorByNodeIds = (arrayOfIds, nodeColor)=>{
+  updateFillColorByNodeIds = (arrayOfIds)=>{
     console.log("update fill color by node ID") // TODO: remove
-    console.log(arrayOfIds)
+    console.log(JSON.stringify(arrayOfIds))
     let fullString = "";
     fullString =  this.state.dotSrc;
     console.log(fullString)
 
-    fullString = fullString.split(` fillcolor=`+ nodeColor).join("");
+    
 
-    arrayOfIds && arrayOfIds.forEach(id=>{
-      const regex = new RegExp("\\t"+`${id}`+"\\s\\[");
+    arrayOfIds && arrayOfIds.forEach(obj=>{
+      const regex = new RegExp("\\t"+`${obj.id}`+"\\s\\[");
       const startIndex =  fullString.search(regex);
       if(startIndex > -1){
         const closingIndex = fullString.slice(startIndex).search(/\]/g) + startIndex;
@@ -1021,10 +1085,10 @@ class Index extends React.Component {
           const a = fullString.substring(startIndex,closingIndex);
           let nodeString = ""
           // console.log(a) 
-          if(a.includes(`fillcolor=` + nodeColor)){
+          if(a.includes(`fillcolor=` + obj.color)){
             return
           }else{
-            nodeString = a + ` fillcolor=` + nodeColor + `]`;
+            nodeString = a + ` fillcolor=` + obj.color + `]`;
           }
           const firstPart = fullString.substring(0,startIndex);
           const lastPart = fullString.substring(closingIndex+1);
@@ -1179,7 +1243,7 @@ class Index extends React.Component {
     const leftPaneElevation = textEditorHasFocus || nodeFormatDrawerHasFocus || edgeFormatDrawerHasFocus? focusedElevation : defaultElevation;
     const rightPaneElevation = graphHasFocus ? focusedElevation : defaultElevation;
     const midPaneElevation = insertPanelsHaveFocus ? focusedElevation : defaultElevation;
-    const showTextEditor = true; // MORAN
+    const showTextEditor = false; // MORAN
     const showToggles = true; // MORAN
 
     var columns;

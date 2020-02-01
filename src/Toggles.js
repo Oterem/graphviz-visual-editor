@@ -7,7 +7,6 @@ import Switch from '@material-ui/core/Switch';
 import List from '@material-ui/core/List';
 import TextField from '@material-ui/core/TextField';
 import ListItem from '@material-ui/core/ListItem';
-import { createMuiTheme  } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -17,6 +16,12 @@ import Select from '@material-ui/core/Select';
 import Checkbox from '@material-ui/core/Checkbox';
 import Chip from '@material-ui/core/Chip';
 import { graphIngrList, graphToolList, uncommonIngrList } from './utils/graph_dict_apple_cake'
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
+
+const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
+const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
 const styles = {
     root: {
@@ -59,7 +64,7 @@ const styles = {
     },
     ingredientConstraintContainer:{
         display:"flex",
-        flexDirection:"row"
+        justifyContent:"flex-start"
     },
     parentContainer:{
         display:"flex",
@@ -75,7 +80,7 @@ const styles = {
       formControl: {
         margin: 8,
         minWidth: 120,
-        maxWidth: 300,
+        maxWidth: 250,
       },
   };
 
@@ -111,16 +116,13 @@ class TogglesPanel extends React.Component{
             listOfIngredients:[],
             listOfTools:[],
 
-            unUsedIngredients:["a","b","c","d"],
+
             selectedUnusedIngredients:[],
 
-            ingredientsToAppear:["e","f","g"],
             selectedIngredientsToAppear:[],
 
-            unUsedTools:["h","i","j"],
             selectedUnusedTools:[],
 
-            preferedTools:["k","l","m"],
             selectedPreferedTools:[]
         }
         this.findNodesByIngredients = props.findNodesByIngredients.bind(this);
@@ -143,7 +145,8 @@ handleChangeSwitchChange = switchName => event => {
         return {
             ...prev,
             selectedLeastCommon: !(event.target && event.target.checked) ? [] : [...prev.selectedLeastCommon],
-            [switchName]: event.target && event.target.checked
+            [switchName]: event.target && event.target.checked,
+            selectedPreferedTools: (switchName === 'showToolConstraint' && !(event.target && event.target.checked)) ? [] : [...prev.selectedPreferedTools]
         };
     })
 };
@@ -173,6 +176,13 @@ handleArrayChange = (arrayName) =>(event) => {
         [arrayName]:event.target.value
     })
   };
+  kuku = (arrayName)=>(event,values)=>{
+
+       this.setState({
+        [arrayName]:values
+    })
+      console.log(values);
+  }
 
 componentDidUpdate(prevProps, prevState){
     if(JSON.stringify(prevState.selectedLeastCommon) !== JSON.stringify(this.state.selectedLeastCommon)){//need to update 
@@ -245,7 +255,7 @@ componentDidUpdate(prevProps, prevState){
                             style={{justifyContent:"flex-end", paddingTop:15}}
                             />
                             {this.state.showTimeConstraint && <div style={{display:"flex", flexDirection:"row", flexWrap:"wrap"}}>
-                           <div className={classes.timeConstraintContainer}>
+                           {false && <div className={classes.timeConstraintContainer}>
                                 <Typography variant="body2" style={{padding:15}}>Min Time:</Typography>
                                 <div className={classes.timeConstraintItem}>
                                     <TextField
@@ -268,7 +278,7 @@ componentDidUpdate(prevProps, prevState){
                                     inputProps={{ min: "0" }}
                                     />
                                 </div>
-                            </div>
+                            </div>}
                             <div className={classes.timeConstraintContainer}>
                                 <Typography variant="body2" style={{padding:15}}>Max Time:</Typography>
                                 <div className={classes.timeConstraintItem}>
@@ -308,70 +318,74 @@ componentDidUpdate(prevProps, prevState){
                             labelPlacement="top"
                             style={{width:127, justifyContent:"flex-end", paddingTop:15}}
                             />
-                            {this.state.showIngredientsConstraint && <div style={{display:"flex", flexDirection:"row"}}>
+                            {this.state.showIngredientsConstraint && <div style={{display:"flex", flexDirection:"column"}}>
                             <div className={classes.ingredientConstraintContainer}>
-                            <FormControl className={classes.formControl}>
-                                <InputLabel >Do Not Use These Ingredients</InputLabel>
-                                <Select
-                                multiple
-                                value={this.state.selectedUnusedIngredients}
-                                onChange={this.handleArrayChange("selectedUnusedIngredients")}
-                                input={<Input />}
-                                style={{paddingTop:30}}
-                                renderValue={selected => (
-                                    <div className={classes.chips}>
-                                      {selected.map(value => (
-                                        <Chip key={value} label={value} className={classes.chip} onDelete={()=>{
-                                            this.setState({
-                                                selectedUnusedIngredients:[...this.state.selectedUnusedIngredients].filter(item=>item!==value)
-                                            })
-                                        }} />
-                                      ))}
-                                    </div>
-                                  )}
-                                MenuProps={MenuProps}
-                                >
-                                {this.state.listOfIngredients.map((ingredient,index) => (
-                                    <MenuItem key={ingredient+index} value={ingredient}>
-                                    <Checkbox checked={this.state.selectedUnusedIngredients.includes(ingredient)} />
-                                    <ListItemText primary={ingredient} />
-                                    </MenuItem>
-                                ))}
-                                </Select>
-                            </FormControl>
+                            <Autocomplete
+                                            multiple
+                                            onChange={this.kuku("selectedUnusedIngredients")}
+                                            options={this.state.listOfIngredients}
+                                            disableCloseOnSelect
+                                            getOptionLabel={option => option}
+                                            renderOption={(option, {selected}) => (
+                                                <React.Fragment>
+                                                <Checkbox
+                                                    icon={icon}
+                                                    checkedIcon={checkedIcon}
+                                                    style={{ marginRight: 8 }}
+                                                    checked={selected}
+                                                />
+                                                {option}
+                                                </React.Fragment>
+                                            )}
+                                            style={{ width: 220 }}
+                                            renderInput={params => (
+                                                <TextField
+                                                {...params}
+                                                fullWidth
+                                                placeholder="Search Ingredient..."
+                                                label="Do Not Use These Ingredients"
+                                                color="secondary"
+                                                InputLabelProps={{style:{color:"black"}}}
+                                                style={{paddingTop:15}}
+                                                />
+                                            )}
+                                        />
+
 
                                 </div>
                                 <div className={classes.ingredientConstraintContainer}>
                                 <div className={classes.ingredientConstraintContainer}>
-                            <FormControl className={classes.formControl}>
-                                <InputLabel >Want These Ingredients To Appear</InputLabel>
-                                <Select
-                                multiple
-                                value={this.state.selectedIngredientsToAppear}
-                                onChange={this.handleArrayChange("selectedIngredientsToAppear")}
-                                input={<Input />}
-                                style={{paddingTop:30}}
-                                renderValue={selected => (
-                                    <div className={classes.chips}>
-                                      {selected.map(value => (
-                                        <Chip key={value} label={value} className={classes.chip} onDelete={()=>{
-                                            this.setState({
-                                                selectedIngredientsToAppear:[...this.state.selectedIngredientsToAppear].filter(item=>item!==value)
-                                            })
-                                        }} />
-                                      ))}
-                                    </div>
-                                  )}
-                                MenuProps={MenuProps}
-                                >
-                                {this.state.listOfIngredients.map(ingredient => (
-                                    <MenuItem key={ingredient} value={ingredient}>
-                                    <Checkbox checked={this.state.selectedIngredientsToAppear.includes(ingredient)} />
-                                    <ListItemText primary={ingredient} />
-                                    </MenuItem>
-                                ))}
-                                </Select>
-                            </FormControl>
+                                <Autocomplete
+                                            multiple
+                                            onChange={this.kuku("selectedIngredientsToAppear")}
+                                            options={this.state.listOfIngredients}
+                                            disableCloseOnSelect
+                                            getOptionLabel={option => option}
+                                            renderOption={(option, {selected}) => (
+                                                <React.Fragment>
+                                                <Checkbox
+                                                    icon={icon}
+                                                    checkedIcon={checkedIcon}
+                                                    style={{ marginRight: 8 }}
+                                                    checked={selected}
+                                                />
+                                                {option}
+                                                </React.Fragment>
+                                            )}
+                                            style={{ width: 250 }}
+                                            renderInput={params => (
+                                                <TextField
+                                                {...params}
+                                                fullWidth
+                                                placeholder="Search Ingredient..."
+                                                label="Want These Ingredients To Appear"
+                                                color="secondary"
+                                                InputLabelProps={{style:{color:"black", fontSize:14}}}
+                                                style={{paddingTop:15}}
+                                                />
+                                            )}
+                                        />
+
 
                                 </div>
                                 </div>
@@ -387,72 +401,75 @@ componentDidUpdate(prevProps, prevState){
                             labelPlacement="top"
                             style={{width:127, justifyContent:"flex-end", paddingTop:15}}
                             />
-                            {this.state.showToolConstraint && <div style={{display:"flex", flexDirection:"row"}}>
+                            {this.state.showToolConstraint && <div style={{display:"flex", flexDirection:"column"}}>
                             <div className={classes.ingredientConstraintContainer}>
-                            <FormControl className={classes.formControl}>
-                                <InputLabel >Can't Use</InputLabel>
-                                <Select
-                                multiple
-                                value={this.state.selectedUnusedTools}
-                                onChange={this.handleArrayChange("selectedUnusedTools")}
-                                input={<Input />}
-                                style={{paddingTop:30}}
-                                renderValue={selected => (
-                                    <div className={classes.chips}>
-                                      {selected.map(tool => (
-                                        <Chip key={tool} label={tool} className={classes.chip} onDelete={()=>{
-                                            this.setState({
-                                                selectedUnusedTools:[...this.state.selectedUnusedTools].filter(item=>item!==tool)
-                                            })
-                                        }} />
-                                      ))}
-                                    </div>
-                                  )}
-                                MenuProps={MenuProps}
-                                >
-                                {this.state.listOfTools.map(tool => (
-                                    <MenuItem key={tool} value={tool}>
-                                    <Checkbox checked={this.state.selectedUnusedTools.includes(tool)} />
-                                    <ListItemText primary={tool} />
-                                    </MenuItem>
-                                ))}
-                                </Select>
-                            </FormControl>
+                                <div className={classes.ingredientConstraintContainer}>
+                                        <Autocomplete
+                                            multiple
+                                            onChange={this.kuku("selectedUnusedTools")}
+                                            options={this.state.listOfTools}
+                                            disableCloseOnSelect
+                                            getOptionLabel={option => option}
+                                            renderOption={(option, {selected}) => (
+                                                <React.Fragment>
+                                                <Checkbox
+                                                    icon={icon}
+                                                    checkedIcon={checkedIcon}
+                                                    style={{ marginRight: 8 }}
+                                                    checked={selected}
+                                                />
+                                                {option}
+                                                </React.Fragment>
+                                            )}
+                                            style={{ width: 220 }}
+
+                                            renderInput={params => (
+                                                <TextField
+                                                {...params}
+                                                fullWidth
+                                                placeholder="Search Tool..."
+                                                label="Can't Use"
+                                                color="secondary"
+                                                InputLabelProps={{style:{color:"black"}}}
+                                                style={{paddingTop:15}}
+                                                />
+                                            )}
+                                        />
+                                </div>
 
                                 </div>
                                 <div className={classes.ingredientConstraintContainer}>
-                                <div className={classes.ingredientConstraintContainer}>
-                            <FormControl className={classes.formControl}>
-                                <InputLabel >Prefer To Use</InputLabel>
-                                <Select
-                                multiple
-                                value={this.state.selectedPreferedTools}
-                                onChange={this.handleArrayChange("selectedPreferedTools")}
-                                input={<Input />}
-                                style={{paddingTop:30}}
-                                renderValue={selected => (
-                                    <div className={classes.chips}>
-                                      {selected.map(tool => (
-                                        <Chip key={tool} label={tool} className={classes.chip} onDelete={()=>{
-                                            this.setState({
-                                                selectedPreferedTools:[...this.state.selectedPreferedTools].filter(item=>item!==tool)
-                                            })
-                                        }} />
-                                      ))}
-                                    </div>
-                                  )}
-                                MenuProps={MenuProps}
-                                >
-                                {[...new Set(this.state.listOfTools)].map(tool => (
-                                    <MenuItem key={tool} value={tool}>
-                                    <Checkbox checked={this.state.selectedPreferedTools.includes(tool)} />
-                                    <ListItemText primary={tool} />
-                                    </MenuItem>
-                                ))}
-                                </Select>
-                            </FormControl>
+                                        <Autocomplete
+                                            multiple
+                                            onChange={this.kuku("selectedPreferedTools")}
+                                            options={this.state.listOfTools}
+                                            disableCloseOnSelect
+                                            getOptionLabel={option => option}
+                                            renderOption={(option, {selected}) => (
+                                                <React.Fragment>
+                                                <Checkbox
+                                                    icon={icon}
+                                                    checkedIcon={checkedIcon}
+                                                    style={{ marginRight: 8 }}
+                                                    checked={selected}
+                                                />
+                                                {option}
+                                                </React.Fragment>
+                                            )}
+                                            style={{ width: 220 }}
 
-                                </div>
+                                            renderInput={params => (
+                                                <TextField
+                                                {...params}
+                                                fullWidth
+                                                placeholder="Search Tool..."
+                                                label="Prefered Tools"
+                                                color="secondary"
+                                                InputLabelProps={{style:{color:"black"}}}
+                                                style={{paddingTop:15}}
+                                                />
+                                            )}
+                                        />
                                 </div>
                             </div>}
                                 
