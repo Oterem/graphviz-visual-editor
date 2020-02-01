@@ -23,9 +23,8 @@ import AboutDialog from '../AboutDialog';
 import { parse as qs_parse } from 'qs';
 import { stringify as qs_stringify } from 'qs';
 import ExportAsUrlDialog from '../ExportAsUrlDialog';
-import { graphDot } from '../utils/graphSrc'
-import { graphDict } from '../utils/graph_dict'
-import { graphIngrDict } from '../utils/graph_dict'
+import { graphDot } from '../utils/graphSrc_apple_cake'
+import { graphDict, graphIngrDict, graphToolDict } from '../utils/graph_dict_apple_cake'
 import TogglesPanel from '../Toggles';
 
 const styles = theme => ({
@@ -771,6 +770,155 @@ class Index extends React.Component {
       return [...new Set(a)].filter(x => new Set(b).has(x));
   }
 
+  handleConstraints = (prevConstraints, currentConstraints) => {
+    console.log("HANDLE CONSTRAINTS!!!!")
+
+    var goodIngrNodeIds = [] 
+    var badIngrNodeIds = []
+    var goodToolNodeIds = [] 
+    var badToolNodeIds = []
+
+    // if (currentConstraints.timeMinHour || currentConstraints.timeMinMinute){
+    //   console.log(currentConstraints.timeMinHour)
+    //   console.log(currentConstraints.timeMinMinute)
+    // }
+    if (currentConstraints.timeMaxHour || currentConstraints.timeMaxMinute){
+      console.log(currentConstraints.timeMaxHour)
+      console.log(currentConstraints.timeMaxMinute)
+
+    }
+    if (currentConstraints.selectedUnusedIngredients.length !== 0){
+      console.log(currentConstraints.selectedUnusedIngredients) 
+      currentConstraints.selectedUnusedIngredients && currentConstraints.selectedUnusedIngredients.forEach(ingr=>{
+        // console.log(graphIngrDict[ingr]);
+        // console.log(graphIngrDict[ingr].in_nodes);
+        const inNodes = graphIngrDict[ingr].in_nodes;
+        inNodes && inNodes.forEach(node=>{
+          if(badIngrNodeIds.indexOf(node) === -1){
+            badIngrNodeIds.push(node)
+          }
+        })
+      })
+    }
+    if (currentConstraints.selectedIngredientsToAppear.length !== 0){
+      console.log(currentConstraints.selectedIngredientsToAppear)
+
+      currentConstraints.selectedIngredientsToAppear && currentConstraints.selectedIngredientsToAppear.forEach(ingr=>{
+        // console.log(graphIngrDict[ingr]);
+        // console.log(graphIngrDict[ingr].in_nodes);
+        const inNodes = graphIngrDict[ingr].in_nodes;
+        inNodes && inNodes.forEach(node=>{
+          if(goodIngrNodeIds.indexOf(node) === -1){
+            goodIngrNodeIds.push(node)
+          }
+        })
+      })
+    }
+    if (currentConstraints.selectedUnusedTools.length !== 0){
+      console.log(currentConstraints.selectedUnusedTools)
+      currentConstraints.selectedUnusedTools && currentConstraints.selectedUnusedTools.forEach(tool=>{
+        const inNodes = graphToolDict[tool].in_nodes;
+        inNodes && inNodes.forEach(node=>{
+          if(badToolNodeIds.indexOf(node) === -1){
+            badToolNodeIds.push(node)
+          }
+        })
+      })
+    }
+    if (currentConstraints.selectedPreferedTools.length !== 0){
+      console.log(currentConstraints.selectedPreferedTools)
+      currentConstraints.selectedPreferedTools && currentConstraints.selectedPreferedTools.forEach(tool=>{
+        const inNodes = graphToolDict[tool].in_nodes;
+        inNodes && inNodes.forEach(node=>{
+          if(goodToolNodeIds.indexOf(node) === -1){
+            goodToolNodeIds.push(node)
+          }
+        })
+      })
+    }
+
+    // update good constraints:
+    // this.updateCurGraphDict(currentConstraints.selectedIngredientsToAppear, goodIngrNodeIds, "GOOD") // update good ingredients
+    // this.updateFillColorByNodeIds(goodIngrNodeIds, `"#afcfaf"`) // color nodes that contain good constraints
+    // this.updateCurGraphDict(currentConstraints.selectedPreferedTools, goodToolNodeIds, "GOOD") //update good tools.
+    // this.updateFillColorByNodeIds(goodToolNodeIds, `"#afcfaf"`) // color nodes that contain good tools.
+    
+    // update bad constraints:
+    this.handleTime(currentConstraints.timeMaxHour, currentConstraints.timeMaxMinute)
+    // this.updateCurGraphDict(currentConstraints.selectedUnusedIngredients, badIngrNodeIds, "BAD") 
+    // this.updateCurGraphDict(currentConstraints.selectedUnusedTools, badToolNodeIds, "BAD")
+    // const allDirectionAreBadNodes = this.allDirectionsAreBad(badNodeIds)
+    // this.updateFillColorByNodeIds(allDirectionAreBadNodes, `"#db8a8a"`)
+
+  }
+
+  handleTime = (maxHour, maxMinute) => {
+    
+    console.log("handleTime")
+    
+    var totalTimeMinutes = 0
+    var colorRedNodes = []
+
+    if (maxHour){
+      totalTimeMinutes = totalTimeMinutes + 60*maxHour
+    }
+    if (maxMinute){
+      totalTimeMinutes = totalTimeMinutes + maxMinute
+    }
+    console.log(totalTimeMinutes)
+
+    var updatedDict = {...this.state.updatedGraphDict}
+    const keys = Object.keys(updatedDict);
+    console.log(keys)
+
+    keys && keys.forEach(nodeId=>{
+      // console.log(updatedDict[nodeId])
+      if (!updatedDict[nodeId].hidden && updatedDict[nodeId].time_description_full_info && Object.keys(updatedDict[nodeId].time_description_full_info).length!==0){
+        console.log(nodeId)
+        console.log(updatedDict[nodeId])
+        const start_range = updatedDict[nodeId].time_description_full_info.start_range
+        const unit = updatedDict[nodeId].time_description_full_info.start_unit
+        const nodeMinTimeMinutes = unit==="minute" ? start_range: (unit==="hour"? 60*start_range: 0)
+        console.log(nodeMinTimeMinutes) 
+        updatedDict[nodeId].directions && updatedDict[nodeId].directions.forEach(direction=>{
+          const directionMinTimeMinutes = direction.min_time_unit==="minute" ? direction.min_time: (direction.min_time_unit==="hour"? 60*direction.min_time: 0)
+          if (totalTimeMinutes < directionMinTimeMinutes){
+            console.log(direction.title)
+            direction.constraint = "BAD";
+          }
+        })          
+      }
+    })
+    
+    this.setState({
+      updateCurGraphDict : updatedDict
+    })
+  }
+
+  allDirectionsAreBad = (nodeIds) => {
+    var badNodeIds = []
+    console.log("all directions are bad")
+
+    nodeIds && nodeIds.forEach(nodeId=>{
+      const obj = this.state.updatedGraphDict[nodeId];
+      console.log(obj)
+      var flag = true
+      if(obj && obj.directions){
+        obj.directions.forEach(direction=>{
+          if(!direction.constraint){
+            flag = false
+          } else if (direction.constraint !== "BAD"){
+            flag = false 
+          }
+        })
+      }
+      if (flag){
+        badNodeIds.push(nodeId)
+      }
+    })
+    return badNodeIds;
+  }
+
   findNodesByIngredients = (leastCommonIngredients) =>{
     console.log("least common!!")
     console.log(leastCommonIngredients) 
@@ -791,7 +939,7 @@ class Index extends React.Component {
 
     this.addSpecialPaths(leastCommonIngredients, nodeIds)
     // this.updateFillColorByNodeIds(nodeIds)  
-    // this.updateCurGraphDict(leastCommonIngredients, nodeIds) // TODO: uncomment
+    // this.updateCurGraphDict(leastCommonIngredients, nodeIds) 
     
   }
 
@@ -850,19 +998,19 @@ class Index extends React.Component {
     this.setState({
       dotSrc : fullString
     }, () => {
-      this.updateFillColorByNodeIds(nodeIds)
-      this.updateCurGraphDict(uncommonIngredients, nodeIds)
+      this.updateFillColorByNodeIds(nodeIds, `"#ffe4b5"`)
+      this.updateCurGraphDict(uncommonIngredients, nodeIds, "UNCOMMON")
      })
   }
 
-  updateFillColorByNodeIds = (arrayOfIds)=>{
+  updateFillColorByNodeIds = (arrayOfIds, nodeColor)=>{
     console.log("update fill color by node ID") // TODO: remove
     console.log(arrayOfIds)
     let fullString = "";
     fullString =  this.state.dotSrc;
     console.log(fullString)
 
-    fullString = fullString.split(` fillcolor="#ffe4b5"`).join("");
+    fullString = fullString.split(` fillcolor=`+ nodeColor).join("");
 
     arrayOfIds && arrayOfIds.forEach(id=>{
       const regex = new RegExp("\\t"+`${id}`+"\\s\\[");
@@ -873,10 +1021,10 @@ class Index extends React.Component {
           const a = fullString.substring(startIndex,closingIndex);
           let nodeString = ""
           // console.log(a) 
-          if(a.includes(`fillcolor="#ffe4b5"`)){
+          if(a.includes(`fillcolor=` + nodeColor)){
             return
           }else{
-            nodeString = a + ` fillcolor="#ffe4b5"]`;
+            nodeString = a + ` fillcolor=` + nodeColor + `]`;
           }
           const firstPart = fullString.substring(0,startIndex);
           const lastPart = fullString.substring(closingIndex+1);
@@ -892,13 +1040,15 @@ class Index extends React.Component {
     })
   }
 
-  updateCurGraphDict =(leastCommonIngredients, nodeIds)=>{
+  // ingredientList can be also tools list.
+  updateCurGraphDict =(ingredientOrToolList, nodeIds, constraintStr)=>{
+
     console.log("update cur graph dict") // TODO: remove
     console.log(nodeIds)
     let updatedDict = {...graphDict}
     nodeIds && nodeIds.forEach(id=>{
       console.log(id)
-      leastCommonIngredients && leastCommonIngredients.forEach(uncommonIngr=>{
+      ingredientOrToolList && ingredientOrToolList.forEach(uncommonIngr=>{
         console.log(uncommonIngr)
         const regex = new RegExp(uncommonIngr);
         updatedDict[id].directions && updatedDict[id].directions.forEach(direction=>{
@@ -906,7 +1056,7 @@ class Index extends React.Component {
           console.log(direction.title);
           const startInx = direction.title.search(regex);
           if (startInx !== -1){
-            direction.constraint = "UNCOMMON";
+            direction.constraint = constraintStr;
             // updatedDict[id].directions.constraint = "UNCOMMON";
           }
         })
@@ -919,7 +1069,7 @@ class Index extends React.Component {
         const obj = updatedDict[nodeId];
         if(obj && obj.directions){
           obj.directions.forEach(direction=>{
-            if(direction.constraint && direction.constraint === "UNCOMMON"){
+            if(direction.constraint && direction.constraint === constraintStr){ // "UNCOMMON"){
               delete  direction.constraint;
             }
           })
@@ -1029,8 +1179,8 @@ class Index extends React.Component {
     const leftPaneElevation = textEditorHasFocus || nodeFormatDrawerHasFocus || edgeFormatDrawerHasFocus? focusedElevation : defaultElevation;
     const rightPaneElevation = graphHasFocus ? focusedElevation : defaultElevation;
     const midPaneElevation = insertPanelsHaveFocus ? focusedElevation : defaultElevation;
-    const showTextEditor = false;
-    const showToggles = true;
+    const showTextEditor = true; // MORAN
+    const showToggles = true; // MORAN
 
     var columns;
     if (this.state.insertPanelsAreOpen && this.state.graphInitialized) {
@@ -1083,7 +1233,7 @@ class Index extends React.Component {
             
             <Grid container  direction="row" justify="flex-start" alignItems="flex-start" spacin={1}>
               {showToggles && <Grid item xs={showToggles ? 3 : 0}>
-              <TogglesPanel findNodesByIngredients={this.findNodesByIngredients}/>
+              <TogglesPanel findNodesByIngredients={this.findNodesByIngredients} handleConstraints={this.handleConstraints}/>
               </Grid>}
               <Grid item xs={showToggles ? 9 : 12}>
                 <Paper elevation={rightPaneElevation} className={classes.paper}>

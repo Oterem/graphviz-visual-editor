@@ -17,9 +17,7 @@ import { event as d3_event} from 'd3-selection';
 import { mouse as d3_mouse} from 'd3-selection';
 import 'd3-graphviz';
 import DotGraph from './dot'
-import { dictionary } from './utils/Dictionary';
-import { graphDict } from './utils/graph_dict'
-import { yellow } from '@material-ui/core/colors';
+import { graphDict } from './utils/graph_dict_apple_cake'
 
 const styles = {
   root: {
@@ -928,9 +926,9 @@ class Graph extends React.Component {
                 let color = "#ffffff" // white - neutral 
                 if (directionObj.constraint){
                   if (directionObj.constraint === "GOOD"){
-                    color = "#9fc69f" // green
+                    color = "#afcfaf" //"#9fc69f" // green
                   } else if (directionObj.constraint === "BAD"){
-                    color = "#cf6363" // red
+                    color = "#e19d9d" //"#db8a8a" //"#cf6363" // red
                   } else if (directionObj.constraint === "UNCOMMON"){
                     color = "#ffe4b5" // yellow
                   }

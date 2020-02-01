@@ -118,7 +118,6 @@ export const graphToolList = [
   "bowl",
   "oven",
   "baking dish",
-  "bowl",
   "mixer",
   "pan",
   "baking dish",
@@ -142,13 +141,6 @@ export const graphToolList = [
   "cutting board",
   "serving dish",
   "baking dish",
-  "pan",
-  "oven",
-  "bowl",
-  "baking dish",
-  "plate",
-  "aluminum foil",
-  "baking paper",
   "mixer",
   "spatula",
   "pan",
@@ -223,8 +215,8 @@ export const graphIngrDict = {
   "egg": {
     "ingredient_names": [
       "large egg",
-      "egg",
       "large eggs",
+      "egg",
       "eggs"
     ],
     "appearances": 182,
@@ -250,9 +242,9 @@ export const graphIngrDict = {
   },
   "vanilla": {
     "ingredient_names": [
-      "vanilla extract",
       "o vanilla flavor instant pudding",
-      "vanilla"
+      "vanilla",
+      "vanilla extract"
     ],
     "appearances": 76,
     "in_nodes": [
@@ -273,14 +265,14 @@ export const graphIngrDict = {
   "flour": {
     "ingredient_names": [
       "flour",
-      "cake flour",
-      "gluten free purpose baking flour",
-      "whole wheat flour",
-      "self rising flour",
       "pastry flour",
-      "white flour",
       "purpose flour",
-      "best purpose flour"
+      "gluten free purpose baking flour",
+      "self rising flour",
+      "best purpose flour",
+      "cake flour",
+      "whole wheat flour",
+      "white flour"
     ],
     "appearances": 175,
     "in_nodes": [
@@ -356,8 +348,8 @@ export const graphIngrDict = {
   "cinnamon": {
     "ingredient_names": [
       "cinnamon",
-      "ground cinnamon",
-      "ground cinnamon taste"
+      "ground cinnamon taste",
+      "ground cinnamon"
     ],
     "appearances": 161,
     "in_nodes": [
@@ -382,9 +374,9 @@ export const graphIngrDict = {
   },
   "nutmeg": {
     "ingredient_names": [
-      "nutmeg",
       "ground nutmeg taste",
-      "ground nutmeg"
+      "ground nutmeg",
+      "nutmeg"
     ],
     "appearances": 53,
     "in_nodes": [
@@ -399,10 +391,10 @@ export const graphIngrDict = {
   },
   "milk": {
     "ingredient_names": [
-      "eagle brand milk",
-      "low fat milk",
+      "milk",
       "skim milk",
-      "milk"
+      "low fat milk",
+      "eagle brand milk"
     ],
     "appearances": 54,
     "in_nodes": [
@@ -419,41 +411,41 @@ export const graphIngrDict = {
   },
   "apple": {
     "ingredient_names": [
+      "pounds apples",
+      "winesap apples",
+      "apple small cubes",
+      "pounds delicious apples",
+      "medium apple",
+      "medium apples",
+      "granny smith red delicious apple",
+      "granny smith apples",
+      "tart apple",
+      "apples taste",
+      "small delicious apples",
+      "granny smith delicious apples",
+      "apple",
+      "large baking apples",
+      "macintosh apples",
+      "medium granny smith apples",
+      "granny smith apple",
+      "tart apples",
+      "pounds granny smith apples",
+      "baking apples",
+      "gala apples",
+      "large rome beauty apples",
+      "large apple",
       "large granny smith apples",
       "tart apple granny smith",
       "green apples",
-      "tart apple",
-      "pounds apples",
-      "delicious apple",
-      "pounds granny smith apples",
-      "tart apples",
-      "granny smith apple",
-      "apples",
-      "macintosh apples",
-      "baking apples",
-      "medium cooking apples",
-      "granny smith red delicious apple",
-      "large apple",
-      "granny smith delicious apples",
-      "winesap apples",
-      "large apples",
-      "apple small cubes",
-      "apple",
       "medium tart apples",
-      "medium gala apples cut wedges",
-      "gala apples",
-      "apple peel",
-      "medium apples",
-      "apples taste",
-      "large baking apples",
-      "medium granny smith apples",
-      "small delicious apples",
-      "medium apple",
-      "granny smith apples",
-      "pounds delicious apples",
-      "large granny smith apple",
       "large red delicious apple",
-      "large rome beauty apples"
+      "apples",
+      "large apples",
+      "delicious apple",
+      "apple peel",
+      "large granny smith apple",
+      "medium cooking apples",
+      "medium gala apples cut wedges"
     ],
     "appearances": 168,
     "in_nodes": [
@@ -474,8 +466,8 @@ export const graphIngrDict = {
   },
   "confectioner sugar": {
     "ingredient_names": [
-      "confectioners sugar taste",
-      "confectioners sugar"
+      "confectioners sugar",
+      "confectioners sugar taste"
     ],
     "appearances": 25,
     "in_nodes": [
@@ -488,13 +480,13 @@ export const graphIngrDict = {
   },
   "sugar": {
     "ingredient_names": [
-      "confectioners sugar",
-      "raw cane sugar",
-      "white sugar",
-      "sugar taste",
-      "white sugar taste",
       "sugar",
       "pounds confectioners sugar",
+      "sugar taste",
+      "confectioners sugar",
+      "raw cane sugar",
+      "white sugar taste",
+      "white sugar",
       "brown sugar"
     ],
     "appearances": 138,
@@ -528,9 +520,9 @@ export const graphIngrDict = {
   },
   "oil": {
     "ingredient_names": [
-      "oil",
+      "olive oil",
       "vegetable oil",
-      "olive oil"
+      "oil"
     ],
     "appearances": 57,
     "in_nodes": [
@@ -556,8 +548,8 @@ export const graphIngrDict = {
   },
   "raisin": {
     "ingredient_names": [
-      "raisins",
-      "raisins dates"
+      "raisins dates",
+      "raisins"
     ],
     "appearances": 43,
     "in_nodes": [
@@ -595,17 +587,17 @@ export const graphIngrDict = {
   },
   "butter": {
     "ingredient_names": [
-      "butter inch cubes",
+      "cold butter",
+      "stick butter",
+      "butter cubes",
+      "butter room temperature",
       "butter margarine",
       "butter extract",
-      "cold butter",
-      "sticks butter",
-      "butter cubes",
       "peanut butter",
-      "butter room temperature",
+      "sticks butter",
       "butter",
-      "stick butter",
-      "pound butter"
+      "pound butter",
+      "butter inch cubes"
     ],
     "appearances": 125,
     "in_nodes": [
@@ -751,9 +743,9 @@ export const graphIngrDict = {
   },
   "vanilla extract": {
     "ingredient_names": [
-      "vanilla extract",
+      "vanilla extract taste",
       "bourbon vanilla extract",
-      "vanilla extract taste"
+      "vanilla extract"
     ],
     "appearances": 54,
     "in_nodes": [
@@ -875,8 +867,8 @@ export const graphIngrDict = {
   },
   "pecan": {
     "ingredient_names": [
-      "pecans",
-      "pound pecans"
+      "pound pecans",
+      "pecans"
     ],
     "appearances": 21,
     "in_nodes": [
@@ -890,8 +882,8 @@ export const graphIngrDict = {
   },
   "cream cheese": {
     "ingredient_names": [
-      "cream cheese",
       "container cream cheese frosting",
+      "cream cheese",
       "cream cheese room temperature",
       "fat cream cheese",
       "philadelphia brick cream cheese"
@@ -920,8 +912,8 @@ export const graphIngrDict = {
   "oat": {
     "ingredient_names": [
       "gluten free oats",
-      "quick cooking oats",
       "old oats",
+      "quick cooking oats",
       "oats"
     ],
     "appearances": 11,
@@ -933,8 +925,8 @@ export const graphIngrDict = {
   },
   "lemon": {
     "ingredient_names": [
-      "lemon",
-      "lemon zest"
+      "lemon zest",
+      "lemon"
     ],
     "appearances": 9,
     "in_nodes": [
@@ -958,8 +950,8 @@ export const graphIngrDict = {
   "sour cream": {
     "ingredient_names": [
       "container sour cream",
-      "light sour cream",
-      "sour cream"
+      "sour cream",
+      "light sour cream"
     ],
     "appearances": 16,
     "in_nodes": [
@@ -1026,10 +1018,10 @@ export const graphIngrDict = {
   },
   "applesauce": {
     "ingredient_names": [
-      "jar applesauce",
       "thick applesauce",
-      "cinnamon applesauce",
+      "jar applesauce",
       "natural applesauce",
+      "cinnamon applesauce",
       "applesauce"
     ],
     "appearances": 46,
@@ -1056,8 +1048,8 @@ export const graphIngrDict = {
   },
   "honey": {
     "ingredient_names": [
-      "raw honey",
-      "honey"
+      "honey",
+      "raw honey"
     ],
     "appearances": 9,
     "in_nodes": [
@@ -1144,9 +1136,9 @@ export const graphIngrDict = {
   },
   "yogurt": {
     "ingredient_names": [
-      "plain yogurt",
       "plain low fat yogurt",
-      "vanilla yogurt"
+      "vanilla yogurt",
+      "plain yogurt"
     ],
     "appearances": 3,
     "in_nodes": [
@@ -1220,9 +1212,9 @@ export const graphIngrDict = {
   },
   "cream": {
     "ingredient_names": [
+      "cream",
       "heavy whipping cream",
-      "heavy cream",
-      "cream"
+      "heavy cream"
     ],
     "appearances": 9,
     "in_nodes": [
@@ -1259,9 +1251,9 @@ export const graphIngrDict = {
   },
   "chocolate chip": {
     "ingredient_names": [
-      "vegan chocolate chips",
       "chocolate chips",
-      "vegan chocolate chips taste"
+      "vegan chocolate chips taste",
+      "vegan chocolate chips"
     ],
     "appearances": 6,
     "in_nodes": [
@@ -1311,8 +1303,8 @@ export const graphIngrDict = {
   "topping": {
     "ingredient_names": [
       "caramel ice cream topping",
-      "container topping",
-      "topping"
+      "topping",
+      "container topping"
     ],
     "appearances": 3,
     "in_nodes": [
@@ -1336,8 +1328,8 @@ export const graphIngrDict = {
   },
   "molasses": {
     "ingredient_names": [
-      "molasses",
-      "light molasses"
+      "light molasses",
+      "molasses"
     ],
     "appearances": 4,
     "in_nodes": [
@@ -1588,11 +1580,11 @@ export const graphIngrDict = {
   },
   "FAIL!": {
     "ingredient_names": [
-      "philadelphia cheese",
       "apples",
-      "eggs",
       "raisins",
-      "mott natural applesauce"
+      "mott natural applesauce",
+      "eggs",
+      "philadelphia cheese"
     ],
     "appearances": 5,
     "in_nodes": []
@@ -1643,8 +1635,8 @@ export const graphIngrDict = {
   },
   "egg yolk": {
     "ingredient_names": [
-      "egg yolk",
-      "egg yolks"
+      "egg yolks",
+      "egg yolk"
     ],
     "appearances": 4,
     "in_nodes": [
@@ -1686,10 +1678,10 @@ export const graphIngrDict = {
   },
   "cherry": {
     "ingredient_names": [
-      "pound cherries",
       "maraschino cherries",
       "red green cherries",
-      "jar maraschino cherries"
+      "jar maraschino cherries",
+      "pound cherries"
     ],
     "appearances": 5,
     "in_nodes": [
@@ -1812,8 +1804,8 @@ export const graphIngrDict = {
   },
   "mix": {
     "ingredient_names": [
-      "instant vanilla pudding mix",
-      "instant lemon pudding mix"
+      "instant lemon pudding mix",
+      "instant vanilla pudding mix"
     ],
     "appearances": 2,
     "in_nodes": [
@@ -1890,9 +1882,9 @@ export const graphIngrDict = {
   },
   "rum": {
     "ingredient_names": [
-      "rum",
+      "rum extract",
       "dark rum",
-      "rum extract"
+      "rum"
     ],
     "appearances": 6,
     "in_nodes": [
@@ -1923,8 +1915,8 @@ export const graphIngrDict = {
   },
   "apple butter": {
     "ingredient_names": [
-      "apple butter",
-      "jar dickinson country apple butter"
+      "jar dickinson country apple butter",
+      "apple butter"
     ],
     "appearances": 2,
     "in_nodes": []
@@ -1997,9 +1989,9 @@ export const graphIngrDict = {
   },
   "egg white": {
     "ingredient_names": [
+      "eggs whites",
       "egg whites",
-      "egg white",
-      "eggs whites"
+      "egg white"
     ],
     "appearances": 8,
     "in_nodes": [
@@ -2138,8 +2130,8 @@ export const graphIngrDict = {
   },
   "inch": {
     "ingredient_names": [
-      "granny smith apple inch slices",
-      "butter inch chunks"
+      "butter inch chunks",
+      "granny smith apple inch slices"
     ],
     "appearances": 2,
     "in_nodes": []
@@ -2596,9 +2588,9 @@ export const graphIngrDict = {
   },
   "graham cracker": {
     "ingredient_names": [
-      "cinnamon graham crackers",
       "individual cinnamon graham crackers",
-      "graham crackers fine crumbs"
+      "graham crackers fine crumbs",
+      "cinnamon graham crackers"
     ],
     "appearances": 3,
     "in_nodes": [
@@ -2714,8 +2706,8 @@ export const graphIngrDict = {
   },
   "soy milk": {
     "ingredient_names": [
-      "soy milk",
-      "vanilla soy milk"
+      "vanilla soy milk",
+      "soy milk"
     ],
     "appearances": 2,
     "in_nodes": []
@@ -2979,6 +2971,182 @@ export const graphIngrDict = {
   }
 }
 
+export const graphToolDict = {
+  "bowl": {
+    "in_nodes": [
+      "3199",
+      "3294",
+      "3301",
+      "3409",
+      "3588",
+      "3589",
+      "3594",
+      "3619",
+      "3660",
+      "3759",
+      "3811",
+      "3816",
+      "3896",
+      "3908",
+      "3938",
+      "3939",
+      "4030",
+      "4032",
+      "4064",
+      "4093",
+      "4100",
+      "4172",
+      "4231",
+      "4247",
+      "4292",
+      "4321",
+      "4380",
+      "4393",
+      "4404",
+      "4413"
+    ]
+  },
+  "mixer": {
+    "in_nodes": [
+      "3409",
+      "3664",
+      "3908",
+      "3938",
+      "4064",
+      "4100",
+      "4264",
+      "4393",
+      "4414"
+    ]
+  },
+  "oven": {
+    "in_nodes": [
+      "4083",
+      "4096",
+      "4366",
+      "4400",
+      "4404",
+      "4409",
+      "4413"
+    ]
+  },
+  "baking dish": {
+    "in_nodes": [
+      "4096",
+      "4247",
+      "4294",
+      "4321",
+      "4325",
+      "4339",
+      "4379",
+      "4400",
+      "4404",
+      "4405",
+      "4406",
+      "4413"
+    ]
+  },
+  "pan": {
+    "in_nodes": [
+      "3619",
+      "3938",
+      "4030",
+      "4053",
+      "4127",
+      "4164",
+      "4247",
+      "4248",
+      "4292",
+      "4294",
+      "4321",
+      "4325",
+      "4339",
+      "4366",
+      "4375",
+      "4379",
+      "4380",
+      "4390",
+      "4400",
+      "4404",
+      "4409",
+      "4413",
+      "4414",
+      "4416"
+    ]
+  },
+  "knife": {
+    "in_nodes": [
+      "3988",
+      "4030",
+      "4127",
+      "4366",
+      "4391"
+    ]
+  },
+  "fork": {
+    "in_nodes": [
+      "3294",
+      "3988",
+      "4118",
+      "4366"
+    ]
+  },
+  "plate": {
+    "in_nodes": [
+      "4379",
+      "4400",
+      "4404",
+      "4413",
+      "4416"
+    ]
+  },
+  "rice steamer": {
+    "in_nodes": [
+      "4247",
+      "4400",
+      "4407"
+    ]
+  },
+  "baking paper": {
+    "in_nodes": [
+      "4404",
+      "4413"
+    ]
+  },
+  "aluminum foil": {
+    "in_nodes": [
+      "4404",
+      "4405",
+      "4413"
+    ]
+  },
+  "refrigerator": {
+    "in_nodes": [
+      "4404"
+    ]
+  },
+  "cutting board": {
+    "in_nodes": [
+      "4321",
+      "4404"
+    ]
+  },
+  "serving dish": {
+    "in_nodes": [
+      "4404"
+    ]
+  },
+  "spatula": {
+    "in_nodes": [
+      "4030",
+      "4127",
+      "4230",
+      "4290",
+      "4414"
+    ]
+  }
+}
+
 export const graphDict = {
   "0": {
     "hidden": false,
@@ -3163,18 +3331,18 @@ export const graphDict = {
     ],
     "verb": "turn",
     "ingredients_full_info": {
-      "confectioner sugar": {
-        "min_quan": "",
-        "max_quan": "1/4",
-        "min_quan_unit": "cup",
-        "max_quan_unit": "1/4 cup",
-        "percent": 100.0
-      },
       "sugar": {
         "min_quan": "1 1/2",
         "max_quan": "1 3/4",
         "min_quan_unit": "1 1/2 cup",
         "max_quan_unit": "1 3/4 cup",
+        "percent": 100.0
+      },
+      "confectioner sugar": {
+        "min_quan": "",
+        "max_quan": "1/4",
+        "min_quan_unit": "cup",
+        "max_quan_unit": "1/4 cup",
         "percent": 100.0
       }
     },
@@ -3184,8 +3352,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>turn</b><br/><br/>cup - 1/4 cup confectioner sugar (100%)<br/>1 1/2 cup - 1 3/4 cup sugar (100%)<br/><br/>plate (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>turn</b><br/>confectioner sugar (100%)<br/>sugar (100%)</font>>"
+    "summary": "<<font point-size='18'><b>turn</b><br/><br/>1 1/2 cup - 1 3/4 cup sugar (100%)<br/>cup - 1/4 cup confectioner sugar (100%)<br/><br/>plate (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>turn</b><br/>sugar (100%)<br/>confectioner sugar (100%)</font>>"
   },
   "48": {
     "hidden": true,
@@ -3809,13 +3977,6 @@ export const graphDict = {
     ],
     "verb": "place",
     "ingredients_full_info": {
-      "butter": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 100.0
-      },
       "cream": {
         "min_quan": "1/2",
         "max_quan": "3/4",
@@ -3828,6 +3989,13 @@ export const graphDict = {
         "max_quan": "1 1/4",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 1/4 cup",
+        "percent": 100.0
+      },
+      "butter": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 100.0
       },
       "vanilla": {
@@ -3844,8 +4012,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>place</b><br/><br/>1/4 cup - 1/2 cup butter (100%)<br/>1/2 cup - 3/4 cup cream (100%)<br/>1 cup - 1 1/4 cup sugar (100%)<br/>1 1/2 teaspoon - 2 teaspoon vanilla (100%)<br/><br/>pan (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>place</b><br/>butter (100%)<br/>cream (100%)<br/>sugar (100%)<br/>vanilla (100%)</font>>"
+    "summary": "<<font point-size='18'><b>place</b><br/><br/>1/2 cup - 3/4 cup cream (100%)<br/>1 cup - 1 1/4 cup sugar (100%)<br/>1/4 cup - 1/2 cup butter (100%)<br/>1 1/2 teaspoon - 2 teaspoon vanilla (100%)<br/><br/>pan (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>place</b><br/>cream (100%)<br/>sugar (100%)<br/>butter (100%)<br/>vanilla (100%)</font>>"
   },
   "434": {
     "hidden": true,
@@ -3999,18 +4167,18 @@ export const graphDict = {
     ],
     "verb": "set",
     "ingredients_full_info": {
-      "butter": {
-        "min_quan": "1/4",
-        "max_quan": "1/4",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/4 cup",
-        "percent": 100.0
-      },
       "sugar": {
         "min_quan": "3/4",
         "max_quan": "3/4",
         "min_quan_unit": "3/4 cup",
         "max_quan_unit": "3/4 cup",
+        "percent": 100.0
+      },
+      "butter": {
+        "min_quan": "1/4",
+        "max_quan": "1/4",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/4 cup",
         "percent": 100.0
       }
     },
@@ -4023,8 +4191,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>set</b><br/><br/>1/4 cup butter (100%)<br/>3/4 cup sugar (100%)<br/><br/>mixer (100%)<br/>bowl (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>set</b><br/>butter (100%)<br/>sugar (100%)</font>>"
+    "summary": "<<font point-size='18'><b>set</b><br/><br/>3/4 cup sugar (100%)<br/>1/4 cup butter (100%)<br/><br/>mixer (100%)<br/>bowl (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>set</b><br/>sugar (100%)<br/>butter (100%)</font>>"
   },
   "553": {
     "hidden": true,
@@ -4276,13 +4444,6 @@ export const graphDict = {
     ],
     "verb": "sift",
     "ingredients_full_info": {
-      "self rising flour": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 cup",
-        "max_quan_unit": "2 cup",
-        "percent": 100.0
-      },
       "pumpkin pie spice": {
         "min_quan": "3",
         "max_quan": "3",
@@ -4296,6 +4457,13 @@ export const graphDict = {
         "min_quan_unit": "3 cup",
         "max_quan_unit": "3 cup",
         "percent": 100.0
+      },
+      "self rising flour": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 cup",
+        "max_quan_unit": "2 cup",
+        "percent": 100.0
       }
     },
     "instruments_full_info": {
@@ -4304,8 +4472,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>sift</b><br/><br/>2 cup self rising flour (100%)<br/>3 teaspoon pumpkin pie spice (100%)<br/>3 cup pumpkin (100%)<br/><br/>bowl (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>sift</b><br/>self rising flour (100%)<br/>pumpkin pie spice (100%)<br/>pumpkin (100%)</font>>"
+    "summary": "<<font point-size='18'><b>sift</b><br/><br/>3 teaspoon pumpkin pie spice (100%)<br/>3 cup pumpkin (100%)<br/>2 cup self rising flour (100%)<br/><br/>bowl (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>sift</b><br/>pumpkin pie spice (100%)<br/>pumpkin (100%)<br/>self rising flour (100%)</font>>"
   },
   "634": {
     "hidden": true,
@@ -5551,18 +5719,18 @@ export const graphDict = {
     ],
     "verb": "bring",
     "ingredients_full_info": {
-      "butter": {
-        "min_quan": "",
-        "max_quan": "1/2",
-        "min_quan_unit": "teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
-        "percent": 100.0
-      },
       "rum": {
         "min_quan": "1",
         "max_quan": "1",
         "min_quan_unit": "1 teaspoon",
         "max_quan_unit": "1 teaspoon",
+        "percent": 100.0
+      },
+      "butter": {
+        "min_quan": "",
+        "max_quan": "1/2",
+        "min_quan_unit": "teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
         "percent": 100.0
       },
       "vanilla": {
@@ -5575,8 +5743,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>bring</b><br/><br/>teaspoon - 1/2 teaspoon butter (100%)<br/>1 teaspoon rum (100%)<br/>1 teaspoon vanilla (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>bring</b><br/>butter (100%)<br/>rum (100%)<br/>vanilla (100%)</font>>"
+    "summary": "<<font point-size='18'><b>bring</b><br/><br/>1 teaspoon rum (100%)<br/>teaspoon - 1/2 teaspoon butter (100%)<br/>1 teaspoon vanilla (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>bring</b><br/>rum (100%)<br/>butter (100%)<br/>vanilla (100%)</font>>"
   },
   "1154": {
     "hidden": true,
@@ -5610,25 +5778,25 @@ export const graphDict = {
     ],
     "verb": "prepare",
     "ingredients_full_info": {
-      "half": {
-        "min_quan": "6",
-        "max_quan": "6",
-        "min_quan_unit": "6 can",
-        "max_quan_unit": "6 can",
-        "percent": 100.0
-      },
       "cherry": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 cup",
         "max_quan_unit": "1/2 cup",
         "percent": 100.0
+      },
+      "half": {
+        "min_quan": "6",
+        "max_quan": "6",
+        "min_quan_unit": "6 can",
+        "max_quan_unit": "6 can",
+        "percent": 100.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>prepare</b><br/><br/>6 can half (100%)<br/>1/2 cup cherry (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>prepare</b><br/>half (100%)<br/>cherry (100%)</font>>"
+    "summary": "<<font point-size='18'><b>prepare</b><br/><br/>1/2 cup cherry (100%)<br/>6 can half (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>prepare</b><br/>cherry (100%)<br/>half (100%)</font>>"
   },
   "1176": {
     "hidden": true,
@@ -5742,17 +5910,17 @@ export const graphDict = {
     ],
     "verb": "sit",
     "ingredients_full_info": {
-      "rum": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 100.0
-      },
       "raisin": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
+        "percent": 100.0
+      },
+      "rum": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/2 cup",
         "percent": 100.0
       }
@@ -5768,8 +5936,8 @@ export const graphDict = {
       "end_range": "4",
       "end_unit": "hour"
     },
-    "summary": "<<font point-size='18'><b>sit</b><br/><br/>1/4 cup - 1/2 cup rum (100%)<br/>1/2 cup raisin (100%)<br/><br/>bowl (100%)<br/><br/>overnight - 4 hour</font>>",
-    "summary_abbr": "<<font point-size='18'><b>sit</b><br/>rum (100%)<br/>raisin (100%)</font>>"
+    "summary": "<<font point-size='18'><b>sit</b><br/><br/>1/2 cup raisin (100%)<br/>1/4 cup - 1/2 cup rum (100%)<br/><br/>bowl (100%)<br/><br/>overnight - 4 hour</font>>",
+    "summary_abbr": "<<font point-size='18'><b>sit</b><br/>raisin (100%)<br/>rum (100%)</font>>"
   },
   "1242": {
     "hidden": true,
@@ -5856,6 +6024,13 @@ export const graphDict = {
     ],
     "verb": "mix",
     "ingredients_full_info": {
+      "beer": {
+        "min_quan": "4",
+        "max_quan": "4",
+        "min_quan_unit": "4 ounce",
+        "max_quan_unit": "4 ounce",
+        "percent": 100.0
+      },
       "root beer": {
         "min_quan": "5",
         "max_quan": "5",
@@ -5869,13 +6044,6 @@ export const graphDict = {
         "min_quan_unit": "1",
         "max_quan_unit": "1",
         "percent": 100.0
-      },
-      "beer": {
-        "min_quan": "4",
-        "max_quan": "4",
-        "min_quan_unit": "4 ounce",
-        "max_quan_unit": "4 ounce",
-        "percent": 100.0
       }
     },
     "instruments_full_info": {
@@ -5884,8 +6052,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>5 ounce root beer (100%)<br/>1 instant dessert topping (100%)<br/>4 ounce beer (100%)<br/><br/>bowl (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>root beer (100%)<br/>instant dessert topping (100%)<br/>beer (100%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>4 ounce beer (100%)<br/>5 ounce root beer (100%)<br/>1 instant dessert topping (100%)<br/><br/>bowl (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>beer (100%)<br/>root beer (100%)<br/>instant dessert topping (100%)</font>>"
   },
   "1272": {
     "hidden": true,
@@ -6428,10 +6596,10 @@ export const graphDict = {
       {
         "title": "Microwave caramels and milk in heatable bowl on HIGH 1-1/2 min.",
         "verb": "heat",
-        "min_time": "",
-        "min_time_unit": "",
-        "max_time": "",
-        "max_time_unit": "",
+        "min_time": "2",
+        "min_time_unit": "minute",
+        "max_time": "2",
+        "max_time_unit": "minute",
         "instruments": [
           "bowl"
         ],
@@ -6683,11 +6851,11 @@ export const graphDict = {
     ],
     "verb": "flour",
     "ingredients_full_info": {
-      "salt": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
+      "cinnamon": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 teaspoon",
+        "max_quan_unit": "1 1/2 teaspoon",
         "percent": 100.0
       },
       "flour": {
@@ -6697,6 +6865,13 @@ export const graphDict = {
         "max_quan_unit": "1 3/4 cup",
         "percent": 100.0
       },
+      "baking powder": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 teaspoon",
+        "max_quan_unit": "2 teaspoon",
+        "percent": 100.0
+      },
       "nutmeg": {
         "min_quan": "1/2",
         "max_quan": "1/2",
@@ -6704,25 +6879,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 teaspoon",
         "percent": 100.0
       },
-      "cinnamon": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 teaspoon",
-        "max_quan_unit": "1 1/2 teaspoon",
-        "percent": 100.0
-      },
-      "baking powder": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 teaspoon",
-        "max_quan_unit": "2 teaspoon",
+      "salt": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
         "percent": 100.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>flour</b><br/><br/>1/2 teaspoon salt (100%)<br/>1 3/4 cup flour (100%)<br/>1/2 teaspoon nutmeg (100%)<br/>1 1/2 teaspoon cinnamon (100%)<br/>2 teaspoon baking powder (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>flour</b><br/>salt (100%)<br/>flour (100%)<br/>nutmeg (100%)<br/>cinnamon (100%)</font>>"
+    "summary": "<<font point-size='18'><b>flour</b><br/><br/>1 1/2 teaspoon cinnamon (100%)<br/>1 3/4 cup flour (100%)<br/>2 teaspoon baking powder (100%)<br/>1/2 teaspoon nutmeg (100%)<br/>1/2 teaspoon salt (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>flour</b><br/>cinnamon (100%)<br/>flour (100%)<br/>baking powder (100%)<br/>nutmeg (100%)</font>>"
   },
   "1428": {
     "hidden": true,
@@ -6932,25 +7100,18 @@ export const graphDict = {
     ],
     "verb": "heat",
     "ingredients_full_info": {
+      "cinnamon": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
+        "percent": 100.0
+      },
       "flour": {
         "min_quan": "1",
         "max_quan": "1 1/4",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 1/4 cup",
-        "percent": 100.0
-      },
-      "salt": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
-        "percent": 100.0
-      },
-      "baking soda": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
         "percent": 100.0
       },
       "nutmeg": {
@@ -6960,17 +7121,10 @@ export const graphDict = {
         "max_quan_unit": "1/8 teaspoon",
         "percent": 100.0
       },
-      "oat": {
-        "min_quan": "1/2",
-        "max_quan": "3/4",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "3/4 cup",
-        "percent": 100.0
-      },
-      "cinnamon": {
-        "min_quan": "1/2",
+      "baking soda": {
+        "min_quan": "1/4",
         "max_quan": "1/2",
-        "min_quan_unit": "1/2 teaspoon",
+        "min_quan_unit": "1/4 teaspoon",
         "max_quan_unit": "1/2 teaspoon",
         "percent": 100.0
       },
@@ -6979,6 +7133,20 @@ export const graphDict = {
         "max_quan": "1/2",
         "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 100.0
+      },
+      "salt": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
+        "percent": 100.0
+      },
+      "oat": {
+        "min_quan": "1/2",
+        "max_quan": "3/4",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 100.0
       }
     },
@@ -6991,8 +7159,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>heat</b><br/><br/>1 cup - 1 1/4 cup flour (100%)<br/>1/4 teaspoon - 1/2 teaspoon salt (100%)<br/>1/4 teaspoon - 1/2 teaspoon baking soda (100%)<br/>1/8 teaspoon nutmeg (100%)<br/>1/2 cup - 3/4 cup oat (100%)<br/>1/2 teaspoon cinnamon (100%)<br/>1/4 cup - 1/2 cup brown sugar (100%)<br/><br/>bowl (100%)<br/>oven (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>heat</b><br/>flour (100%)<br/>salt (100%)<br/>baking soda (100%)<br/>nutmeg (100%)</font>>"
+    "summary": "<<font point-size='18'><b>heat</b><br/><br/>1/2 teaspoon cinnamon (100%)<br/>1 cup - 1 1/4 cup flour (100%)<br/>1/8 teaspoon nutmeg (100%)<br/>1/4 teaspoon - 1/2 teaspoon baking soda (100%)<br/>1/4 cup - 1/2 cup brown sugar (100%)<br/>1/4 teaspoon - 1/2 teaspoon salt (100%)<br/>1/2 cup - 3/4 cup oat (100%)<br/><br/>bowl (100%)<br/>oven (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>heat</b><br/>cinnamon (100%)<br/>flour (100%)<br/>nutmeg (100%)<br/>baking soda (100%)</font>>"
   },
   "1482": {
     "hidden": true,
@@ -7204,18 +7372,18 @@ export const graphDict = {
     ],
     "verb": "dip",
     "ingredients_full_info": {
-      "boiling water": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 cup",
-        "max_quan_unit": "1 1/2 cup",
-        "percent": 100.0
-      },
       "raisin": {
         "min_quan": "1/4",
         "max_quan": "1/2",
         "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 100.0
+      },
+      "boiling water": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 cup",
+        "max_quan_unit": "1 1/2 cup",
         "percent": 100.0
       }
     },
@@ -7225,8 +7393,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>dip</b><br/><br/>1 1/2 cup boiling water (100%)<br/>1/4 cup - 1/2 cup raisin (100%)<br/><br/>oven (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>dip</b><br/>boiling water (100%)<br/>raisin (100%)</font>>"
+    "summary": "<<font point-size='18'><b>dip</b><br/><br/>1/4 cup - 1/2 cup raisin (100%)<br/>1 1/2 cup boiling water (100%)<br/><br/>oven (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>dip</b><br/>raisin (100%)<br/>boiling water (100%)</font>>"
   },
   "1527": {
     "hidden": true,
@@ -7716,25 +7884,25 @@ export const graphDict = {
     ],
     "verb": "decorate",
     "ingredients_full_info": {
-      "filling": {
-        "min_quan": "1",
-        "max_quan": "2",
-        "min_quan_unit": "1 can",
-        "max_quan_unit": "2 can",
-        "percent": 100.0
-      },
       "apple": {
         "min_quan": "4",
         "max_quan": "5",
         "min_quan_unit": "4",
         "max_quan_unit": "5",
         "percent": 100.0
+      },
+      "filling": {
+        "min_quan": "1",
+        "max_quan": "2",
+        "min_quan_unit": "1 can",
+        "max_quan_unit": "2 can",
+        "percent": 100.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>decorate</b><br/><br/>1 can - 2 can filling (100%)<br/>4 - 5 apple (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>decorate</b><br/>filling (100%)<br/>apple (100%)</font>>"
+    "summary": "<<font point-size='18'><b>decorate</b><br/><br/>4 - 5 apple (100%)<br/>1 can - 2 can filling (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>decorate</b><br/>apple (100%)<br/>filling (100%)</font>>"
   },
   "1630": {
     "hidden": true,
@@ -8335,18 +8503,18 @@ export const graphDict = {
     ],
     "verb": "smooth",
     "ingredients_full_info": {
-      "egg yolk": {
-        "min_quan": "5",
-        "max_quan": "6",
-        "min_quan_unit": "5",
-        "max_quan_unit": "6",
-        "percent": 100.0
-      },
       "vegetable oil": {
         "min_quan": "1/4",
         "max_quan": "1/2",
         "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 100.0
+      },
+      "egg yolk": {
+        "min_quan": "5",
+        "max_quan": "6",
+        "min_quan_unit": "5",
+        "max_quan_unit": "6",
         "percent": 100.0
       },
       "applesauce": {
@@ -8359,8 +8527,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>smooth</b><br/><br/>5 - 6 egg yolk (100%)<br/>1/4 cup - 1/2 cup vegetable oil (100%)<br/>3/4 cup - 1 cup applesauce (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>smooth</b><br/>egg yolk (100%)<br/>vegetable oil (100%)<br/>applesauce (100%)</font>>"
+    "summary": "<<font point-size='18'><b>smooth</b><br/><br/>1/4 cup - 1/2 cup vegetable oil (100%)<br/>5 - 6 egg yolk (100%)<br/>3/4 cup - 1 cup applesauce (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>smooth</b><br/>vegetable oil (100%)<br/>egg yolk (100%)<br/>applesauce (100%)</font>>"
   },
   "1780": {
     "hidden": true,
@@ -8640,13 +8808,6 @@ export const graphDict = {
     ],
     "verb": "beat",
     "ingredients_full_info": {
-      "applesauce": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 100.0
-      },
       "honey": {
         "min_quan": "3",
         "max_quan": "3",
@@ -8660,12 +8821,19 @@ export const graphDict = {
         "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/4 cup",
         "percent": 100.0
+      },
+      "applesauce": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
+        "percent": 100.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1/2 cup applesauce (100%)<br/>3 tablespoon honey (100%)<br/>1/4 cup coconut oil (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>applesauce (100%)<br/>honey (100%)<br/>coconut oil (100%)</font>>"
+    "summary": "<<font point-size='18'><b>beat</b><br/><br/>3 tablespoon honey (100%)<br/>1/4 cup coconut oil (100%)<br/>1/2 cup applesauce (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>honey (100%)<br/>coconut oil (100%)<br/>applesauce (100%)</font>>"
   },
   "1860": {
     "hidden": true,
@@ -9484,25 +9652,25 @@ export const graphDict = {
     ],
     "verb": "garnish",
     "ingredients_full_info": {
-      "ginger": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 tablespoon",
-        "max_quan_unit": "1 1/2 tablespoon",
-        "percent": 100.0
-      },
       "cream": {
         "min_quan": "3/4",
         "max_quan": "3/4",
         "min_quan_unit": "3/4 cup",
         "max_quan_unit": "3/4 cup",
         "percent": 100.0
+      },
+      "ginger": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 tablespoon",
+        "max_quan_unit": "1 1/2 tablespoon",
+        "percent": 100.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>garnish</b><br/><br/>1 1/2 tablespoon ginger (100%)<br/>3/4 cup cream (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>garnish</b><br/>ginger (100%)<br/>cream (100%)</font>>"
+    "summary": "<<font point-size='18'><b>garnish</b><br/><br/>3/4 cup cream (100%)<br/>1 1/2 tablespoon ginger (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>garnish</b><br/>cream (100%)<br/>ginger (100%)</font>>"
   },
   "2066": {
     "hidden": true,
@@ -9906,25 +10074,25 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 100.0
       },
-      "margarine": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 teaspoon",
-        "max_quan_unit": "2 teaspoon",
-        "percent": 100.0
-      },
       "chocolate": {
         "min_quan": "1",
         "max_quan": "1",
         "min_quan_unit": "1 package",
         "max_quan_unit": "1 package",
         "percent": 100.0
+      },
+      "margarine": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 teaspoon",
+        "max_quan_unit": "2 teaspoon",
+        "percent": 100.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>place</b><br/><br/>1 cup water (100%)<br/>2 teaspoon margarine (100%)<br/>1 package chocolate (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>place</b><br/>water (100%)<br/>margarine (100%)<br/>chocolate (100%)</font>>"
+    "summary": "<<font point-size='18'><b>place</b><br/><br/>1 cup water (100%)<br/>1 package chocolate (100%)<br/>2 teaspoon margarine (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>place</b><br/>water (100%)<br/>chocolate (100%)<br/>margarine (100%)</font>>"
   },
   "2144": {
     "hidden": true,
@@ -10112,14 +10280,14 @@ export const graphDict = {
     ],
     "verb": "remove",
     "ingredients_full_info": {
-      "butter": {
+      "cream": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 cup",
         "max_quan_unit": "1/2 cup",
         "percent": 100.0
       },
-      "cream": {
+      "butter": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 cup",
@@ -10129,8 +10297,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>remove</b><br/><br/>1/2 cup butter (100%)<br/>1/2 cup cream (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>remove</b><br/>butter (100%)<br/>cream (100%)</font>>"
+    "summary": "<<font point-size='18'><b>remove</b><br/><br/>1/2 cup cream (100%)<br/>1/2 cup butter (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>remove</b><br/>cream (100%)<br/>butter (100%)</font>>"
   },
   "2196": {
     "hidden": true,
@@ -10164,25 +10332,25 @@ export const graphDict = {
     ],
     "verb": "mix",
     "ingredients_full_info": {
-      "lemon juice": {
-        "min_quan": "3",
-        "max_quan": "3",
-        "min_quan_unit": "3 drop",
-        "max_quan_unit": "3 drop",
-        "percent": 100.0
-      },
       "juice": {
         "min_quan": "2",
         "max_quan": "2",
         "min_quan_unit": "2 teaspoon",
         "max_quan_unit": "2 teaspoon",
         "percent": 100.0
+      },
+      "lemon juice": {
+        "min_quan": "3",
+        "max_quan": "3",
+        "min_quan_unit": "3 drop",
+        "max_quan_unit": "3 drop",
+        "percent": 100.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3 drop lemon juice (100%)<br/>2 teaspoon juice (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>lemon juice (100%)<br/>juice (100%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 teaspoon juice (100%)<br/>3 drop lemon juice (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>juice (100%)<br/>lemon juice (100%)</font>>"
   },
   "2209": {
     "hidden": true,
@@ -10906,18 +11074,11 @@ export const graphDict = {
     ],
     "verb": "place",
     "ingredients_full_info": {
-      "vanilla extract": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 tablespoon",
-        "max_quan_unit": "1 tablespoon",
-        "percent": 100.0
-      },
-      "apple": {
-        "min_quan": "5",
-        "max_quan": "5",
-        "min_quan_unit": "5 slice",
-        "max_quan_unit": "5 slice",
+      "cinnamon": {
+        "min_quan": "3",
+        "max_quan": "3",
+        "min_quan_unit": "3 tablespoon",
+        "max_quan_unit": "3 tablespoon",
         "percent": 100.0
       },
       "flour": {
@@ -10927,39 +11088,11 @@ export const graphDict = {
         "max_quan_unit": "4 cup",
         "percent": 100.0
       },
-      "salt": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 teaspoon",
-        "max_quan_unit": "2 teaspoon",
-        "percent": 100.0
-      },
-      "apple juice": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 cup",
-        "max_quan_unit": "1 1/2 cup",
-        "percent": 100.0
-      },
-      "white sugar": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 cup",
-        "max_quan_unit": "1 1/2 cup",
-        "percent": 100.0
-      },
-      "egg": {
-        "min_quan": "4",
-        "max_quan": "4",
-        "min_quan_unit": "4",
-        "max_quan_unit": "4",
-        "percent": 100.0
-      },
-      "cinnamon": {
-        "min_quan": "3",
-        "max_quan": "3",
-        "min_quan_unit": "3 tablespoon",
-        "max_quan_unit": "3 tablespoon",
+      "vanilla extract": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 tablespoon",
+        "max_quan_unit": "1 tablespoon",
         "percent": 100.0
       },
       "baking powder": {
@@ -10969,6 +11102,34 @@ export const graphDict = {
         "max_quan_unit": "2 teaspoon",
         "percent": 100.0
       },
+      "milk": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
+        "percent": 100.0
+      },
+      "apple": {
+        "min_quan": "5",
+        "max_quan": "5",
+        "min_quan_unit": "5 slice",
+        "max_quan_unit": "5 slice",
+        "percent": 100.0
+      },
+      "egg": {
+        "min_quan": "4",
+        "max_quan": "4",
+        "min_quan_unit": "4",
+        "max_quan_unit": "4",
+        "percent": 100.0
+      },
+      "white sugar": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 cup",
+        "max_quan_unit": "1 1/2 cup",
+        "percent": 100.0
+      },
       "butter": {
         "min_quan": "1",
         "max_quan": "1",
@@ -10976,11 +11137,18 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 100.0
       },
-      "milk": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
+      "apple juice": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 cup",
+        "max_quan_unit": "1 1/2 cup",
+        "percent": 100.0
+      },
+      "salt": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 teaspoon",
+        "max_quan_unit": "2 teaspoon",
         "percent": 100.0
       }
     },
@@ -10993,8 +11161,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>place</b><br/><br/>1 tablespoon vanilla extract (100%)<br/>5 slice apple (100%)<br/>4 cup flour (100%)<br/>2 teaspoon salt (100%)<br/>1 1/2 cup apple juice (100%)<br/>1 1/2 cup white sugar (100%)<br/>4 egg (100%)<br/>3 tablespoon cinnamon (100%)<br/>2 teaspoon baking powder (100%)<br/>1 cup butter (100%)<br/>1/2 cup milk (100%)<br/><br/>bowl (100%)<br/>mixer (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>place</b><br/>vanilla extract (100%)<br/>apple (100%)<br/>flour (100%)<br/>salt (100%)</font>>"
+    "summary": "<<font point-size='18'><b>place</b><br/><br/>3 tablespoon cinnamon (100%)<br/>4 cup flour (100%)<br/>1 tablespoon vanilla extract (100%)<br/>2 teaspoon baking powder (100%)<br/>1/2 cup milk (100%)<br/>5 slice apple (100%)<br/>4 egg (100%)<br/>1 1/2 cup white sugar (100%)<br/>1 cup butter (100%)<br/>1 1/2 cup apple juice (100%)<br/>2 teaspoon salt (100%)<br/><br/>bowl (100%)<br/>mixer (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>place</b><br/>cinnamon (100%)<br/>flour (100%)<br/>vanilla extract (100%)<br/>baking powder (100%)</font>>"
   },
   "2508": {
     "hidden": true,
@@ -11471,13 +11639,6 @@ export const graphDict = {
     ],
     "verb": "mix",
     "ingredients_full_info": {
-      "ginger": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
-        "percent": 100.0
-      },
       "cinnamon": {
         "min_quan": "2",
         "max_quan": "1",
@@ -11492,6 +11653,13 @@ export const graphDict = {
         "max_quan_unit": "2 teaspoon",
         "percent": 100.0
       },
+      "ginger": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
+        "percent": 100.0
+      },
       "clove": {
         "min_quan": "1/4",
         "max_quan": "1/4",
@@ -11499,7 +11667,21 @@ export const graphDict = {
         "max_quan_unit": "1/4 teaspoon",
         "percent": 100.0
       },
-      "gum": {
+      "coconut sugar": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/2 cup",
+        "percent": 50.0
+      },
+      "flour": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 cup",
+        "max_quan_unit": "1 1/2 cup",
+        "percent": 50.0
+      },
+      "pumpkin pie spice": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 teaspoon",
@@ -11511,13 +11693,6 @@ export const graphDict = {
         "max_quan": "1",
         "min_quan_unit": "1 tablespoon",
         "max_quan_unit": "1 tablespoon",
-        "percent": 50.0
-      },
-      "flour": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 cup",
-        "max_quan_unit": "1 1/2 cup",
         "percent": 50.0
       },
       "salt": {
@@ -11534,25 +11709,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 teaspoon",
         "percent": 50.0
       },
-      "sea salt": {
-        "min_quan": "",
-        "max_quan": "1",
-        "min_quan_unit": "pinch",
-        "max_quan_unit": "1 pinch",
-        "percent": 50.0
-      },
-      "pumpkin pie spice": {
+      "gum": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 teaspoon",
         "max_quan_unit": "1/2 teaspoon",
         "percent": 50.0
       },
-      "coconut sugar": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/2 cup",
+      "sea salt": {
+        "min_quan": "",
+        "max_quan": "1",
+        "min_quan_unit": "pinch",
+        "max_quan_unit": "1 pinch",
         "percent": 50.0
       },
       "almond flour": {
@@ -11562,18 +11730,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 50.0
       },
-      "allspice": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 teaspoon",
-        "max_quan_unit": "2 teaspoon",
-        "percent": 50.0
-      },
       "whole wheat flour": {
         "min_quan": "2",
         "max_quan": "2",
         "min_quan_unit": "2 cup",
         "max_quan_unit": "2 cup",
+        "percent": 50.0
+      },
+      "allspice": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 teaspoon",
+        "max_quan_unit": "2 teaspoon",
         "percent": 50.0
       }
     },
@@ -11583,8 +11751,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 teaspoon - 1/2 teaspoon ginger (100%)<br/>2 teaspoon - 1 tablespoon cinnamon (100%)<br/>1 teaspoon - 2 teaspoon baking powder (100%)<br/>1/4 teaspoon clove (100%)<br/>1/2 teaspoon gum (50.00%)<br/>1 tablespoon flax seed meal (50.00%)<br/>1 1/2 cup flour (50.00%)<br/>1/2 teaspoon salt (50.00%)<br/>1/2 teaspoon baking soda (50.00%)<br/>pinch - 1 pinch sea salt (50.00%)<br/>1/2 teaspoon pumpkin pie spice (50.00%)<br/>1/4 cup - 1/2 cup coconut sugar (50.00%)<br/>1/2 cup almond flour (50.00%)<br/>2 teaspoon allspice (50.00%)<br/>2 cup whole wheat flour (50.00%)<br/><br/>bowl (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>ginger (100%)<br/>cinnamon (100%)<br/>baking powder (100%)<br/>clove (100%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 teaspoon - 1 tablespoon cinnamon (100%)<br/>1 teaspoon - 2 teaspoon baking powder (100%)<br/>1/4 teaspoon - 1/2 teaspoon ginger (100%)<br/>1/4 teaspoon clove (100%)<br/>1/4 cup - 1/2 cup coconut sugar (50.00%)<br/>1 1/2 cup flour (50.00%)<br/>1/2 teaspoon pumpkin pie spice (50.00%)<br/>1 tablespoon flax seed meal (50.00%)<br/>1/2 teaspoon salt (50.00%)<br/>1/2 teaspoon baking soda (50.00%)<br/>1/2 teaspoon gum (50.00%)<br/>pinch - 1 pinch sea salt (50.00%)<br/>1/2 cup almond flour (50.00%)<br/>2 cup whole wheat flour (50.00%)<br/>2 teaspoon allspice (50.00%)<br/><br/>bowl (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>cinnamon (100%)<br/>baking powder (100%)<br/>ginger (100%)<br/>clove (100%)</font>>"
   },
   "3123": {
     "hidden": true,
@@ -11665,18 +11833,18 @@ export const graphDict = {
         "max_quan_unit": "2 1/2 cup",
         "percent": 50.0
       },
-      "butter": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 50.0
-      },
       "milk": {
         "min_quan": "2",
         "max_quan": "2",
         "min_quan_unit": "2 teaspoon",
         "max_quan_unit": "2 teaspoon",
+        "percent": 50.0
+      },
+      "butter": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 50.0
       }
     },
@@ -11691,8 +11859,8 @@ export const graphDict = {
       "end_range": "3",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>melt</b><br/><br/>1 cup brown sugar (100%)<br/>2 1/4 cup - 2 1/2 cup sugar (50.00%)<br/>1/2 cup butter (50.00%)<br/>2 teaspoon milk (50.00%)<br/><br/>pan (100%)<br/><br/>2 minute - 3 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>melt</b><br/>brown sugar (100%)<br/>sugar (50.00%)<br/>butter (50.00%)<br/>milk (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>melt</b><br/><br/>1 cup brown sugar (100%)<br/>2 1/4 cup - 2 1/2 cup sugar (50.00%)<br/>2 teaspoon milk (50.00%)<br/>1/2 cup butter (50.00%)<br/><br/>pan (100%)<br/><br/>2 minute - 3 minute</font>>",
+    "summary_abbr": "<<font point-size='18'><b>melt</b><br/>brown sugar (100%)<br/>sugar (50.00%)<br/>milk (50.00%)<br/>butter (50.00%)</font>>"
   },
   "3135": {
     "hidden": true,
@@ -12033,18 +12201,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/4 cup",
         "percent": 50.0
       },
-      "egg": {
-        "min_quan": "7",
-        "max_quan": "8",
-        "min_quan_unit": "7",
-        "max_quan_unit": "8",
-        "percent": 50.0
-      },
       "sugar": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/2 cup",
         "max_quan_unit": "1 1/2 cup",
+        "percent": 50.0
+      },
+      "egg": {
+        "min_quan": "7",
+        "max_quan": "8",
+        "min_quan_unit": "7",
+        "max_quan_unit": "8",
         "percent": 50.0
       }
     },
@@ -12057,8 +12225,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 cup - 3/4 cup confectioner sugar (50.00%)<br/>1 cup - 1 1/4 cup margarita mix (50.00%)<br/>7 - 8 egg (50.00%)<br/>1 1/2 cup sugar (50.00%)<br/><br/>bowl (100%)<br/>mixer (50%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>confectioner sugar (50.00%)<br/>margarita mix (50.00%)<br/>egg (50.00%)<br/>sugar (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 cup - 3/4 cup confectioner sugar (50.00%)<br/>1 cup - 1 1/4 cup margarita mix (50.00%)<br/>1 1/2 cup sugar (50.00%)<br/>7 - 8 egg (50.00%)<br/><br/>bowl (100%)<br/>mixer (50%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>confectioner sugar (50.00%)<br/>margarita mix (50.00%)<br/>sugar (50.00%)<br/>egg (50.00%)</font>>"
   },
   "3197": {
     "hidden": true,
@@ -12178,13 +12346,6 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 100.0
       },
-      "salt": {
-        "min_quan": "1/4",
-        "max_quan": "1/4",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1/4 teaspoon",
-        "percent": 50.0
-      },
       "sugar": {
         "min_quan": "1",
         "max_quan": "1",
@@ -12197,6 +12358,13 @@ export const graphDict = {
         "max_quan": "1/2",
         "min_quan_unit": "1/2 teaspoon",
         "max_quan_unit": "1/2 teaspoon",
+        "percent": 50.0
+      },
+      "salt": {
+        "min_quan": "1/4",
+        "max_quan": "1/4",
+        "min_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1/4 teaspoon",
         "percent": 50.0
       },
       "cocoa": {
@@ -12216,8 +12384,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 cup - 2 1/4 cup flour (100%)<br/>1/2 teaspoon - 1 teaspoon baking soda (100%)<br/>1 teaspoon ground cinnamon (100%)<br/>1/4 teaspoon salt (50.00%)<br/>1 cup sugar (50.00%)<br/>1/2 teaspoon vanilla (50.00%)<br/>2 tablespoon cocoa (50.00%)<br/>1 teaspoon ground allspice (50.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>flour (100%)<br/>baking soda (100%)<br/>ground cinnamon (100%)<br/>salt (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 cup - 2 1/4 cup flour (100%)<br/>1/2 teaspoon - 1 teaspoon baking soda (100%)<br/>1 teaspoon ground cinnamon (100%)<br/>1 cup sugar (50.00%)<br/>1/2 teaspoon vanilla (50.00%)<br/>1/4 teaspoon salt (50.00%)<br/>2 tablespoon cocoa (50.00%)<br/>1 teaspoon ground allspice (50.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>flour (100%)<br/>baking soda (100%)<br/>ground cinnamon (100%)<br/>sugar (50.00%)</font>>"
   },
   "3199": {
     "hidden": true,
@@ -12465,13 +12633,6 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 28.571428571428573
       },
-      "salt": {
-        "min_quan": "1/4",
-        "max_quan": "1/4",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1/4 teaspoon",
-        "percent": 14.285714285714286
-      },
       "baking soda": {
         "min_quan": "1",
         "max_quan": "1",
@@ -12485,6 +12646,13 @@ export const graphDict = {
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 cup",
         "percent": 14.285714285714286
+      },
+      "salt": {
+        "min_quan": "1/4",
+        "max_quan": "1/4",
+        "min_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1/4 teaspoon",
+        "percent": 14.285714285714286
       }
     },
     "instruments_full_info": {
@@ -12493,7 +12661,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 teaspoon - 2 teaspoon cinnamon (85.71%)<br/>1/2 cup - 1 1/4 cup sugar (71.43%)<br/>2 cup - 2 1/4 cup flour (28.57%)<br/>1/2 cup brown sugar (28.57%)<br/>1/4 teaspoon salt (14.29%)<br/>1 teaspoon baking soda (14.29%)<br/>1 cup white sugar (14.29%)<br/><br/>bowl (100%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 teaspoon - 2 teaspoon cinnamon (85.71%)<br/>1/2 cup - 1 1/4 cup sugar (71.43%)<br/>2 cup - 2 1/4 cup flour (28.57%)<br/>1/2 cup brown sugar (28.57%)<br/>1 teaspoon baking soda (14.29%)<br/>1 cup white sugar (14.29%)<br/>1/4 teaspoon salt (14.29%)<br/><br/>bowl (100%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>cinnamon (85.71%)<br/>sugar (71.43%)<br/>flour (28.57%)<br/>brown sugar (28.57%)</font>>"
   },
   "3218": {
@@ -13907,13 +14075,6 @@ export const graphDict = {
     ],
     "verb": "mix",
     "ingredients_full_info": {
-      "oil": {
-        "min_quan": "1/4",
-        "max_quan": "1/4",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/4 cup",
-        "percent": 50.0
-      },
       "applesauce": {
         "min_quan": "1/4",
         "max_quan": "1/4",
@@ -13921,11 +14082,11 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 50.0
       },
-      "coconut oil": {
-        "min_quan": "1",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 tablespoon",
-        "max_quan_unit": "1 1/2 tablespoon",
+      "oil": {
+        "min_quan": "1/4",
+        "max_quan": "1/4",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/4 cup",
         "percent": 50.0
       },
       "almond flour": {
@@ -13933,6 +14094,13 @@ export const graphDict = {
         "max_quan": "1 1/4",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 1/4 cup",
+        "percent": 50.0
+      },
+      "coconut oil": {
+        "min_quan": "1",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 tablespoon",
+        "max_quan_unit": "1 1/2 tablespoon",
         "percent": 50.0
       }
     },
@@ -13942,8 +14110,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup oil (50.00%)<br/>1/4 cup applesauce (50.00%)<br/>1 tablespoon - 1 1/2 tablespoon coconut oil (50.00%)<br/>1 cup - 1 1/4 cup almond flour (50.00%)<br/><br/>bowl (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>oil (50.00%)<br/>applesauce (50.00%)<br/>coconut oil (50.00%)<br/>almond flour (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup applesauce (50.00%)<br/>1/4 cup oil (50.00%)<br/>1 cup - 1 1/4 cup almond flour (50.00%)<br/>1 tablespoon - 1 1/2 tablespoon coconut oil (50.00%)<br/><br/>bowl (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>applesauce (50.00%)<br/>oil (50.00%)<br/>almond flour (50.00%)<br/>coconut oil (50.00%)</font>>"
   },
   "3438": {
     "hidden": true,
@@ -14485,18 +14653,18 @@ export const graphDict = {
     ],
     "verb": "separate",
     "ingredients_full_info": {
-      "nutmeg": {
-        "min_quan": "3/8",
-        "max_quan": "1/2",
-        "min_quan_unit": "3/8 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
-        "percent": 100.0
-      },
       "cinnamon": {
         "min_quan": "3/4",
         "max_quan": "1",
         "min_quan_unit": "3/4 teaspoon",
         "max_quan_unit": "1 teaspoon",
+        "percent": 100.0
+      },
+      "nutmeg": {
+        "min_quan": "3/8",
+        "max_quan": "1/2",
+        "min_quan_unit": "3/8 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
         "percent": 100.0
       },
       "flour": {
@@ -14506,6 +14674,13 @@ export const graphDict = {
         "max_quan_unit": "3 tablespoon",
         "percent": 50.0
       },
+      "white sugar": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 cup",
+        "percent": 50.0
+      },
       "allspice": {
         "min_quan": "1/4",
         "max_quan": "1/2",
@@ -14513,7 +14688,7 @@ export const graphDict = {
         "max_quan_unit": "1/2 teaspoon",
         "percent": 50.0
       },
-      "white sugar": {
+      "sugar": {
         "min_quan": "1",
         "max_quan": "1",
         "min_quan_unit": "1 cup",
@@ -14525,13 +14700,6 @@ export const graphDict = {
         "max_quan": "8",
         "min_quan_unit": "8 slice",
         "max_quan_unit": "8 slice",
-        "percent": 50.0
-      },
-      "sugar": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 cup",
         "percent": 50.0
       },
       "brown sugar": {
@@ -14548,8 +14716,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>separate</b><br/><br/>3/8 teaspoon - 1/2 teaspoon nutmeg (100%)<br/>3/4 teaspoon - 1 teaspoon cinnamon (100%)<br/>3 tablespoon flour (50.00%)<br/>1/4 teaspoon - 1/2 teaspoon allspice (50.00%)<br/>1 cup white sugar (50.00%)<br/>8 slice apple (50.00%)<br/>1 cup sugar (50.00%)<br/>1/2 cup brown sugar (50.00%)<br/><br/>bowl (100%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>separate</b><br/>nutmeg (100%)<br/>cinnamon (100%)<br/>flour (50.00%)<br/>allspice (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>separate</b><br/><br/>3/4 teaspoon - 1 teaspoon cinnamon (100%)<br/>3/8 teaspoon - 1/2 teaspoon nutmeg (100%)<br/>3 tablespoon flour (50.00%)<br/>1 cup white sugar (50.00%)<br/>1/4 teaspoon - 1/2 teaspoon allspice (50.00%)<br/>1 cup sugar (50.00%)<br/>8 slice apple (50.00%)<br/>1/2 cup brown sugar (50.00%)<br/><br/>bowl (100%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>separate</b><br/>cinnamon (100%)<br/>nutmeg (100%)<br/>flour (50.00%)<br/>white sugar (50.00%)</font>>"
   },
   "3485": {
     "hidden": true,
@@ -14715,31 +14883,10 @@ export const graphDict = {
         "max_quan_unit": "2 1/2 cup",
         "percent": 100.0
       },
-      "salt": {
-        "min_quan": "1/2",
+      "coconut sugar": {
+        "min_quan": "1/4",
         "max_quan": "1/2",
-        "min_quan_unit": "1/2 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
-        "percent": 33.333333333333336
-      },
-      "coconut flour": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 tablespoon",
-        "max_quan_unit": "1/2 tablespoon",
-        "percent": 33.333333333333336
-      },
-      "oat": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 33.333333333333336
-      },
-      "walnut": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
+        "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/2 cup",
         "percent": 33.333333333333336
       },
@@ -14750,11 +14897,25 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 33.333333333333336
       },
-      "coconut sugar": {
-        "min_quan": "1/4",
+      "walnut": {
+        "min_quan": "1/2",
         "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
+        "min_quan_unit": "1/2 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 33.333333333333336
+      },
+      "coconut flour": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 tablespoon",
+        "max_quan_unit": "1/2 tablespoon",
+        "percent": 33.333333333333336
+      },
+      "salt": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
         "percent": 33.333333333333336
       },
       "ground": {
@@ -14764,11 +14925,11 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 33.333333333333336
       },
-      "vanilla extract": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
+      "oat": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 33.333333333333336
       },
       "apple": {
@@ -14777,12 +14938,19 @@ export const graphDict = {
         "min_quan_unit": "3 cup",
         "max_quan_unit": "3 cup",
         "percent": 33.333333333333336
+      },
+      "vanilla extract": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
+        "percent": 33.333333333333336
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 teaspoon - 1 tablespoon cinnamon (100%)<br/>1 1/2 cup - 2 1/2 cup flour (100%)<br/>1/2 teaspoon salt (33.33%)<br/>1/2 tablespoon coconut flour (33.33%)<br/>1/2 cup oat (33.33%)<br/>1/2 cup walnut (33.33%)<br/>1/4 cup ghee (33.33%)<br/>1/4 cup - 1/2 cup coconut sugar (33.33%)<br/>1 teaspoon ground (33.33%)<br/>1 teaspoon vanilla extract (33.33%)<br/>3 cup apple (33.33%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>cinnamon (100%)<br/>flour (100%)<br/>salt (33.33%)<br/>coconut flour (33.33%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 teaspoon - 1 tablespoon cinnamon (100%)<br/>1 1/2 cup - 2 1/2 cup flour (100%)<br/>1/4 cup - 1/2 cup coconut sugar (33.33%)<br/>1/4 cup ghee (33.33%)<br/>1/2 cup walnut (33.33%)<br/>1/2 tablespoon coconut flour (33.33%)<br/>1/2 teaspoon salt (33.33%)<br/>1 teaspoon ground (33.33%)<br/>1/2 cup oat (33.33%)<br/>3 cup apple (33.33%)<br/>1 teaspoon vanilla extract (33.33%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>cinnamon (100%)<br/>flour (100%)<br/>coconut sugar (33.33%)<br/>ghee (33.33%)</font>>"
   },
   "3495": {
     "hidden": true,
@@ -14948,25 +15116,25 @@ export const graphDict = {
         "max_quan_unit": "2 3/4 teaspoon",
         "percent": 50.0
       },
-      "baking soda": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 teaspoon",
-        "max_quan_unit": "1 1/2 teaspoon",
-        "percent": 50.0
-      },
       "cinnamon": {
         "min_quan": "2 1/4",
         "max_quan": "2 1/4",
         "min_quan_unit": "2 1/4 teaspoon",
         "max_quan_unit": "2 1/4 teaspoon",
         "percent": 50.0
+      },
+      "baking soda": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 teaspoon",
+        "max_quan_unit": "1 1/2 teaspoon",
+        "percent": 50.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>sift</b><br/><br/>1 1/2 cup - 2 1/2 cup flour (100%)<br/>2 1/2 teaspoon - 2 3/4 teaspoon baking powder (50.00%)<br/>1 1/2 teaspoon baking soda (50.00%)<br/>2 1/4 teaspoon cinnamon (50.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>sift</b><br/>flour (100%)<br/>baking powder (50.00%)<br/>baking soda (50.00%)<br/>cinnamon (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>sift</b><br/><br/>1 1/2 cup - 2 1/2 cup flour (100%)<br/>2 1/2 teaspoon - 2 3/4 teaspoon baking powder (50.00%)<br/>2 1/4 teaspoon cinnamon (50.00%)<br/>1 1/2 teaspoon baking soda (50.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>sift</b><br/>flour (100%)<br/>baking powder (50.00%)<br/>cinnamon (50.00%)<br/>baking soda (50.00%)</font>>"
   },
   "3518": {
     "hidden": true,
@@ -15381,18 +15549,18 @@ export const graphDict = {
         "max_quan_unit": "3",
         "percent": 80.0
       },
-      "vanilla extract": {
-        "min_quan": "2",
-        "max_quan": "2 1/2",
-        "min_quan_unit": "2 teaspoon",
-        "max_quan_unit": "2 1/2 teaspoon",
-        "percent": 60.0
-      },
       "sugar": {
         "min_quan": "1 3/4",
         "max_quan": "1 3/4",
         "min_quan_unit": "1 3/4 cup",
         "max_quan_unit": "1 3/4 cup",
+        "percent": 60.0
+      },
+      "vanilla extract": {
+        "min_quan": "2",
+        "max_quan": "2 1/2",
+        "min_quan_unit": "2 teaspoon",
+        "max_quan_unit": "2 1/2 teaspoon",
         "percent": 60.0
       },
       "baking soda": {
@@ -15430,6 +15598,13 @@ export const graphDict = {
         "max_quan_unit": "1 1/8 teaspoon",
         "percent": 40.0
       },
+      "butter": {
+        "min_quan": "6",
+        "max_quan": "6",
+        "min_quan_unit": "6 tablespoon",
+        "max_quan_unit": "6 tablespoon",
+        "percent": 20.0
+      },
       "yeast": {
         "min_quan": "1",
         "max_quan": "1",
@@ -15437,11 +15612,25 @@ export const graphDict = {
         "max_quan_unit": "1 package",
         "percent": 20.0
       },
-      "butter": {
-        "min_quan": "6",
-        "max_quan": "6",
-        "min_quan_unit": "6 tablespoon",
-        "max_quan_unit": "6 tablespoon",
+      "applesauce": {
+        "min_quan": "3/4",
+        "max_quan": "3/4",
+        "min_quan_unit": "3/4 cup",
+        "max_quan_unit": "3/4 cup",
+        "percent": 20.0
+      },
+      "water": {
+        "min_quan": "1/4",
+        "max_quan": "1/4",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/4 cup",
+        "percent": 20.0
+      },
+      "baking powder": {
+        "min_quan": "",
+        "max_quan": "1/4",
+        "min_quan_unit": "teaspoon",
+        "max_quan_unit": "1/4 teaspoon",
         "percent": 20.0
       },
       "almond": {
@@ -15451,7 +15640,7 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 20.0
       },
-      "water": {
+      "shortening": {
         "min_quan": "1/4",
         "max_quan": "1/4",
         "min_quan_unit": "1/4 cup",
@@ -15465,20 +15654,6 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 20.0
       },
-      "allspice": {
-        "min_quan": "1/4",
-        "max_quan": "1/4",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1/4 teaspoon",
-        "percent": 20.0
-      },
-      "baking powder": {
-        "min_quan": "",
-        "max_quan": "1/4",
-        "min_quan_unit": "teaspoon",
-        "max_quan_unit": "1/4 teaspoon",
-        "percent": 20.0
-      },
       "raisin": {
         "min_quan": "1/2",
         "max_quan": "1/2",
@@ -15486,18 +15661,11 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 20.0
       },
-      "applesauce": {
-        "min_quan": "3/4",
-        "max_quan": "3/4",
-        "min_quan_unit": "3/4 cup",
-        "max_quan_unit": "3/4 cup",
-        "percent": 20.0
-      },
-      "shortening": {
+      "allspice": {
         "min_quan": "1/4",
         "max_quan": "1/4",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/4 cup",
+        "min_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1/4 teaspoon",
         "percent": 20.0
       },
       "mayonnaise": {
@@ -15522,8 +15690,8 @@ export const graphDict = {
       "end_range": "5",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>beat</b><br/><br/>2 cup - 3 cup flour (100%)<br/>1/2 teaspoon - 1 teaspoon salt (100%)<br/>2 - 3 egg (80.00%)<br/>2 teaspoon - 2 1/2 teaspoon vanilla extract (60.00%)<br/>1 3/4 cup sugar (60.00%)<br/>1 teaspoon - 1 1/4 teaspoon baking soda (60.00%)<br/>1/2 cup - 1 cup milk (40.00%)<br/>1/2 teaspoon - 1 1/2 teaspoon cinnamon (40.00%)<br/>1/4 teaspoon clove (40.00%)<br/>1/2 teaspoon - 1 1/8 teaspoon nutmeg (40.00%)<br/>1 package yeast (20.00%)<br/>6 tablespoon butter (20.00%)<br/>1/4 cup almond (20.00%)<br/>1/4 cup water (20.00%)<br/>1 cup white sugar (20.00%)<br/>1/4 teaspoon allspice (20.00%)<br/>teaspoon - 1/4 teaspoon baking powder (20.00%)<br/>1/2 cup raisin (20.00%)<br/>3/4 cup applesauce (20.00%)<br/>1/4 cup shortening (20.00%)<br/>1 cup mayonnaise (20.00%)<br/><br/>mixer (60%)<br/>bowl (60%)<br/><br/>30 second - 5 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>flour (100%)<br/>salt (100%)<br/>egg (80.00%)<br/>vanilla extract (60.00%)</font>>"
+    "summary": "<<font point-size='18'><b>beat</b><br/><br/>2 cup - 3 cup flour (100%)<br/>1/2 teaspoon - 1 teaspoon salt (100%)<br/>2 - 3 egg (80.00%)<br/>1 3/4 cup sugar (60.00%)<br/>2 teaspoon - 2 1/2 teaspoon vanilla extract (60.00%)<br/>1 teaspoon - 1 1/4 teaspoon baking soda (60.00%)<br/>1/2 cup - 1 cup milk (40.00%)<br/>1/2 teaspoon - 1 1/2 teaspoon cinnamon (40.00%)<br/>1/4 teaspoon clove (40.00%)<br/>1/2 teaspoon - 1 1/8 teaspoon nutmeg (40.00%)<br/>6 tablespoon butter (20.00%)<br/>1 package yeast (20.00%)<br/>3/4 cup applesauce (20.00%)<br/>1/4 cup water (20.00%)<br/>teaspoon - 1/4 teaspoon baking powder (20.00%)<br/>1/4 cup almond (20.00%)<br/>1/4 cup shortening (20.00%)<br/>1 cup white sugar (20.00%)<br/>1/2 cup raisin (20.00%)<br/>1/4 teaspoon allspice (20.00%)<br/>1 cup mayonnaise (20.00%)<br/><br/>mixer (60%)<br/>bowl (60%)<br/><br/>30 second - 5 minute</font>>",
+    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>flour (100%)<br/>salt (100%)<br/>egg (80.00%)<br/>sugar (60.00%)</font>>"
   },
   "3575": {
     "hidden": true,
@@ -15699,18 +15867,18 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 25.0
       },
-      "white sugar": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 25.0
-      },
       "canola oil": {
         "min_quan": "1/4",
         "max_quan": "1/4",
         "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/4 cup",
+        "percent": 25.0
+      },
+      "white sugar": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 25.0
       },
       "brown sugar": {
@@ -15727,7 +15895,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>separate</b><br/><br/>2 - 3 egg (100%)<br/>1/4 cup - 1/2 cup oil (50.00%)<br/>3/4 cup - 1 1/2 cup vegetable oil (50.00%)<br/>1/2 cup - 3/4 cup pumpkin (25.00%)<br/>1 teaspoon vanilla extract (25.00%)<br/>1/2 cup white sugar (25.00%)<br/>1/4 cup canola oil (25.00%)<br/>1/2 cup brown sugar (25.00%)<br/><br/>bowl (100%)</font>>",
+    "summary": "<<font point-size='18'><b>separate</b><br/><br/>2 - 3 egg (100%)<br/>1/4 cup - 1/2 cup oil (50.00%)<br/>3/4 cup - 1 1/2 cup vegetable oil (50.00%)<br/>1/2 cup - 3/4 cup pumpkin (25.00%)<br/>1 teaspoon vanilla extract (25.00%)<br/>1/4 cup canola oil (25.00%)<br/>1/2 cup white sugar (25.00%)<br/>1/2 cup brown sugar (25.00%)<br/><br/>bowl (100%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>separate</b><br/>egg (100%)<br/>oil (50.00%)<br/>vegetable oil (50.00%)<br/>pumpkin (25.00%)</font>>"
   },
   "3580": {
@@ -16746,13 +16914,6 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 6.666666666666667
       },
-      "white sugar": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 6.666666666666667
-      },
       "pumpkin pie spice": {
         "min_quan": "1",
         "max_quan": "1",
@@ -16760,11 +16921,18 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 6.666666666666667
       },
-      "gum": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 tablespoon",
-        "max_quan_unit": "1 tablespoon",
+      "white sugar": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
+        "percent": 6.666666666666667
+      },
+      "rice flour": {
+        "min_quan": "1/4",
+        "max_quan": "1/4",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/4 cup",
         "percent": 6.666666666666667
       },
       "tapioca flour": {
@@ -16774,11 +16942,11 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 6.666666666666667
       },
-      "sorghum flour": {
-        "min_quan": "3/4",
-        "max_quan": "3/4",
-        "min_quan_unit": "3/4 cup",
-        "max_quan_unit": "3/4 cup",
+      "gum": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 tablespoon",
+        "max_quan_unit": "1 tablespoon",
         "percent": 6.666666666666667
       },
       "almond flour": {
@@ -16788,11 +16956,11 @@ export const graphDict = {
         "max_quan_unit": "3/4 cup",
         "percent": 6.666666666666667
       },
-      "rice flour": {
-        "min_quan": "1/4",
-        "max_quan": "1/4",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/4 cup",
+      "sorghum flour": {
+        "min_quan": "3/4",
+        "max_quan": "3/4",
+        "min_quan_unit": "3/4 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 6.666666666666667
       },
       "soda": {
@@ -16823,7 +16991,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3/4 teaspoon - 1 1/2 teaspoon cinnamon (100%)<br/>1/4 teaspoon - 1 teaspoon salt (86.67%)<br/>1/2 teaspoon - 2 1/2 teaspoon baking powder (80.00%)<br/>1 1/2 cup - 2 1/2 cup flour (66.67%)<br/>1/2 teaspoon - 1 1/2 teaspoon baking soda (66.67%)<br/>3/8 teaspoon - 1/2 teaspoon nutmeg (33.33%)<br/>1 cup - 1 1/4 cup purpose flour (26.67%)<br/>3/4 teaspoon clove (20.00%)<br/>1/4 cup - 3/4 cup brown sugar (13.33%)<br/>1/2 teaspoon ginger (13.33%)<br/>1/4 cup whole wheat flour (13.33%)<br/>1/4 teaspoon allspice (13.33%)<br/>1/4 cup - 1/2 cup sugar (13.33%)<br/>1 cup bran (6.67%)<br/>1/2 cup white sugar (6.67%)<br/>1 teaspoon pumpkin pie spice (6.67%)<br/>1 tablespoon gum (6.67%)<br/>1/4 cup tapioca flour (6.67%)<br/>3/4 cup sorghum flour (6.67%)<br/>3/4 cup almond flour (6.67%)<br/>1/4 cup rice flour (6.67%)<br/>2 1/4 teaspoon soda (6.67%)<br/>1/4 cup - 1/2 cup coconut flour (6.67%)<br/>3/4 cup - 1 cup whole wheat pastry flour (6.67%)<br/><br/>bowl (59%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3/4 teaspoon - 1 1/2 teaspoon cinnamon (100%)<br/>1/4 teaspoon - 1 teaspoon salt (86.67%)<br/>1/2 teaspoon - 2 1/2 teaspoon baking powder (80.00%)<br/>1 1/2 cup - 2 1/2 cup flour (66.67%)<br/>1/2 teaspoon - 1 1/2 teaspoon baking soda (66.67%)<br/>3/8 teaspoon - 1/2 teaspoon nutmeg (33.33%)<br/>1 cup - 1 1/4 cup purpose flour (26.67%)<br/>3/4 teaspoon clove (20.00%)<br/>1/4 cup - 3/4 cup brown sugar (13.33%)<br/>1/2 teaspoon ginger (13.33%)<br/>1/4 cup whole wheat flour (13.33%)<br/>1/4 teaspoon allspice (13.33%)<br/>1/4 cup - 1/2 cup sugar (13.33%)<br/>1 cup bran (6.67%)<br/>1 teaspoon pumpkin pie spice (6.67%)<br/>1/2 cup white sugar (6.67%)<br/>1/4 cup rice flour (6.67%)<br/>1/4 cup tapioca flour (6.67%)<br/>1 tablespoon gum (6.67%)<br/>3/4 cup almond flour (6.67%)<br/>3/4 cup sorghum flour (6.67%)<br/>2 1/4 teaspoon soda (6.67%)<br/>1/4 cup - 1/2 cup coconut flour (6.67%)<br/>3/4 cup - 1 cup whole wheat pastry flour (6.67%)<br/><br/>bowl (59%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>cinnamon (100%)<br/>salt (86.67%)<br/>baking powder (80.00%)<br/>flour (66.67%)</font>>"
   },
   "3589": {
@@ -17839,18 +18007,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/4 teaspoon",
         "percent": 95.23809523809521
       },
-      "flour": {
-        "min_quan": "1 1/2",
-        "max_quan": "3",
-        "min_quan_unit": "1 1/2 cup",
-        "max_quan_unit": "3 cup",
-        "percent": 90.47619047619045
-      },
       "cinnamon": {
         "min_quan": "3/4",
         "max_quan": "1",
         "min_quan_unit": "3/4 teaspoon",
         "max_quan_unit": "1 tablespoon",
+        "percent": 90.47619047619045
+      },
+      "flour": {
+        "min_quan": "1 1/2",
+        "max_quan": "3",
+        "min_quan_unit": "1 1/2 cup",
+        "max_quan_unit": "3 cup",
         "percent": 90.47619047619045
       },
       "baking soda": {
@@ -17923,14 +18091,14 @@ export const graphDict = {
         "max_quan_unit": "3 cup",
         "percent": 4.761904761904762
       },
-      "cinnamon sugar": {
+      "matzo meal": {
         "min_quan": "1 1/4",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/4 cup",
         "max_quan_unit": "1 1/2 cup",
         "percent": 4.761904761904762
       },
-      "matzo meal": {
+      "cinnamon sugar": {
         "min_quan": "1 1/4",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/4 cup",
@@ -17944,18 +18112,18 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 4.761904761904762
       },
-      "egg": {
-        "min_quan": "3",
-        "max_quan": "3",
-        "min_quan_unit": "3",
-        "max_quan_unit": "3",
-        "percent": 4.761904761904762
-      },
       "vegetable oil": {
         "min_quan": "1 1/4",
         "max_quan": "1 1/4",
         "min_quan_unit": "1 1/4 cup",
         "max_quan_unit": "1 1/4 cup",
+        "percent": 4.761904761904762
+      },
+      "egg": {
+        "min_quan": "3",
+        "max_quan": "3",
+        "min_quan_unit": "3",
+        "max_quan_unit": "3",
         "percent": 4.761904761904762
       },
       "oil": {
@@ -17986,8 +18154,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 teaspoon - 1 1/4 teaspoon salt (95.24%)<br/>1 1/2 cup - 3 cup flour (90.48%)<br/>3/4 teaspoon - 1 tablespoon cinnamon (90.48%)<br/>1/2 teaspoon - 2 teaspoon baking soda (76.19%)<br/>1 cup - 2 cup sugar (42.86%)<br/>1/4 teaspoon - 5/8 teaspoon nutmeg (33.33%)<br/>2 teaspoon baking powder (14.29%)<br/>1/4 teaspoon allspice (14.29%)<br/>1/4 teaspoon - 1 teaspoon clove (9.52%)<br/>cup - 1/4 cup cocoa (9.52%)<br/>3/4 cup - 2 1/2 cup white sugar (9.52%)<br/>2 ounce lemon peel (4.76%)<br/>3 cup purpose flour (4.76%)<br/>1 1/4 cup - 1 1/2 cup cinnamon sugar (4.76%)<br/>1 1/4 cup - 1 1/2 cup matzo meal (4.76%)<br/>1 teaspoon vanilla extract (4.76%)<br/>3 egg (4.76%)<br/>1 1/4 cup vegetable oil (4.76%)<br/>1/2 cup - 3/4 cup oil (4.76%)<br/>1/2 teaspoon - 3/4 teaspoon ginger (4.76%)<br/>3/4 cup - 1 cup brown sugar (4.76%)<br/><br/>bowl (99%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>salt (95.24%)<br/>flour (90.48%)<br/>cinnamon (90.48%)<br/>baking soda (76.19%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 teaspoon - 1 1/4 teaspoon salt (95.24%)<br/>3/4 teaspoon - 1 tablespoon cinnamon (90.48%)<br/>1 1/2 cup - 3 cup flour (90.48%)<br/>1/2 teaspoon - 2 teaspoon baking soda (76.19%)<br/>1 cup - 2 cup sugar (42.86%)<br/>1/4 teaspoon - 5/8 teaspoon nutmeg (33.33%)<br/>2 teaspoon baking powder (14.29%)<br/>1/4 teaspoon allspice (14.29%)<br/>1/4 teaspoon - 1 teaspoon clove (9.52%)<br/>cup - 1/4 cup cocoa (9.52%)<br/>3/4 cup - 2 1/2 cup white sugar (9.52%)<br/>2 ounce lemon peel (4.76%)<br/>3 cup purpose flour (4.76%)<br/>1 1/4 cup - 1 1/2 cup matzo meal (4.76%)<br/>1 1/4 cup - 1 1/2 cup cinnamon sugar (4.76%)<br/>1 teaspoon vanilla extract (4.76%)<br/>1 1/4 cup vegetable oil (4.76%)<br/>3 egg (4.76%)<br/>1/2 cup - 3/4 cup oil (4.76%)<br/>1/2 teaspoon - 3/4 teaspoon ginger (4.76%)<br/>3/4 cup - 1 cup brown sugar (4.76%)<br/><br/>bowl (99%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>salt (95.24%)<br/>cinnamon (90.48%)<br/>flour (90.48%)<br/>baking soda (76.19%)</font>>"
   },
   "3594": {
     "hidden": true,
@@ -18386,13 +18554,6 @@ export const graphDict = {
         "max_quan_unit": "6",
         "percent": 100.0
       },
-      "salt": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
-        "percent": 60.0
-      },
       "baking soda": {
         "min_quan": "3/4",
         "max_quan": "1",
@@ -18400,11 +18561,25 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 60.0
       },
+      "salt": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
+        "percent": 60.0
+      },
       "vanilla": {
         "min_quan": "",
         "max_quan": "1/2",
         "min_quan_unit": "teaspoon",
         "max_quan_unit": "1/2 teaspoon",
+        "percent": 20.0
+      },
+      "sugar": {
+        "min_quan": "3/4",
+        "max_quan": "1",
+        "min_quan_unit": "3/4 cup",
+        "max_quan_unit": "1 cup",
         "percent": 20.0
       },
       "vanilla extract": {
@@ -18421,11 +18596,11 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 20.0
       },
-      "sugar": {
-        "min_quan": "3/4",
-        "max_quan": "1",
-        "min_quan_unit": "3/4 cup",
-        "max_quan_unit": "1 cup",
+      "baking powder": {
+        "min_quan": "1",
+        "max_quan": "2",
+        "min_quan_unit": "1 tablespoon",
+        "max_quan_unit": "2 tablespoon",
         "percent": 20.0
       },
       "apple": {
@@ -18442,20 +18617,6 @@ export const graphDict = {
         "max_quan_unit": "3 3/4 cup",
         "percent": 20.0
       },
-      "baking powder": {
-        "min_quan": "1",
-        "max_quan": "2",
-        "min_quan_unit": "1 tablespoon",
-        "max_quan_unit": "2 tablespoon",
-        "percent": 20.0
-      },
-      "allspice": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 20.0
-      },
       "cinnamon": {
         "min_quan": "2",
         "max_quan": "2",
@@ -18464,6 +18625,13 @@ export const graphDict = {
         "percent": 20.0
       },
       "clove": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
+        "percent": 20.0
+      },
+      "allspice": {
         "min_quan": "1",
         "max_quan": "1",
         "min_quan_unit": "1 teaspoon",
@@ -18487,8 +18655,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>2 3/4 cup - 3 1/4 cup flour (100%)<br/>2 - 6 egg (100%)<br/>1/4 teaspoon - 1/2 teaspoon salt (60.00%)<br/>3/4 teaspoon - 1 teaspoon baking soda (60.00%)<br/>teaspoon - 1/2 teaspoon vanilla (20.00%)<br/>1/2 teaspoon vanilla extract (20.00%)<br/>1/4 cup sour cream (20.00%)<br/>3/4 cup - 1 cup sugar (20.00%)<br/>7 slice - 8 slice apple (20.00%)<br/>3 3/4 cup white sugar (20.00%)<br/>1 tablespoon - 2 tablespoon baking powder (20.00%)<br/>1 teaspoon allspice (20.00%)<br/>2 teaspoon cinnamon (20.00%)<br/>1 teaspoon clove (20.00%)<br/>2 teaspoon ground cinnamon (20.00%)<br/>1 teaspoon ground allspice (20.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>flour (100%)<br/>egg (100%)<br/>salt (60.00%)<br/>baking soda (60.00%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>2 3/4 cup - 3 1/4 cup flour (100%)<br/>2 - 6 egg (100%)<br/>3/4 teaspoon - 1 teaspoon baking soda (60.00%)<br/>1/4 teaspoon - 1/2 teaspoon salt (60.00%)<br/>teaspoon - 1/2 teaspoon vanilla (20.00%)<br/>3/4 cup - 1 cup sugar (20.00%)<br/>1/2 teaspoon vanilla extract (20.00%)<br/>1/4 cup sour cream (20.00%)<br/>1 tablespoon - 2 tablespoon baking powder (20.00%)<br/>7 slice - 8 slice apple (20.00%)<br/>3 3/4 cup white sugar (20.00%)<br/>2 teaspoon cinnamon (20.00%)<br/>1 teaspoon clove (20.00%)<br/>1 teaspoon allspice (20.00%)<br/>2 teaspoon ground cinnamon (20.00%)<br/>1 teaspoon ground allspice (20.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>flour (100%)<br/>egg (100%)<br/>baking soda (60.00%)<br/>salt (60.00%)</font>>"
   },
   "3604": {
     "hidden": true,
@@ -18941,13 +19109,6 @@ export const graphDict = {
         "max_quan_unit": "3/4 cup",
         "percent": 40.0
       },
-      "baking soda": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 20.0
-      },
       "cocoa powder": {
         "min_quan": "1/4",
         "max_quan": "1/4",
@@ -18960,6 +19121,13 @@ export const graphDict = {
         "max_quan": "1/2",
         "min_quan_unit": "1/2 teaspoon",
         "max_quan_unit": "1/2 teaspoon",
+        "percent": 20.0
+      },
+      "baking soda": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
         "percent": 20.0
       },
       "almond": {
@@ -18993,7 +19161,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 1/2 cup flour (100%)<br/>1 cup sugar (60.00%)<br/>1/4 teaspoon salt (40.00%)<br/>1 teaspoon cinnamon (40.00%)<br/>3/4 cup brown sugar (40.00%)<br/>1 teaspoon baking soda (20.00%)<br/>1/4 cup cocoa powder (20.00%)<br/>1/2 teaspoon cayenne pepper (20.00%)<br/>1/2 cup almond (20.00%)<br/>3/4 cup ground almond (20.00%)<br/>1 1/2 cup white sugar (20.00%)<br/><br/>bowl (60%)<br/>pan (20%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 1/2 cup flour (100%)<br/>1 cup sugar (60.00%)<br/>1/4 teaspoon salt (40.00%)<br/>1 teaspoon cinnamon (40.00%)<br/>3/4 cup brown sugar (40.00%)<br/>1/4 cup cocoa powder (20.00%)<br/>1/2 teaspoon cayenne pepper (20.00%)<br/>1 teaspoon baking soda (20.00%)<br/>1/2 cup almond (20.00%)<br/>3/4 cup ground almond (20.00%)<br/>1 1/2 cup white sugar (20.00%)<br/><br/>bowl (60%)<br/>pan (20%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>flour (100%)<br/>sugar (60.00%)<br/>salt (40.00%)<br/>cinnamon (40.00%)</font>>"
   },
   "3631": {
@@ -19450,18 +19618,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/2",
         "percent": 20.0
       },
-      "nutmeg": {
-        "min_quan": "5/8",
-        "max_quan": "3/4",
-        "min_quan_unit": "5/8 teaspoon",
-        "max_quan_unit": "3/4 teaspoon",
-        "percent": 20.0
-      },
       "cinnamon": {
         "min_quan": "1 1/4",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/4 teaspoon",
         "max_quan_unit": "1 1/2 teaspoon",
+        "percent": 20.0
+      },
+      "nutmeg": {
+        "min_quan": "5/8",
+        "max_quan": "3/4",
+        "min_quan_unit": "5/8 teaspoon",
+        "max_quan_unit": "3/4 teaspoon",
         "percent": 20.0
       },
       "shortening": {
@@ -19485,7 +19653,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup - 1/2 cup sugar (80.00%)<br/>2 package cream cheese (60.00%)<br/>1/2 teaspoon - 1 teaspoon vanilla extract (40.00%)<br/>1/2 cup - 2 1/2 cup confectioner sugar (40.00%)<br/>1 - 1 1/2 mascarpone cheese (20.00%)<br/>5/8 teaspoon - 3/4 teaspoon nutmeg (20.00%)<br/>1 1/4 teaspoon - 1 1/2 teaspoon cinnamon (20.00%)<br/>1/2 cup - 3/4 cup shortening (20.00%)<br/>cup - 1/4 cup water (20.00%)<br/><br/>bowl (100%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup - 1/2 cup sugar (80.00%)<br/>2 package cream cheese (60.00%)<br/>1/2 teaspoon - 1 teaspoon vanilla extract (40.00%)<br/>1/2 cup - 2 1/2 cup confectioner sugar (40.00%)<br/>1 - 1 1/2 mascarpone cheese (20.00%)<br/>1 1/4 teaspoon - 1 1/2 teaspoon cinnamon (20.00%)<br/>5/8 teaspoon - 3/4 teaspoon nutmeg (20.00%)<br/>1/2 cup - 3/4 cup shortening (20.00%)<br/>cup - 1/4 cup water (20.00%)<br/><br/>bowl (100%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>sugar (80.00%)<br/>cream cheese (60.00%)<br/>vanilla extract (40.00%)<br/>confectioner sugar (40.00%)</font>>"
   },
   "3661": {
@@ -19592,18 +19760,18 @@ export const graphDict = {
         "max_quan_unit": "2 cup",
         "percent": 66.66666666666667
       },
-      "flour": {
-        "min_quan": "3/4",
-        "max_quan": "3/4",
-        "min_quan_unit": "3/4 cup",
-        "max_quan_unit": "3/4 cup",
-        "percent": 33.333333333333336
-      },
       "cinnamon": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/2 teaspoon",
         "max_quan_unit": "1 1/2 teaspoon",
+        "percent": 33.333333333333336
+      },
+      "flour": {
+        "min_quan": "3/4",
+        "max_quan": "3/4",
+        "min_quan_unit": "3/4 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 33.333333333333336
       },
       "white sugar": {
@@ -19616,8 +19784,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>13 slice - 14 slice apple (100%)<br/>1/2 cup - 2 cup sugar (66.67%)<br/>3/4 cup flour (33.33%)<br/>1 1/2 teaspoon cinnamon (33.33%)<br/>1 cup white sugar (33.33%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>apple (100%)<br/>sugar (66.67%)<br/>flour (33.33%)<br/>cinnamon (33.33%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>13 slice - 14 slice apple (100%)<br/>1/2 cup - 2 cup sugar (66.67%)<br/>1 1/2 teaspoon cinnamon (33.33%)<br/>3/4 cup flour (33.33%)<br/>1 cup white sugar (33.33%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>apple (100%)<br/>sugar (66.67%)<br/>cinnamon (33.33%)<br/>flour (33.33%)</font>>"
   },
   "3664": {
     "hidden": true,
@@ -20666,18 +20834,18 @@ export const graphDict = {
     ],
     "verb": "frost",
     "ingredients_full_info": {
-      "apple butter": {
-        "min_quan": "3",
-        "max_quan": "3",
-        "min_quan_unit": "3 tablespoon",
-        "max_quan_unit": "3 tablespoon",
-        "percent": 50.0
-      },
       "apple": {
         "min_quan": "2",
         "max_quan": "2",
         "min_quan_unit": "2",
         "max_quan_unit": "2",
+        "percent": 50.0
+      },
+      "apple butter": {
+        "min_quan": "3",
+        "max_quan": "3",
+        "min_quan_unit": "3 tablespoon",
+        "max_quan_unit": "3 tablespoon",
         "percent": 50.0
       },
       "butter": {
@@ -20690,8 +20858,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>frost</b><br/><br/>3 tablespoon apple butter (50.00%)<br/>2 apple (50.00%)<br/>1/2 cup butter (50.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>frost</b><br/>apple butter (50.00%)<br/>apple (50.00%)<br/>butter (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>frost</b><br/><br/>2 apple (50.00%)<br/>3 tablespoon apple butter (50.00%)<br/>1/2 cup butter (50.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>frost</b><br/>apple (50.00%)<br/>apple butter (50.00%)<br/>butter (50.00%)</font>>"
   },
   "3729": {
     "hidden": true,
@@ -20801,14 +20969,14 @@ export const graphDict = {
         "max_quan_unit": "1 tablespoon",
         "percent": 66.66666666666667
       },
-      "vanilla extract": {
+      "orange extract": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/2 teaspoon",
         "max_quan_unit": "1 1/2 teaspoon",
         "percent": 33.333333333333336
       },
-      "orange extract": {
+      "vanilla extract": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/2 teaspoon",
@@ -20825,8 +20993,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1/4 cup orange juice (66.67%)<br/>2 1/2 teaspoon - 1 tablespoon vanilla (66.67%)<br/>1 1/2 teaspoon vanilla extract (33.33%)<br/>1 1/2 teaspoon orange extract (33.33%)<br/>4 egg (33.33%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>orange juice (66.67%)<br/>vanilla (66.67%)<br/>vanilla extract (33.33%)<br/>orange extract (33.33%)</font>>"
+    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1/4 cup orange juice (66.67%)<br/>2 1/2 teaspoon - 1 tablespoon vanilla (66.67%)<br/>1 1/2 teaspoon orange extract (33.33%)<br/>1 1/2 teaspoon vanilla extract (33.33%)<br/>4 egg (33.33%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>orange juice (66.67%)<br/>vanilla (66.67%)<br/>orange extract (33.33%)<br/>vanilla extract (33.33%)</font>>"
   },
   "3730": {
     "hidden": false,
@@ -22140,18 +22308,18 @@ export const graphDict = {
     ],
     "verb": "beat",
     "ingredients_full_info": {
-      "oil": {
-        "min_quan": "1 1/4",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/4 cup",
-        "max_quan_unit": "1 1/2 cup",
-        "percent": 75.0
-      },
       "sugar": {
         "min_quan": "1 1/2",
         "max_quan": "1 3/4",
         "min_quan_unit": "1 1/2 cup",
         "max_quan_unit": "1 3/4 cup",
+        "percent": 75.0
+      },
+      "oil": {
+        "min_quan": "1 1/4",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/4 cup",
+        "max_quan_unit": "1 1/2 cup",
         "percent": 75.0
       },
       "egg": {
@@ -22196,8 +22364,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1 1/4 cup - 1 1/2 cup oil (75.00%)<br/>1 1/2 cup - 1 3/4 cup sugar (75.00%)<br/>3 egg (50.00%)<br/>1/4 cup - 1/2 cup shortening (25.00%)<br/>3/4 cup white sugar (25.00%)<br/>1/4 cup - 1/2 cup butter (25.00%)<br/>1 1/2 teaspoon - 2 teaspoon vanilla (25.00%)<br/><br/>bowl (50%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>oil (75.00%)<br/>sugar (75.00%)<br/>egg (50.00%)<br/>shortening (25.00%)</font>>"
+    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1 1/2 cup - 1 3/4 cup sugar (75.00%)<br/>1 1/4 cup - 1 1/2 cup oil (75.00%)<br/>3 egg (50.00%)<br/>1/4 cup - 1/2 cup shortening (25.00%)<br/>3/4 cup white sugar (25.00%)<br/>1/4 cup - 1/2 cup butter (25.00%)<br/>1 1/2 teaspoon - 2 teaspoon vanilla (25.00%)<br/><br/>bowl (50%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>sugar (75.00%)<br/>oil (75.00%)<br/>egg (50.00%)<br/>shortening (25.00%)</font>>"
   },
   "3759": {
     "hidden": true,
@@ -22605,18 +22773,18 @@ export const graphDict = {
         "max_quan_unit": "3",
         "percent": 100.0
       },
-      "vanilla extract": {
-        "min_quan": "",
-        "max_quan": "1",
-        "min_quan_unit": "tablespoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 60.0
-      },
       "sugar": {
         "min_quan": "2 1/2",
         "max_quan": "1",
         "min_quan_unit": "2 1/2 tablespoon",
         "max_quan_unit": "1 cup",
+        "percent": 60.0
+      },
+      "vanilla extract": {
+        "min_quan": "",
+        "max_quan": "1",
+        "min_quan_unit": "tablespoon",
+        "max_quan_unit": "1 teaspoon",
         "percent": 60.0
       },
       "oil": {
@@ -22675,18 +22843,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/4 cup",
         "percent": 10.0
       },
-      "tahini": {
-        "min_quan": "6 1/2",
-        "max_quan": "7",
-        "min_quan_unit": "6 1/2 tablespoon",
-        "max_quan_unit": "7 tablespoon",
-        "percent": 10.0
-      },
       "buttermilk": {
         "min_quan": "1/2",
         "max_quan": "3/4",
         "min_quan_unit": "1/2 cup",
         "max_quan_unit": "3/4 cup",
+        "percent": 10.0
+      },
+      "tahini": {
+        "min_quan": "6 1/2",
+        "max_quan": "7",
+        "min_quan_unit": "6 1/2 tablespoon",
+        "max_quan_unit": "7 tablespoon",
         "percent": 10.0
       },
       "butter": {
@@ -22703,6 +22871,13 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 10.0
       },
+      "honey": {
+        "min_quan": "",
+        "max_quan": "1/4",
+        "min_quan_unit": "cup",
+        "max_quan_unit": "1/4 cup",
+        "percent": 10.0
+      },
       "olive oil": {
         "min_quan": "1/4",
         "max_quan": "1/4",
@@ -22716,13 +22891,6 @@ export const graphDict = {
         "min_quan_unit": "1 1/2 cup",
         "max_quan_unit": "1 1/2 cup",
         "percent": 10.0
-      },
-      "honey": {
-        "min_quan": "",
-        "max_quan": "1/4",
-        "min_quan_unit": "cup",
-        "max_quan_unit": "1/4 cup",
-        "percent": 10.0
       }
     },
     "instruments_full_info": {
@@ -22731,8 +22899,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 - 3 egg (100%)<br/>tablespoon - 1 teaspoon vanilla extract (60.00%)<br/>2 1/2 tablespoon - 1 cup sugar (60.00%)<br/>3/4 cup - 1 cup oil (30.00%)<br/>1/2 cup - 3/4 cup brown sugar (30.00%)<br/>1 teaspoon vanilla (20.00%)<br/>1 teaspoon cinnamon (10.00%)<br/>2 cup milk (10.00%)<br/> lemon (10.00%)<br/>2 teaspoon vanilla sugar (10.00%)<br/>1 cup - 1 1/4 cup white sugar (10.00%)<br/>6 1/2 tablespoon - 7 tablespoon tahini (10.00%)<br/>1/2 cup - 3/4 cup buttermilk (10.00%)<br/>1/2 cup - 3/4 cup butter (10.00%)<br/>1 cup vegetable oil (10.00%)<br/>1/4 cup olive oil (10.00%)<br/>1 1/2 cup applesauce (10.00%)<br/>cup - 1/4 cup honey (10.00%)<br/><br/>bowl (90%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>egg (100%)<br/>vanilla extract (60.00%)<br/>sugar (60.00%)<br/>oil (30.00%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 - 3 egg (100%)<br/>2 1/2 tablespoon - 1 cup sugar (60.00%)<br/>tablespoon - 1 teaspoon vanilla extract (60.00%)<br/>3/4 cup - 1 cup oil (30.00%)<br/>1/2 cup - 3/4 cup brown sugar (30.00%)<br/>1 teaspoon vanilla (20.00%)<br/>1 teaspoon cinnamon (10.00%)<br/>2 cup milk (10.00%)<br/> lemon (10.00%)<br/>2 teaspoon vanilla sugar (10.00%)<br/>1 cup - 1 1/4 cup white sugar (10.00%)<br/>1/2 cup - 3/4 cup buttermilk (10.00%)<br/>6 1/2 tablespoon - 7 tablespoon tahini (10.00%)<br/>1/2 cup - 3/4 cup butter (10.00%)<br/>1 cup vegetable oil (10.00%)<br/>cup - 1/4 cup honey (10.00%)<br/>1/4 cup olive oil (10.00%)<br/>1 1/2 cup applesauce (10.00%)<br/><br/>bowl (90%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>egg (100%)<br/>sugar (60.00%)<br/>vanilla extract (60.00%)<br/>oil (30.00%)</font>>"
   },
   "3760": {
     "hidden": true,
@@ -22907,13 +23075,6 @@ export const graphDict = {
         "max_quan_unit": "2 cup",
         "percent": 50.0
       },
-      "cream tartar": {
-        "min_quan": "3/4",
-        "max_quan": "7/8",
-        "min_quan_unit": "3/4 teaspoon",
-        "max_quan_unit": "7/8 teaspoon",
-        "percent": 25.0
-      },
       "maple syrup": {
         "min_quan": "3/4",
         "max_quan": "1",
@@ -22927,6 +23088,13 @@ export const graphDict = {
         "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/2 cup",
         "percent": 25.0
+      },
+      "cream tartar": {
+        "min_quan": "3/4",
+        "max_quan": "7/8",
+        "min_quan_unit": "3/4 teaspoon",
+        "max_quan_unit": "7/8 teaspoon",
+        "percent": 25.0
       }
     },
     "instruments_full_info": {
@@ -22935,7 +23103,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 - 3 egg (100%)<br/>1/2 cup - 3 cup sugar (75.00%)<br/>1 teaspoon - 1 1/2 teaspoon vanilla extract (50.00%)<br/>1 3/4 cup - 2 cup oil (50.00%)<br/>3/4 teaspoon - 7/8 teaspoon cream tartar (25.00%)<br/>3/4 cup - 1 cup maple syrup (25.00%)<br/>1/4 cup - 1/2 cup butter (25.00%)<br/><br/>blender (25%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 - 3 egg (100%)<br/>1/2 cup - 3 cup sugar (75.00%)<br/>1 teaspoon - 1 1/2 teaspoon vanilla extract (50.00%)<br/>1 3/4 cup - 2 cup oil (50.00%)<br/>3/4 cup - 1 cup maple syrup (25.00%)<br/>1/4 cup - 1/2 cup butter (25.00%)<br/>3/4 teaspoon - 7/8 teaspoon cream tartar (25.00%)<br/><br/>blender (25%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>egg (100%)<br/>sugar (75.00%)<br/>vanilla extract (50.00%)<br/>oil (50.00%)</font>>"
   },
   "3773": {
@@ -23042,18 +23210,18 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 33.333333333333336
       },
-      "cherry": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1",
-        "max_quan_unit": "1",
-        "percent": 33.333333333333336
-      },
       "date": {
         "min_quan": "1",
         "max_quan": "1",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 cup",
+        "percent": 33.333333333333336
+      },
+      "cherry": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1",
+        "max_quan_unit": "1",
         "percent": 33.333333333333336
       },
       "walnut": {
@@ -23073,8 +23241,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup raisin (100%)<br/>1 cup pecan (33.33%)<br/>1 cherry (33.33%)<br/>1 cup date (33.33%)<br/>1/2 cup walnut (33.33%)<br/>1/4 cup cranberry (33.33%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>raisin (100%)<br/>pecan (33.33%)<br/>cherry (33.33%)<br/>date (33.33%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup raisin (100%)<br/>1 cup pecan (33.33%)<br/>1 cup date (33.33%)<br/>1 cherry (33.33%)<br/>1/2 cup walnut (33.33%)<br/>1/4 cup cranberry (33.33%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>raisin (100%)<br/>pecan (33.33%)<br/>date (33.33%)<br/>cherry (33.33%)</font>>"
   },
   "3796": {
     "hidden": true,
@@ -23286,18 +23454,18 @@ export const graphDict = {
     ],
     "verb": "sift",
     "ingredients_full_info": {
-      "flour": {
-        "min_quan": "1 3/4",
-        "max_quan": "2",
-        "min_quan_unit": "1 3/4 cup",
-        "max_quan_unit": "2 cup",
-        "percent": 100.0
-      },
       "cinnamon": {
         "min_quan": "1",
         "max_quan": "1 1/4",
         "min_quan_unit": "1 teaspoon",
         "max_quan_unit": "1 1/4 teaspoon",
+        "percent": 100.0
+      },
+      "flour": {
+        "min_quan": "1 3/4",
+        "max_quan": "2",
+        "min_quan_unit": "1 3/4 cup",
+        "max_quan_unit": "2 cup",
         "percent": 100.0
       },
       "baking soda": {
@@ -23342,8 +23510,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>sift</b><br/><br/>1 3/4 cup - 2 cup flour (100%)<br/>1 teaspoon - 1 1/4 teaspoon cinnamon (100%)<br/>1 teaspoon baking soda (80.00%)<br/>1/4 teaspoon - 1/2 teaspoon salt (60.00%)<br/>5/8 teaspoon - 3/4 teaspoon nutmeg (60.00%)<br/>tablespoon - 2 1/4 teaspoon baking powder (40.00%)<br/>1 1/4 teaspoon - 1 1/2 teaspoon allspice (20.00%)<br/><br/>bowl (80%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>sift</b><br/>flour (100%)<br/>cinnamon (100%)<br/>baking soda (80.00%)<br/>salt (60.00%)</font>>"
+    "summary": "<<font point-size='18'><b>sift</b><br/><br/>1 teaspoon - 1 1/4 teaspoon cinnamon (100%)<br/>1 3/4 cup - 2 cup flour (100%)<br/>1 teaspoon baking soda (80.00%)<br/>1/4 teaspoon - 1/2 teaspoon salt (60.00%)<br/>5/8 teaspoon - 3/4 teaspoon nutmeg (60.00%)<br/>tablespoon - 2 1/4 teaspoon baking powder (40.00%)<br/>1 1/4 teaspoon - 1 1/2 teaspoon allspice (20.00%)<br/><br/>bowl (80%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>sift</b><br/>cinnamon (100%)<br/>flour (100%)<br/>baking soda (80.00%)<br/>salt (60.00%)</font>>"
   },
   "3798": {
     "hidden": true,
@@ -23616,12 +23784,12 @@ export const graphDict = {
     "out_edges": {
       "4406": {
         "weight": 6,
-        "hidden": false,
-        "pen_width": 1.1411764705882352
+        "hidden": true
       },
       "4414": {
         "weight": 2,
-        "hidden": true
+        "hidden": false,
+        "pen_width": 1.0
       }
     },
     "in_edges": {
@@ -24629,18 +24797,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 teaspoon",
         "percent": 88.8888888888889
       },
-      "salt": {
-        "min_quan": "1/4",
-        "max_quan": "1",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 77.77777777777779
-      },
       "flour": {
         "min_quan": "1",
         "max_quan": "3",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "3 cup",
+        "percent": 77.77777777777779
+      },
+      "salt": {
+        "min_quan": "1/4",
+        "max_quan": "1",
+        "min_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1 teaspoon",
         "percent": 77.77777777777779
       },
       "cinnamon": {
@@ -24692,11 +24860,11 @@ export const graphDict = {
         "max_quan_unit": "2 cup",
         "percent": 22.22222222222222
       },
-      "ground allspice": {
+      "ground clove": {
         "min_quan": "",
-        "max_quan": "1/2",
+        "max_quan": "1/4",
         "min_quan_unit": "teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
+        "max_quan_unit": "1/4 teaspoon",
         "percent": 11.11111111111111
       },
       "ground cinnamon": {
@@ -24706,11 +24874,11 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 11.11111111111111
       },
-      "ground clove": {
+      "ground allspice": {
         "min_quan": "",
-        "max_quan": "1/4",
+        "max_quan": "1/2",
         "min_quan_unit": "teaspoon",
-        "max_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
         "percent": 11.11111111111111
       },
       "cocoa powder": {
@@ -24734,13 +24902,6 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 11.11111111111111
       },
-      "pumpkin": {
-        "min_quan": "1/2",
-        "max_quan": "3/4",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "3/4 cup",
-        "percent": 11.11111111111111
-      },
       "pumpkin pie spice": {
         "min_quan": "1/2",
         "max_quan": "1",
@@ -24748,11 +24909,11 @@ export const graphDict = {
         "max_quan_unit": "1 tablespoon",
         "percent": 11.11111111111111
       },
-      "white sugar": {
-        "min_quan": "1",
-        "max_quan": "1 1/4",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 1/4 cup",
+      "pumpkin": {
+        "min_quan": "1/2",
+        "max_quan": "3/4",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 11.11111111111111
       },
       "soda": {
@@ -24760,6 +24921,13 @@ export const graphDict = {
         "max_quan": "1",
         "min_quan_unit": "1 teaspoon",
         "max_quan_unit": "1 teaspoon",
+        "percent": 11.11111111111111
+      },
+      "white sugar": {
+        "min_quan": "1",
+        "max_quan": "1 1/4",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 1/4 cup",
         "percent": 11.11111111111111
       },
       "nutmeg": {
@@ -24776,8 +24944,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>sift</b><br/><br/>3/4 teaspoon - 1 1/2 teaspoon baking soda (88.89%)<br/>1/4 teaspoon - 1 teaspoon salt (77.78%)<br/>1 cup - 3 cup flour (77.78%)<br/>1 teaspoon cinnamon (44.44%)<br/>1/2 teaspoon - 1 teaspoon baking powder (22.22%)<br/>1 cup - 1 1/2 cup purpose flour (22.22%)<br/>1 tablespoon - 2 tablespoon cocoa (22.22%)<br/>1/2 teaspoon - 1 teaspoon allspice (22.22%)<br/>3/8 teaspoon - 3/4 teaspoon clove (22.22%)<br/>1 1/2 cup - 2 cup sugar (22.22%)<br/>teaspoon - 1/2 teaspoon ground allspice (11.11%)<br/>1/2 teaspoon - 1 teaspoon ground cinnamon (11.11%)<br/>teaspoon - 1/4 teaspoon ground clove (11.11%)<br/>4 tablespoon cocoa powder (11.11%)<br/>2 cup whole wheat flour (11.11%)<br/>1 teaspoon kosher salt (11.11%)<br/>1/2 cup - 3/4 cup pumpkin (11.11%)<br/>1/2 tablespoon - 1 tablespoon pumpkin pie spice (11.11%)<br/>1 cup - 1 1/4 cup white sugar (11.11%)<br/>1 teaspoon soda (11.11%)<br/>1 1/2 teaspoon nutmeg (11.11%)<br/><br/>bowl (88%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>sift</b><br/>baking soda (88.89%)<br/>salt (77.78%)<br/>flour (77.78%)<br/>cinnamon (44.44%)</font>>"
+    "summary": "<<font point-size='18'><b>sift</b><br/><br/>3/4 teaspoon - 1 1/2 teaspoon baking soda (88.89%)<br/>1 cup - 3 cup flour (77.78%)<br/>1/4 teaspoon - 1 teaspoon salt (77.78%)<br/>1 teaspoon cinnamon (44.44%)<br/>1/2 teaspoon - 1 teaspoon baking powder (22.22%)<br/>1 cup - 1 1/2 cup purpose flour (22.22%)<br/>1 tablespoon - 2 tablespoon cocoa (22.22%)<br/>1/2 teaspoon - 1 teaspoon allspice (22.22%)<br/>3/8 teaspoon - 3/4 teaspoon clove (22.22%)<br/>1 1/2 cup - 2 cup sugar (22.22%)<br/>teaspoon - 1/4 teaspoon ground clove (11.11%)<br/>1/2 teaspoon - 1 teaspoon ground cinnamon (11.11%)<br/>teaspoon - 1/2 teaspoon ground allspice (11.11%)<br/>4 tablespoon cocoa powder (11.11%)<br/>2 cup whole wheat flour (11.11%)<br/>1 teaspoon kosher salt (11.11%)<br/>1/2 tablespoon - 1 tablespoon pumpkin pie spice (11.11%)<br/>1/2 cup - 3/4 cup pumpkin (11.11%)<br/>1 teaspoon soda (11.11%)<br/>1 cup - 1 1/4 cup white sugar (11.11%)<br/>1 1/2 teaspoon nutmeg (11.11%)<br/><br/>bowl (88%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>sift</b><br/>baking soda (88.89%)<br/>flour (77.78%)<br/>salt (77.78%)<br/>cinnamon (44.44%)</font>>"
   },
   "3828": {
     "hidden": true,
@@ -24840,18 +25008,18 @@ export const graphDict = {
     ],
     "verb": "add",
     "ingredients_full_info": {
-      "almond": {
-        "min_quan": "7",
-        "max_quan": "7 1/2",
-        "min_quan_unit": "7 slice",
-        "max_quan_unit": "7 1/2 slice",
-        "percent": 50.0
-      },
       "milk": {
         "min_quan": "2",
         "max_quan": "3",
         "min_quan_unit": "2 tablespoon",
         "max_quan_unit": "3 tablespoon",
+        "percent": 50.0
+      },
+      "almond": {
+        "min_quan": "7",
+        "max_quan": "7 1/2",
+        "min_quan_unit": "7 slice",
+        "max_quan_unit": "7 1/2 slice",
         "percent": 50.0
       },
       "salt": {
@@ -24878,8 +25046,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>7 slice - 7 1/2 slice almond (50.00%)<br/>2 tablespoon - 3 tablespoon milk (50.00%)<br/>1/2 teaspoon - 3/4 teaspoon salt (50.00%)<br/>1/2 cup - 3/4 cup oat (50.00%)<br/>3/4 teaspoon - 1 teaspoon sea salt (50.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>almond (50.00%)<br/>milk (50.00%)<br/>salt (50.00%)<br/>oat (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>2 tablespoon - 3 tablespoon milk (50.00%)<br/>7 slice - 7 1/2 slice almond (50.00%)<br/>1/2 teaspoon - 3/4 teaspoon salt (50.00%)<br/>1/2 cup - 3/4 cup oat (50.00%)<br/>3/4 teaspoon - 1 teaspoon sea salt (50.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>milk (50.00%)<br/>almond (50.00%)<br/>salt (50.00%)<br/>oat (50.00%)</font>>"
   },
   "3831": {
     "hidden": true,
@@ -25125,6 +25293,13 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 16.666666666666668
       },
+      "confectioner sugar": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 cup",
+        "percent": 16.666666666666668
+      },
       "rum": {
         "min_quan": "1/4",
         "max_quan": "1/2",
@@ -25132,11 +25307,11 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 16.666666666666668
       },
-      "confectioner sugar": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 cup",
+      "whipping cream": {
+        "min_quan": "1/2",
+        "max_quan": "3/4",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 16.666666666666668
       },
       "corn": {
@@ -25153,13 +25328,6 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 cup",
         "percent": 16.666666666666668
       },
-      "whipping cream": {
-        "min_quan": "1/2",
-        "max_quan": "3/4",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "3/4 cup",
-        "percent": 16.666666666666668
-      },
       "flax seed": {
         "min_quan": "2",
         "max_quan": "2",
@@ -25174,7 +25342,7 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 16.666666666666668
       },
-      "butter": {
+      "sugar": {
         "min_quan": "3/4",
         "max_quan": "3/4",
         "min_quan_unit": "3/4 cup",
@@ -25188,7 +25356,7 @@ export const graphDict = {
         "max_quan_unit": "1 2/3",
         "percent": 16.666666666666668
       },
-      "sugar": {
+      "butter": {
         "min_quan": "3/4",
         "max_quan": "3/4",
         "min_quan_unit": "3/4 cup",
@@ -25205,8 +25373,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 cup - 1 1/2 cup brown sugar (83.33%)<br/>1/4 cup pecan (16.67%)<br/>1/4 cup - 1/2 cup rum (16.67%)<br/>1 cup confectioner sugar (16.67%)<br/>2 tablespoon corn (16.67%)<br/>1 1/2 cup white sugar (16.67%)<br/>1/2 cup - 3/4 cup whipping cream (16.67%)<br/>2 tablespoon flax seed (16.67%)<br/>1/2 cup oat (16.67%)<br/>3/4 cup butter (16.67%)<br/>1 1/3 - 1 2/3 vanilla bean (16.67%)<br/>3/4 cup sugar (16.67%)<br/><br/>bowl (50%)<br/>pan (16%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>brown sugar (83.33%)<br/>pecan (16.67%)<br/>rum (16.67%)<br/>confectioner sugar (16.67%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 cup - 1 1/2 cup brown sugar (83.33%)<br/>1/4 cup pecan (16.67%)<br/>1 cup confectioner sugar (16.67%)<br/>1/4 cup - 1/2 cup rum (16.67%)<br/>1/2 cup - 3/4 cup whipping cream (16.67%)<br/>2 tablespoon corn (16.67%)<br/>1 1/2 cup white sugar (16.67%)<br/>2 tablespoon flax seed (16.67%)<br/>1/2 cup oat (16.67%)<br/>3/4 cup sugar (16.67%)<br/>1 1/3 - 1 2/3 vanilla bean (16.67%)<br/>3/4 cup butter (16.67%)<br/><br/>bowl (50%)<br/>pan (16%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>brown sugar (83.33%)<br/>pecan (16.67%)<br/>confectioner sugar (16.67%)<br/>rum (16.67%)</font>>"
   },
   "3850": {
     "hidden": true,
@@ -25882,18 +26050,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/4 cup",
         "percent": 40.0
       },
-      "cream cheese": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 package",
-        "max_quan_unit": "1 package",
-        "percent": 20.0
-      },
       "confectioner sugar": {
         "min_quan": "2",
         "max_quan": "2",
         "min_quan_unit": "2 cup",
         "max_quan_unit": "2 cup",
+        "percent": 20.0
+      },
+      "cream cheese": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 package",
+        "max_quan_unit": "1 package",
         "percent": 20.0
       },
       "rum extract": {
@@ -25934,7 +26102,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>frost</b><br/><br/>1/4 cup - 1/2 cup butter (100%)<br/>1 1/2 cup - 2 cup sugar (80.00%)<br/>1 tablespoon milk (60.00%)<br/>1/2 cup - 1 1/4 cup brown sugar (40.00%)<br/>1 package cream cheese (20.00%)<br/>2 cup confectioner sugar (20.00%)<br/>1 teaspoon rum extract (20.00%)<br/>1/4 cup orange juice (20.00%)<br/>3/4 teaspoon baking soda (20.00%)<br/>1/4 cup - 1/2 cup buttermilk (20.00%)<br/><br/>pan (60%)<br/>bowl (40%)</font>>",
+    "summary": "<<font point-size='18'><b>frost</b><br/><br/>1/4 cup - 1/2 cup butter (100%)<br/>1 1/2 cup - 2 cup sugar (80.00%)<br/>1 tablespoon milk (60.00%)<br/>1/2 cup - 1 1/4 cup brown sugar (40.00%)<br/>2 cup confectioner sugar (20.00%)<br/>1 package cream cheese (20.00%)<br/>1 teaspoon rum extract (20.00%)<br/>1/4 cup orange juice (20.00%)<br/>3/4 teaspoon baking soda (20.00%)<br/>1/4 cup - 1/2 cup buttermilk (20.00%)<br/><br/>pan (60%)<br/>bowl (40%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>frost</b><br/>butter (100%)<br/>sugar (80.00%)<br/>milk (60.00%)<br/>brown sugar (40.00%)</font>>"
   },
   "3868": {
@@ -26660,18 +26828,18 @@ export const graphDict = {
         "max_quan_unit": "7 ounce",
         "percent": 16.666666666666668
       },
-      "graham cracker crumb": {
-        "min_quan": "1",
-        "max_quan": "1 1/4",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 1/4 cup",
-        "percent": 16.666666666666668
-      },
       "brown sugar": {
         "min_quan": "1",
         "max_quan": "2",
         "min_quan_unit": "1 tablespoon",
         "max_quan_unit": "2 tablespoon",
+        "percent": 16.666666666666668
+      },
+      "graham cracker crumb": {
+        "min_quan": "1",
+        "max_quan": "1 1/4",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 1/4 cup",
         "percent": 16.666666666666668
       },
       "graham cracker": {
@@ -26703,8 +26871,8 @@ export const graphDict = {
       "end_range": "5",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup - 1/2 cup butter (100%)<br/>3 tablespoon - 4 tablespoon milk (16.67%)<br/>6 1/2 ounce - 7 ounce farmer cheese (16.67%)<br/>1 cup - 1 1/4 cup graham cracker crumb (16.67%)<br/>1 tablespoon - 2 tablespoon brown sugar (16.67%)<br/>2/3 package - 1 package graham cracker (16.67%)<br/>6 slice apple (16.67%)<br/><br/>bowl (50%)<br/>oven (16%)<br/><br/>5 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>butter (100%)<br/>milk (16.67%)<br/>farmer cheese (16.67%)<br/>graham cracker crumb (16.67%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup - 1/2 cup butter (100%)<br/>3 tablespoon - 4 tablespoon milk (16.67%)<br/>6 1/2 ounce - 7 ounce farmer cheese (16.67%)<br/>1 tablespoon - 2 tablespoon brown sugar (16.67%)<br/>1 cup - 1 1/4 cup graham cracker crumb (16.67%)<br/>2/3 package - 1 package graham cracker (16.67%)<br/>6 slice apple (16.67%)<br/><br/>bowl (50%)<br/>oven (16%)<br/><br/>5 minute</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>butter (100%)<br/>milk (16.67%)<br/>farmer cheese (16.67%)<br/>brown sugar (16.67%)</font>>"
   },
   "3896": {
     "hidden": true,
@@ -27854,18 +28022,18 @@ export const graphDict = {
         "max_quan_unit": "3",
         "percent": 3.5714285714285716
       },
-      "oat": {
-        "min_quan": "1 1/4",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/4 cup",
-        "max_quan_unit": "1 1/2 cup",
-        "percent": 3.5714285714285716
-      },
       "clove": {
         "min_quan": "5/8",
         "max_quan": "3/4",
         "min_quan_unit": "5/8 teaspoon",
         "max_quan_unit": "3/4 teaspoon",
+        "percent": 3.5714285714285716
+      },
+      "oat": {
+        "min_quan": "1 1/4",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/4 cup",
+        "max_quan_unit": "1 1/2 cup",
         "percent": 3.5714285714285716
       }
     },
@@ -27875,7 +28043,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 teaspoon - 1 teaspoon salt (100%)<br/>1 cup - 3 1/4 cup flour (100%)<br/>1 teaspoon - 1 tablespoon baking powder (53.57%)<br/>1/2 teaspoon - 2 teaspoon baking soda (53.57%)<br/>1/2 teaspoon - 2 teaspoon cinnamon (42.86%)<br/>3/4 teaspoon nutmeg (17.86%)<br/>1 teaspoon allspice (7.14%)<br/>1/2 teaspoon - 2 teaspoon soda (7.14%)<br/>1 lemon (3.57%)<br/>1/2 cup sugar (3.57%)<br/>1 teaspoon ground cinnamon (3.57%)<br/>3/4 cup milk (3.57%)<br/>2 - 3 egg (3.57%)<br/>1 1/4 cup - 1 1/2 cup oat (3.57%)<br/>5/8 teaspoon - 3/4 teaspoon clove (3.57%)<br/><br/>bowl (57%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 teaspoon - 1 teaspoon salt (100%)<br/>1 cup - 3 1/4 cup flour (100%)<br/>1 teaspoon - 1 tablespoon baking powder (53.57%)<br/>1/2 teaspoon - 2 teaspoon baking soda (53.57%)<br/>1/2 teaspoon - 2 teaspoon cinnamon (42.86%)<br/>3/4 teaspoon nutmeg (17.86%)<br/>1 teaspoon allspice (7.14%)<br/>1/2 teaspoon - 2 teaspoon soda (7.14%)<br/>1 lemon (3.57%)<br/>1/2 cup sugar (3.57%)<br/>1 teaspoon ground cinnamon (3.57%)<br/>3/4 cup milk (3.57%)<br/>2 - 3 egg (3.57%)<br/>5/8 teaspoon - 3/4 teaspoon clove (3.57%)<br/>1 1/4 cup - 1 1/2 cup oat (3.57%)<br/><br/>bowl (57%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>salt (100%)<br/>flour (100%)<br/>baking powder (53.57%)<br/>baking soda (53.57%)</font>>"
   },
   "3899": {
@@ -28338,18 +28506,18 @@ export const graphDict = {
         "max_quan_unit": "2 teaspoon",
         "percent": 22.22222222222222
       },
-      "ground cinnamon": {
-        "min_quan": "1",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 1/2 teaspoon",
-        "percent": 22.22222222222222
-      },
       "ground nutmeg": {
         "min_quan": "1/2",
         "max_quan": "3/4",
         "min_quan_unit": "1/2 teaspoon",
         "max_quan_unit": "3/4 teaspoon",
+        "percent": 22.22222222222222
+      },
+      "ground cinnamon": {
+        "min_quan": "1",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 1/2 teaspoon",
         "percent": 22.22222222222222
       },
       "ginger": {
@@ -28359,18 +28527,18 @@ export const graphDict = {
         "max_quan_unit": "3 1/4 teaspoon",
         "percent": 22.22222222222222
       },
-      "gum": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 teaspoon",
-        "max_quan_unit": "1 1/2 teaspoon",
-        "percent": 11.11111111111111
-      },
       "orange juice": {
         "min_quan": "1/4",
         "max_quan": "1/2",
         "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 11.11111111111111
+      },
+      "gum": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 teaspoon",
+        "max_quan_unit": "1 1/2 teaspoon",
         "percent": 11.11111111111111
       },
       "olive oil": {
@@ -28380,11 +28548,32 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 11.11111111111111
       },
+      "coconut milk": {
+        "min_quan": "1",
+        "max_quan": "1 1/4",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 1/4 cup",
+        "percent": 11.11111111111111
+      },
+      "egg": {
+        "min_quan": "7",
+        "max_quan": "8",
+        "min_quan_unit": "7",
+        "max_quan_unit": "8",
+        "percent": 11.11111111111111
+      },
       "vanilla extract": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/2 teaspoon",
         "max_quan_unit": "1 1/2 teaspoon",
+        "percent": 11.11111111111111
+      },
+      "sea salt": {
+        "min_quan": "3/4",
+        "max_quan": "3/4",
+        "min_quan_unit": "3/4 teaspoon",
+        "max_quan_unit": "3/4 teaspoon",
         "percent": 11.11111111111111
       },
       "coconut flour": {
@@ -28401,27 +28590,6 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 11.11111111111111
       },
-      "egg": {
-        "min_quan": "7",
-        "max_quan": "8",
-        "min_quan_unit": "7",
-        "max_quan_unit": "8",
-        "percent": 11.11111111111111
-      },
-      "coconut milk": {
-        "min_quan": "1",
-        "max_quan": "1 1/4",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 1/4 cup",
-        "percent": 11.11111111111111
-      },
-      "sea salt": {
-        "min_quan": "3/4",
-        "max_quan": "3/4",
-        "min_quan_unit": "3/4 teaspoon",
-        "max_quan_unit": "3/4 teaspoon",
-        "percent": 11.11111111111111
-      },
       "cocoa": {
         "min_quan": "1",
         "max_quan": "2",
@@ -28436,18 +28604,18 @@ export const graphDict = {
         "max_quan_unit": "1 3/4 cup",
         "percent": 11.11111111111111
       },
-      "purpose flour": {
-        "min_quan": "2 1/2",
-        "max_quan": "2 3/4",
-        "min_quan_unit": "2 1/2 cup",
-        "max_quan_unit": "2 3/4 cup",
-        "percent": 11.11111111111111
-      },
       "ground clove": {
         "min_quan": "1/4",
         "max_quan": "1/2",
         "min_quan_unit": "1/4 teaspoon",
         "max_quan_unit": "1/2 teaspoon",
+        "percent": 11.11111111111111
+      },
+      "purpose flour": {
+        "min_quan": "2 1/2",
+        "max_quan": "2 3/4",
+        "min_quan_unit": "2 1/2 cup",
+        "max_quan_unit": "2 3/4 cup",
         "percent": 11.11111111111111
       },
       "pumpkin pie spice": {
@@ -28457,18 +28625,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 teaspoon",
         "percent": 11.11111111111111
       },
-      "flax seed": {
-        "min_quan": "3",
-        "max_quan": "3",
-        "min_quan_unit": "3 tablespoon",
-        "max_quan_unit": "3 tablespoon",
-        "percent": 11.11111111111111
-      },
       "nutmeg": {
         "min_quan": "1/8",
         "max_quan": "1/8",
         "min_quan_unit": "1/8 teaspoon",
         "max_quan_unit": "1/8 teaspoon",
+        "percent": 11.11111111111111
+      },
+      "flax seed": {
+        "min_quan": "3",
+        "max_quan": "3",
+        "min_quan_unit": "3 tablespoon",
+        "max_quan_unit": "3 tablespoon",
         "percent": 11.11111111111111
       }
     },
@@ -28478,7 +28646,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 teaspoon - 1 teaspoon salt (77.78%)<br/>1 teaspoon - 3 teaspoon cinnamon (66.67%)<br/>2 1/4 cup - 3 cup flour (66.67%)<br/>1 teaspoon - 1 1/2 teaspoon baking soda (55.56%)<br/>1 1/2 teaspoon clove (33.33%)<br/>1 1/4 teaspoon - 2 teaspoon baking powder (22.22%)<br/>1 teaspoon - 1 1/2 teaspoon ground cinnamon (22.22%)<br/>1/2 teaspoon - 3/4 teaspoon ground nutmeg (22.22%)<br/>3/4 teaspoon - 3 1/4 teaspoon ginger (22.22%)<br/>1 1/2 teaspoon gum (11.11%)<br/>1/4 cup - 1/2 cup orange juice (11.11%)<br/>1/2 cup olive oil (11.11%)<br/>1 1/2 teaspoon vanilla extract (11.11%)<br/>3 tablespoon coconut flour (11.11%)<br/>1/4 cup - 1/2 cup arrowroot powder (11.11%)<br/>7 - 8 egg (11.11%)<br/>1 cup - 1 1/4 cup coconut milk (11.11%)<br/>3/4 teaspoon sea salt (11.11%)<br/>1 tablespoon - 2 tablespoon cocoa (11.11%)<br/>1 1/2 cup - 1 3/4 cup wheat flour (11.11%)<br/>2 1/2 cup - 2 3/4 cup purpose flour (11.11%)<br/>1/4 teaspoon - 1/2 teaspoon ground clove (11.11%)<br/>1 1/2 teaspoon pumpkin pie spice (11.11%)<br/>3 tablespoon flax seed (11.11%)<br/>1/8 teaspoon nutmeg (11.11%)<br/><br/>bowl (22%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 teaspoon - 1 teaspoon salt (77.78%)<br/>1 teaspoon - 3 teaspoon cinnamon (66.67%)<br/>2 1/4 cup - 3 cup flour (66.67%)<br/>1 teaspoon - 1 1/2 teaspoon baking soda (55.56%)<br/>1 1/2 teaspoon clove (33.33%)<br/>1 1/4 teaspoon - 2 teaspoon baking powder (22.22%)<br/>1/2 teaspoon - 3/4 teaspoon ground nutmeg (22.22%)<br/>1 teaspoon - 1 1/2 teaspoon ground cinnamon (22.22%)<br/>3/4 teaspoon - 3 1/4 teaspoon ginger (22.22%)<br/>1/4 cup - 1/2 cup orange juice (11.11%)<br/>1 1/2 teaspoon gum (11.11%)<br/>1/2 cup olive oil (11.11%)<br/>1 cup - 1 1/4 cup coconut milk (11.11%)<br/>7 - 8 egg (11.11%)<br/>1 1/2 teaspoon vanilla extract (11.11%)<br/>3/4 teaspoon sea salt (11.11%)<br/>3 tablespoon coconut flour (11.11%)<br/>1/4 cup - 1/2 cup arrowroot powder (11.11%)<br/>1 tablespoon - 2 tablespoon cocoa (11.11%)<br/>1 1/2 cup - 1 3/4 cup wheat flour (11.11%)<br/>1/4 teaspoon - 1/2 teaspoon ground clove (11.11%)<br/>2 1/2 cup - 2 3/4 cup purpose flour (11.11%)<br/>1 1/2 teaspoon pumpkin pie spice (11.11%)<br/>1/8 teaspoon nutmeg (11.11%)<br/>3 tablespoon flax seed (11.11%)<br/><br/>bowl (22%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>salt (77.78%)<br/>cinnamon (66.67%)<br/>flour (66.67%)<br/>baking soda (55.56%)</font>>"
   },
   "3902": {
@@ -29396,18 +29564,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/4 cup",
         "percent": 5.2631578947368425
       },
-      "confectioner sugar": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 cup",
-        "percent": 5.2631578947368425
-      },
       "lemon juice": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 teaspoon",
         "max_quan_unit": "1/2 teaspoon",
+        "percent": 5.2631578947368425
+      },
+      "confectioner sugar": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 cup",
         "percent": 5.2631578947368425
       },
       "cream cheese": {
@@ -29432,7 +29600,7 @@ export const graphDict = {
       "end_range": "5",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1/4 cup - 1 cup butter (100%)<br/>1/4 cup - 3/4 cup white sugar (52.63%)<br/>1/2 cup - 1 cup brown sugar (31.58%)<br/>1 cup sugar (21.05%)<br/>1 cup - 1 1/4 cup vegetable oil (5.26%)<br/>1 cup confectioner sugar (5.26%)<br/>1/2 teaspoon lemon juice (5.26%)<br/>package - 1 package cream cheese (5.26%)<br/><br/>bowl (78%)<br/>mixer (52%)<br/><br/>2 minute - 5 minute</font>>",
+    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1/4 cup - 1 cup butter (100%)<br/>1/4 cup - 3/4 cup white sugar (52.63%)<br/>1/2 cup - 1 cup brown sugar (31.58%)<br/>1 cup sugar (21.05%)<br/>1 cup - 1 1/4 cup vegetable oil (5.26%)<br/>1/2 teaspoon lemon juice (5.26%)<br/>1 cup confectioner sugar (5.26%)<br/>package - 1 package cream cheese (5.26%)<br/><br/>bowl (78%)<br/>mixer (52%)<br/><br/>2 minute - 5 minute</font>>",
     "summary_abbr": "<<font point-size='18'><b>beat</b><br/>butter (100%)<br/>white sugar (52.63%)<br/>brown sugar (31.58%)<br/>sugar (21.05%)</font>>",
     "color": "#f9f9f9"
   },
@@ -29921,13 +30089,6 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 25.0
       },
-      "graham cracker crumb": {
-        "min_quan": "3/4",
-        "max_quan": "3/4",
-        "min_quan_unit": "3/4 cup",
-        "max_quan_unit": "3/4 cup",
-        "percent": 25.0
-      },
       "cinnamon": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
@@ -29942,11 +30103,11 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 25.0
       },
-      "sour cream": {
-        "min_quan": "1/4",
-        "max_quan": "1/4",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/4 cup",
+      "graham cracker crumb": {
+        "min_quan": "3/4",
+        "max_quan": "3/4",
+        "min_quan_unit": "3/4 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 25.0
       },
       "oil": {
@@ -29962,6 +30123,13 @@ export const graphDict = {
         "min_quan_unit": "1 package",
         "max_quan_unit": "1 package",
         "percent": 25.0
+      },
+      "sour cream": {
+        "min_quan": "1/4",
+        "max_quan": "1/4",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/4 cup",
+        "percent": 25.0
       }
     },
     "instruments_full_info": {
@@ -29973,7 +30141,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 package cake mix (75.00%)<br/>4 egg (75.00%)<br/>1/2 cup - 1 1/2 cup water (50.00%)<br/>6 egg white (25.00%)<br/>1/4 cup vegetable oil (25.00%)<br/>3/4 cup graham cracker crumb (25.00%)<br/>1 1/2 teaspoon cinnamon (25.00%)<br/>1/4 cup - 1/2 cup butter (25.00%)<br/>1/4 cup sour cream (25.00%)<br/>1/4 cup oil (25.00%)<br/>1 package mix (25.00%)<br/><br/>bowl (75%)<br/>mixer (25%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 package cake mix (75.00%)<br/>4 egg (75.00%)<br/>1/2 cup - 1 1/2 cup water (50.00%)<br/>6 egg white (25.00%)<br/>1/4 cup vegetable oil (25.00%)<br/>1 1/2 teaspoon cinnamon (25.00%)<br/>1/4 cup - 1/2 cup butter (25.00%)<br/>3/4 cup graham cracker crumb (25.00%)<br/>1/4 cup oil (25.00%)<br/>1 package mix (25.00%)<br/>1/4 cup sour cream (25.00%)<br/><br/>bowl (75%)<br/>mixer (25%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>cake mix (75.00%)<br/>egg (75.00%)<br/>water (50.00%)<br/>egg white (25.00%)</font>>"
   },
   "3918": {
@@ -29985,10 +30153,10 @@ export const graphDict = {
       {
         "title": "Cool cake in pan 15 min.",
         "verb": "cool",
-        "min_time": "",
-        "min_time_unit": "",
-        "max_time": "",
-        "max_time_unit": "",
+        "min_time": "15",
+        "min_time_unit": "minute",
+        "max_time": "15",
+        "max_time_unit": "minute",
         "instruments": [
           "pan"
         ],
@@ -30278,6 +30446,13 @@ export const graphDict = {
         "max_quan_unit": "3/4 cup",
         "percent": 16.666666666666668
       },
+      "vegetable oil": {
+        "min_quan": "3/4",
+        "max_quan": "1",
+        "min_quan_unit": "3/4 cup",
+        "max_quan_unit": "1 cup",
+        "percent": 16.666666666666668
+      },
       "raisin": {
         "min_quan": "1/2",
         "max_quan": "3/4",
@@ -30285,11 +30460,11 @@ export const graphDict = {
         "max_quan_unit": "3/4 cup",
         "percent": 16.666666666666668
       },
-      "vegetable oil": {
-        "min_quan": "3/4",
-        "max_quan": "1",
-        "min_quan_unit": "3/4 cup",
-        "max_quan_unit": "1 cup",
+      "zucchini": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 cup",
+        "max_quan_unit": "2 cup",
         "percent": 16.666666666666668
       },
       "vanilla extract": {
@@ -30299,13 +30474,6 @@ export const graphDict = {
         "max_quan_unit": "2 teaspoon",
         "percent": 16.666666666666668
       },
-      "olive oil": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 cup",
-        "percent": 16.666666666666668
-      },
       "brown sugar": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
@@ -30313,11 +30481,11 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 cup",
         "percent": 16.666666666666668
       },
-      "zucchini": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 cup",
-        "max_quan_unit": "2 cup",
+      "olive oil": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 cup",
         "percent": 16.666666666666668
       },
       "pear": {
@@ -30341,7 +30509,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 cup - 7 1/2 cup apple (100%)<br/>3 - 4 egg (33.33%)<br/>3 teaspoon - 1 tablespoon lemon juice (33.33%)<br/>cup - 1/4 cup water (16.67%)<br/>1/2 cup - 3/4 cup pecan (16.67%)<br/>1/2 cup - 3/4 cup raisin (16.67%)<br/>3/4 cup - 1 cup vegetable oil (16.67%)<br/>2 teaspoon vanilla extract (16.67%)<br/>1 cup olive oil (16.67%)<br/>1 1/2 cup brown sugar (16.67%)<br/>2 cup zucchini (16.67%)<br/>3 slice pear (16.67%)<br/>1 cup - 1 1/4 cup cold water (16.67%)<br/><br/>bowl (83%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 cup - 7 1/2 cup apple (100%)<br/>3 - 4 egg (33.33%)<br/>3 teaspoon - 1 tablespoon lemon juice (33.33%)<br/>cup - 1/4 cup water (16.67%)<br/>1/2 cup - 3/4 cup pecan (16.67%)<br/>3/4 cup - 1 cup vegetable oil (16.67%)<br/>1/2 cup - 3/4 cup raisin (16.67%)<br/>2 cup zucchini (16.67%)<br/>2 teaspoon vanilla extract (16.67%)<br/>1 1/2 cup brown sugar (16.67%)<br/>1 cup olive oil (16.67%)<br/>3 slice pear (16.67%)<br/>1 cup - 1 1/4 cup cold water (16.67%)<br/><br/>bowl (83%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>apple (100%)<br/>egg (33.33%)<br/>lemon juice (33.33%)<br/>water (16.67%)</font>>"
   },
   "3936": {
@@ -30469,18 +30637,18 @@ export const graphDict = {
     ],
     "verb": "beat",
     "ingredients_full_info": {
-      "oil": {
-        "min_quan": "1/4",
-        "max_quan": "1/4",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/4 cup",
-        "percent": 50.0
-      },
       "water": {
         "min_quan": "3/4",
         "max_quan": "3/4",
         "min_quan_unit": "3/4 cup",
         "max_quan_unit": "3/4 cup",
+        "percent": 50.0
+      },
+      "oil": {
+        "min_quan": "1/4",
+        "max_quan": "1/4",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/4 cup",
         "percent": 50.0
       },
       "vanilla": {
@@ -30514,8 +30682,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1/4 cup oil (50.00%)<br/>3/4 cup water (50.00%)<br/>package - 1 package vanilla (50.00%)<br/>1 - 1 1/2 lemon (50.00%)<br/>1/2 cup - 3/4 cup peanut oil (50.00%)<br/><br/>bowl (50%)<br/>mixer (50%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>oil (50.00%)<br/>water (50.00%)<br/>vanilla (50.00%)<br/>lemon (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>beat</b><br/><br/>3/4 cup water (50.00%)<br/>1/4 cup oil (50.00%)<br/>package - 1 package vanilla (50.00%)<br/>1 - 1 1/2 lemon (50.00%)<br/>1/2 cup - 3/4 cup peanut oil (50.00%)<br/><br/>bowl (50%)<br/>mixer (50%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>beat</b><br/>water (50.00%)<br/>oil (50.00%)<br/>vanilla (50.00%)<br/>lemon (50.00%)</font>>"
   },
   "3938": {
     "hidden": true,
@@ -31234,18 +31402,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 22.22222222222222
       },
-      "vanilla extract": {
-        "min_quan": "1/2",
-        "max_quan": "1",
-        "min_quan_unit": "1/2 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 16.666666666666664
-      },
       "confectioner sugar": {
         "min_quan": "3/4",
         "max_quan": "1",
         "min_quan_unit": "3/4 cup",
         "max_quan_unit": "1 cup",
+        "percent": 16.666666666666664
+      },
+      "vanilla extract": {
+        "min_quan": "1/2",
+        "max_quan": "1",
+        "min_quan_unit": "1/2 teaspoon",
+        "max_quan_unit": "1 teaspoon",
         "percent": 16.666666666666664
       },
       "white sugar": {
@@ -31317,7 +31485,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup - 1 cup butter (100%)<br/>3/4 cup - 1 cup sugar (55.56%)<br/>1/2 cup - 1 cup brown sugar (33.33%)<br/>4 teaspoon - 1 tablespoon vanilla sugar (22.22%)<br/>1/4 cup - 1/2 cup milk (22.22%)<br/>1/2 teaspoon - 1 teaspoon vanilla extract (16.67%)<br/>3/4 cup - 1 cup confectioner sugar (16.67%)<br/>3 tablespoon - 3 3/4 cup white sugar (16.67%)<br/>1 package cream cheese (11.11%)<br/>1 - 2 egg (5.56%)<br/>1/2 teaspoon vanilla (5.56%)<br/>1 3/4 cup - 2 cup purpose flour (5.56%)<br/>1 1/2 cup graham cracker (5.56%)<br/>1/4 cup cream (5.56%)<br/>7 slice - 8 slice apple (5.56%)<br/><br/>bowl (83%)<br/>pan (11%)<br/>mixer (5%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup - 1 cup butter (100%)<br/>3/4 cup - 1 cup sugar (55.56%)<br/>1/2 cup - 1 cup brown sugar (33.33%)<br/>4 teaspoon - 1 tablespoon vanilla sugar (22.22%)<br/>1/4 cup - 1/2 cup milk (22.22%)<br/>3/4 cup - 1 cup confectioner sugar (16.67%)<br/>1/2 teaspoon - 1 teaspoon vanilla extract (16.67%)<br/>3 tablespoon - 3 3/4 cup white sugar (16.67%)<br/>1 package cream cheese (11.11%)<br/>1 - 2 egg (5.56%)<br/>1/2 teaspoon vanilla (5.56%)<br/>1 3/4 cup - 2 cup purpose flour (5.56%)<br/>1 1/2 cup graham cracker (5.56%)<br/>1/4 cup cream (5.56%)<br/>7 slice - 8 slice apple (5.56%)<br/><br/>bowl (83%)<br/>pan (11%)<br/>mixer (5%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>butter (100%)<br/>sugar (55.56%)<br/>brown sugar (33.33%)<br/>vanilla sugar (22.22%)</font>>"
   },
   "3939": {
@@ -31952,13 +32120,6 @@ export const graphDict = {
     ],
     "verb": "add",
     "ingredients_full_info": {
-      "vanilla extract": {
-        "min_quan": "1 1/2",
-        "max_quan": "1",
-        "min_quan_unit": "1 1/2 teaspoon",
-        "max_quan_unit": "1 tablespoon",
-        "percent": 66.66666666666667
-      },
       "sour cream": {
         "min_quan": "1/2",
         "max_quan": "1/2",
@@ -31966,11 +32127,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 66.66666666666667
       },
-      "vanilla": {
-        "min_quan": "1",
+      "vanilla extract": {
+        "min_quan": "1 1/2",
         "max_quan": "1",
-        "min_quan_unit": "1 tablespoon",
+        "min_quan_unit": "1 1/2 teaspoon",
         "max_quan_unit": "1 tablespoon",
+        "percent": 66.66666666666667
+      },
+      "chocolate chip": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 33.333333333333336
       },
       "apple": {
@@ -31980,11 +32148,11 @@ export const graphDict = {
         "max_quan_unit": "2 cup",
         "percent": 33.333333333333336
       },
-      "chocolate chip": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
+      "vanilla": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 tablespoon",
+        "max_quan_unit": "1 tablespoon",
         "percent": 33.333333333333336
       },
       "vanilla yogurt": {
@@ -32008,8 +32176,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 1/2 teaspoon - 1 tablespoon vanilla extract (66.67%)<br/>1/2 cup sour cream (66.67%)<br/>1 tablespoon vanilla (33.33%)<br/>2 cup apple (33.33%)<br/>1/2 cup chocolate chip (33.33%)<br/>1/4 cup - 1/2 cup vanilla yogurt (33.33%)<br/>1/2 cup cream (33.33%)<br/><br/>grater (33%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>vanilla extract (66.67%)<br/>sour cream (66.67%)<br/>vanilla (33.33%)<br/>apple (33.33%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup sour cream (66.67%)<br/>1 1/2 teaspoon - 1 tablespoon vanilla extract (66.67%)<br/>1/2 cup chocolate chip (33.33%)<br/>2 cup apple (33.33%)<br/>1 tablespoon vanilla (33.33%)<br/>1/4 cup - 1/2 cup vanilla yogurt (33.33%)<br/>1/2 cup cream (33.33%)<br/><br/>grater (33%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>sour cream (66.67%)<br/>vanilla extract (66.67%)<br/>chocolate chip (33.33%)<br/>apple (33.33%)</font>>"
   },
   "3956": {
     "hidden": true,
@@ -32151,18 +32319,18 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 66.66666666666667
       },
-      "cream cheese": {
-        "min_quan": "",
-        "max_quan": "1",
-        "min_quan_unit": "package",
-        "max_quan_unit": "1 package",
-        "percent": 33.333333333333336
-      },
       "milk": {
         "min_quan": "",
         "max_quan": "1",
         "min_quan_unit": "tablespoon",
         "max_quan_unit": "1 tablespoon",
+        "percent": 33.333333333333336
+      },
+      "cream cheese": {
+        "min_quan": "",
+        "max_quan": "1",
+        "min_quan_unit": "package",
+        "max_quan_unit": "1 package",
         "percent": 33.333333333333336
       },
       "vanilla": {
@@ -32172,13 +32340,6 @@ export const graphDict = {
         "max_quan_unit": "1/2 teaspoon",
         "percent": 33.333333333333336
       },
-      "half half": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 33.333333333333336
-      },
       "brown sugar": {
         "min_quan": "1/4",
         "max_quan": "1/2",
@@ -32186,11 +32347,11 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 33.333333333333336
       },
-      "juice": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 teaspoon",
-        "max_quan_unit": "2 teaspoon",
+      "half half": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 33.333333333333336
       },
       "water": {
@@ -32198,6 +32359,13 @@ export const graphDict = {
         "max_quan": "2",
         "min_quan_unit": "2 tablespoon",
         "max_quan_unit": "2 tablespoon",
+        "percent": 33.333333333333336
+      },
+      "juice": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 teaspoon",
+        "max_quan_unit": "2 teaspoon",
         "percent": 33.333333333333336
       },
       "lemon juice": {
@@ -32217,8 +32385,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 teaspoon salt (100%)<br/>1 cup white sugar (66.67%)<br/>package - 1 package cream cheese (33.33%)<br/>tablespoon - 1 tablespoon milk (33.33%)<br/>1/2 teaspoon vanilla (33.33%)<br/>1/4 cup - 1/2 cup half half (33.33%)<br/>1/4 cup - 1/2 cup brown sugar (33.33%)<br/>2 teaspoon juice (33.33%)<br/>2 tablespoon water (33.33%)<br/>3 drop lemon juice (33.33%)<br/><br/>pan (66%)<br/>bowl (33%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>salt (100%)<br/>white sugar (66.67%)<br/>cream cheese (33.33%)<br/>milk (33.33%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 teaspoon salt (100%)<br/>1 cup white sugar (66.67%)<br/>tablespoon - 1 tablespoon milk (33.33%)<br/>package - 1 package cream cheese (33.33%)<br/>1/2 teaspoon vanilla (33.33%)<br/>1/4 cup - 1/2 cup brown sugar (33.33%)<br/>1/4 cup - 1/2 cup half half (33.33%)<br/>2 tablespoon water (33.33%)<br/>2 teaspoon juice (33.33%)<br/>3 drop lemon juice (33.33%)<br/><br/>pan (66%)<br/>bowl (33%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>salt (100%)<br/>white sugar (66.67%)<br/>milk (33.33%)<br/>cream cheese (33.33%)</font>>"
   },
   "3963": {
     "hidden": true,
@@ -33017,11 +33185,11 @@ export const graphDict = {
     ],
     "verb": "roll",
     "ingredients_full_info": {
-      "oil": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/2 cup",
+      "apple": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 cup",
+        "max_quan_unit": "1 1/2 cup",
         "percent": 50.0
       },
       "egg": {
@@ -33031,11 +33199,11 @@ export const graphDict = {
         "max_quan_unit": "1",
         "percent": 50.0
       },
-      "apple": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 cup",
-        "max_quan_unit": "1 1/2 cup",
+      "oil": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 50.0
       },
       "granny smith apple": {
@@ -33048,8 +33216,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>roll</b><br/><br/>1/4 cup - 1/2 cup oil (50.00%)<br/>1 egg (50.00%)<br/>1 1/2 cup apple (50.00%)<br/> granny smith apple (50.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>roll</b><br/>oil (50.00%)<br/>egg (50.00%)<br/>apple (50.00%)<br/>granny smith apple (50.00%)</font>>"
+    "summary": "<<font point-size='18'><b>roll</b><br/><br/>1 1/2 cup apple (50.00%)<br/>1 egg (50.00%)<br/>1/4 cup - 1/2 cup oil (50.00%)<br/> granny smith apple (50.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>roll</b><br/>apple (50.00%)<br/>egg (50.00%)<br/>oil (50.00%)<br/>granny smith apple (50.00%)</font>>"
   },
   "3988": {
     "hidden": true,
@@ -33484,18 +33652,18 @@ export const graphDict = {
     ],
     "verb": "heat",
     "ingredients_full_info": {
-      "butter": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 100.0
-      },
       "sugar": {
         "min_quan": "1 1/4",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/4 cup",
         "max_quan_unit": "1 1/2 cup",
+        "percent": 100.0
+      },
+      "butter": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 100.0
       },
       "milk": {
@@ -33533,8 +33701,8 @@ export const graphDict = {
       "end_range": "10",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>heat</b><br/><br/>1/2 cup butter (100%)<br/>1 1/4 cup - 1 1/2 cup sugar (100%)<br/>1/4 cup - 3/4 cup milk (66.67%)<br/>3/4 cup - 1 cup brown sugar (33.33%)<br/><br/>pan (66%)<br/>mixer (33%)<br/>bowl (33%)<br/>oven (33%)<br/><br/>10 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>heat</b><br/>butter (100%)<br/>sugar (100%)<br/>milk (66.67%)<br/>brown sugar (33.33%)</font>>"
+    "summary": "<<font point-size='18'><b>heat</b><br/><br/>1 1/4 cup - 1 1/2 cup sugar (100%)<br/>1/2 cup butter (100%)<br/>1/4 cup - 3/4 cup milk (66.67%)<br/>3/4 cup - 1 cup brown sugar (33.33%)<br/><br/>pan (66%)<br/>mixer (33%)<br/>bowl (33%)<br/>oven (33%)<br/><br/>10 minute</font>>",
+    "summary_abbr": "<<font point-size='18'><b>heat</b><br/>sugar (100%)<br/>butter (100%)<br/>milk (66.67%)<br/>brown sugar (33.33%)</font>>"
   },
   "3995": {
     "hidden": true,
@@ -34501,13 +34669,6 @@ export const graphDict = {
         "max_quan_unit": "4 ounce",
         "percent": 25.0
       },
-      "applesauce": {
-        "min_quan": "",
-        "max_quan": "1/4",
-        "min_quan_unit": "cup",
-        "max_quan_unit": "1/4 cup",
-        "percent": 25.0
-      },
       "root beer": {
         "min_quan": "5",
         "max_quan": "5",
@@ -34515,11 +34676,11 @@ export const graphDict = {
         "max_quan_unit": "5 ounce",
         "percent": 25.0
       },
-      "salt": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 teaspoon",
-        "max_quan_unit": "1 1/2 teaspoon",
+      "applesauce": {
+        "min_quan": "",
+        "max_quan": "1/4",
+        "min_quan_unit": "cup",
+        "max_quan_unit": "1/4 cup",
         "percent": 25.0
       },
       "baking powder": {
@@ -34527,6 +34688,13 @@ export const graphDict = {
         "max_quan": "3/4",
         "min_quan_unit": "3/4 teaspoon",
         "max_quan_unit": "3/4 teaspoon",
+        "percent": 25.0
+      },
+      "salt": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 teaspoon",
+        "max_quan_unit": "1 1/2 teaspoon",
         "percent": 25.0
       }
     },
@@ -34536,7 +34704,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 cup - 1 1/2 cup flour (100%)<br/>1 1/2 teaspoon vanilla extract (75.00%)<br/>1/2 cup - 1 sour cream (50.00%)<br/>4 ounce beer (25.00%)<br/>cup - 1/4 cup applesauce (25.00%)<br/>5 ounce root beer (25.00%)<br/>1 1/2 teaspoon salt (25.00%)<br/>3/4 teaspoon baking powder (25.00%)<br/><br/>pan (25%)</font>>",
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 cup - 1 1/2 cup flour (100%)<br/>1 1/2 teaspoon vanilla extract (75.00%)<br/>1/2 cup - 1 sour cream (50.00%)<br/>4 ounce beer (25.00%)<br/>5 ounce root beer (25.00%)<br/>cup - 1/4 cup applesauce (25.00%)<br/>3/4 teaspoon baking powder (25.00%)<br/>1 1/2 teaspoon salt (25.00%)<br/><br/>pan (25%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>add</b><br/>flour (100%)<br/>vanilla extract (75.00%)<br/>sour cream (50.00%)<br/>beer (25.00%)</font>>"
   },
   "4018": {
@@ -35386,18 +35554,18 @@ export const graphDict = {
         "max_quan_unit": "2 cup",
         "percent": 7.142857142857143
       },
-      "vanilla extract": {
-        "min_quan": "1/2",
-        "max_quan": "1",
-        "min_quan_unit": "1/2 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 7.142857142857143
-      },
       "cinnamon": {
         "min_quan": "1/2",
         "max_quan": "1",
         "min_quan_unit": "1/2 tablespoon",
         "max_quan_unit": "1 tablespoon",
+        "percent": 7.142857142857143
+      },
+      "vanilla extract": {
+        "min_quan": "1/2",
+        "max_quan": "1",
+        "min_quan_unit": "1/2 teaspoon",
+        "max_quan_unit": "1 teaspoon",
         "percent": 7.142857142857143
       },
       "cinnamon chip": {
@@ -35414,18 +35582,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 7.142857142857143
       },
-      "oat": {
-        "min_quan": "1 3/4",
-        "max_quan": "2",
-        "min_quan_unit": "1 3/4 cup",
-        "max_quan_unit": "2 cup",
-        "percent": 7.142857142857143
-      },
       "quinoa": {
         "min_quan": "1",
         "max_quan": "1 1/4",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 1/4 cup",
+        "percent": 7.142857142857143
+      },
+      "oat": {
+        "min_quan": "1 3/4",
+        "max_quan": "2",
+        "min_quan_unit": "1 3/4 cup",
+        "max_quan_unit": "2 cup",
         "percent": 7.142857142857143
       },
       "sauerkraut": {
@@ -35438,7 +35606,7 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 cup - 2 apple (100%)<br/>3/4 cup walnut (50.00%)<br/>1/2 cup pecan (28.57%)<br/>3/4 cup - 1 cup raisin (21.43%)<br/>3/4 cup coconut (14.29%)<br/>16 caramel (7.14%)<br/>2 cup white (7.14%)<br/>1/2 teaspoon - 1 teaspoon vanilla extract (7.14%)<br/>1/2 tablespoon - 1 tablespoon cinnamon (7.14%)<br/>1/2 cup cinnamon chip (7.14%)<br/>1/4 cup - 1/2 cup flax seed (7.14%)<br/>1 3/4 cup - 2 cup oat (7.14%)<br/>1 cup - 1 1/4 cup quinoa (7.14%)<br/>10 ounce - 11 ounce sauerkraut (7.14%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 cup - 2 apple (100%)<br/>3/4 cup walnut (50.00%)<br/>1/2 cup pecan (28.57%)<br/>3/4 cup - 1 cup raisin (21.43%)<br/>3/4 cup coconut (14.29%)<br/>16 caramel (7.14%)<br/>2 cup white (7.14%)<br/>1/2 tablespoon - 1 tablespoon cinnamon (7.14%)<br/>1/2 teaspoon - 1 teaspoon vanilla extract (7.14%)<br/>1/2 cup cinnamon chip (7.14%)<br/>1/4 cup - 1/2 cup flax seed (7.14%)<br/>1 cup - 1 1/4 cup quinoa (7.14%)<br/>1 3/4 cup - 2 cup oat (7.14%)<br/>10 ounce - 11 ounce sauerkraut (7.14%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>apple (100%)<br/>walnut (50.00%)<br/>pecan (28.57%)<br/>raisin (21.43%)</font>>",
     "color": "#fbfbfb"
   },
@@ -36097,6 +36265,20 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 100.0
       },
+      "honey": {
+        "min_quan": "",
+        "max_quan": "1",
+        "min_quan_unit": "tablespoon",
+        "max_quan_unit": "1 tablespoon",
+        "percent": 25.0
+      },
+      "vanilla": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
+        "percent": 25.0
+      },
       "molasses": {
         "min_quan": "1/2",
         "max_quan": "1/2",
@@ -36111,20 +36293,6 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 25.0
       },
-      "vanilla": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 25.0
-      },
-      "honey": {
-        "min_quan": "",
-        "max_quan": "1",
-        "min_quan_unit": "tablespoon",
-        "max_quan_unit": "1 tablespoon",
-        "percent": 25.0
-      },
       "sugar": {
         "min_quan": "2",
         "max_quan": "2",
@@ -36135,8 +36303,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3/4 cup - 1 cup brown sugar (100%)<br/>1/2 tablespoon molasses (25.00%)<br/>1/4 cup - 1/2 cup applesauce (25.00%)<br/>1 teaspoon vanilla (25.00%)<br/>tablespoon - 1 tablespoon honey (25.00%)<br/>2 cup sugar (25.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>brown sugar (100%)<br/>molasses (25.00%)<br/>applesauce (25.00%)<br/>vanilla (25.00%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3/4 cup - 1 cup brown sugar (100%)<br/>tablespoon - 1 tablespoon honey (25.00%)<br/>1 teaspoon vanilla (25.00%)<br/>1/2 tablespoon molasses (25.00%)<br/>1/4 cup - 1/2 cup applesauce (25.00%)<br/>2 cup sugar (25.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>brown sugar (100%)<br/>honey (25.00%)<br/>vanilla (25.00%)<br/>molasses (25.00%)</font>>"
   },
   "4053": {
     "hidden": true,
@@ -36857,18 +37025,18 @@ export const graphDict = {
     ],
     "verb": "mix",
     "ingredients_full_info": {
-      "oil": {
-        "min_quan": "1/2",
-        "max_quan": "1",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1 cup",
-        "percent": 83.33333333333333
-      },
       "sugar": {
         "min_quan": "1",
         "max_quan": "1 1/4",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 1/4 cup",
+        "percent": 83.33333333333333
+      },
+      "oil": {
+        "min_quan": "1/2",
+        "max_quan": "1",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1 cup",
         "percent": 83.33333333333333
       },
       "egg": {
@@ -36916,8 +37084,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 cup - 1 cup oil (83.33%)<br/>1 cup - 1 1/4 cup sugar (83.33%)<br/>1 - 2 egg (50.00%)<br/>1 3/4 cup - 2 cup white sugar (16.67%)<br/>1 cup vegetable oil (16.67%)<br/>1/4 cup - 1/2 cup butter (8.33%)<br/>1 tablespoon - 1 1/2 tablespoon molasses (8.33%)<br/><br/>bowl (83%)<br/>mixer (25%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>oil (83.33%)<br/>sugar (83.33%)<br/>egg (50.00%)<br/>white sugar (16.67%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 cup - 1 1/4 cup sugar (83.33%)<br/>1/2 cup - 1 cup oil (83.33%)<br/>1 - 2 egg (50.00%)<br/>1 3/4 cup - 2 cup white sugar (16.67%)<br/>1 cup vegetable oil (16.67%)<br/>1/4 cup - 1/2 cup butter (8.33%)<br/>1 tablespoon - 1 1/2 tablespoon molasses (8.33%)<br/><br/>bowl (83%)<br/>mixer (25%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>sugar (83.33%)<br/>oil (83.33%)<br/>egg (50.00%)<br/>white sugar (16.67%)</font>>"
   },
   "4068": {
     "hidden": true,
@@ -38088,18 +38256,18 @@ export const graphDict = {
     ],
     "verb": "mix",
     "ingredients_full_info": {
-      "egg": {
-        "min_quan": "2",
-        "max_quan": "3",
-        "min_quan_unit": "2",
-        "max_quan_unit": "3",
-        "percent": 100.00000000000001
-      },
       "vanilla": {
         "min_quan": "1",
         "max_quan": "2",
         "min_quan_unit": "1 teaspoon",
         "max_quan_unit": "2 teaspoon",
+        "percent": 100.00000000000001
+      },
+      "egg": {
+        "min_quan": "2",
+        "max_quan": "3",
+        "min_quan_unit": "2",
+        "max_quan_unit": "3",
         "percent": 100.00000000000001
       },
       "orange juice": {
@@ -38123,13 +38291,6 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 22.22222222222222
       },
-      "salt": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
-        "percent": 11.11111111111111
-      },
       "flour": {
         "min_quan": "2 1/2",
         "max_quan": "2 3/4",
@@ -38142,6 +38303,13 @@ export const graphDict = {
         "max_quan": "2 3/4",
         "min_quan_unit": "2 1/2 teaspoon",
         "max_quan_unit": "2 3/4 teaspoon",
+        "percent": 11.11111111111111
+      },
+      "salt": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
         "percent": 11.11111111111111
       },
       "white sugar": {
@@ -38179,8 +38347,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 - 3 egg (100%)<br/>1 teaspoon - 2 teaspoon vanilla (100%)<br/>1/4 cup orange juice (44.44%)<br/>3/4 cup - 1 cup vegetable oil (22.22%)<br/>1/2 cup - 1 cup oil (22.22%)<br/>1/4 teaspoon - 1/2 teaspoon salt (11.11%)<br/>2 1/2 cup - 2 3/4 cup flour (11.11%)<br/>2 1/2 teaspoon - 2 3/4 teaspoon baking powder (11.11%)<br/>1 tablespoon white sugar (11.11%)<br/>1 cup sugar (11.11%)<br/>cup - 1/4 cup buttermilk (11.11%)<br/>1/4 cup - 1/2 cup rum (11.11%)<br/><br/>bowl (22%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>egg (100%)<br/>vanilla (100%)<br/>orange juice (44.44%)<br/>vegetable oil (22.22%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 teaspoon - 2 teaspoon vanilla (100%)<br/>2 - 3 egg (100%)<br/>1/4 cup orange juice (44.44%)<br/>3/4 cup - 1 cup vegetable oil (22.22%)<br/>1/2 cup - 1 cup oil (22.22%)<br/>2 1/2 cup - 2 3/4 cup flour (11.11%)<br/>2 1/2 teaspoon - 2 3/4 teaspoon baking powder (11.11%)<br/>1/4 teaspoon - 1/2 teaspoon salt (11.11%)<br/>1 tablespoon white sugar (11.11%)<br/>1 cup sugar (11.11%)<br/>cup - 1/4 cup buttermilk (11.11%)<br/>1/4 cup - 1/2 cup rum (11.11%)<br/><br/>bowl (22%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>vanilla (100%)<br/>egg (100%)<br/>orange juice (44.44%)<br/>vegetable oil (22.22%)</font>>"
   },
   "4096": {
     "hidden": false,
@@ -39817,11 +39985,11 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 28.571428571428573
       },
-      "baking soda": {
+      "ground ginger": {
         "min_quan": "1",
         "max_quan": "1",
-        "min_quan_unit": "1 tablespoon",
-        "max_quan_unit": "1 tablespoon",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
         "percent": 14.285714285714286
       },
       "ground almond": {
@@ -39831,21 +39999,21 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 cup",
         "percent": 14.285714285714286
       },
-      "ground ginger": {
+      "baking soda": {
         "min_quan": "1",
         "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
+        "min_quan_unit": "1 tablespoon",
+        "max_quan_unit": "1 tablespoon",
         "percent": 14.285714285714286
       },
-      "flour": {
+      "raisin": {
         "min_quan": "3/4",
         "max_quan": "1",
         "min_quan_unit": "3/4 cup",
         "max_quan_unit": "1 cup",
         "percent": 14.285714285714286
       },
-      "raisin": {
+      "flour": {
         "min_quan": "3/4",
         "max_quan": "1",
         "min_quan_unit": "3/4 cup",
@@ -39859,18 +40027,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/8 teaspoon",
         "percent": 14.285714285714286
       },
-      "apple butter": {
-        "min_quan": "",
-        "max_quan": "1",
-        "min_quan_unit": "",
-        "max_quan_unit": "1",
-        "percent": 14.285714285714286
-      },
       "butter": {
         "min_quan": "1",
         "max_quan": "2",
         "min_quan_unit": "1 tablespoon",
         "max_quan_unit": "2 tablespoon",
+        "percent": 14.285714285714286
+      },
+      "apple butter": {
+        "min_quan": "",
+        "max_quan": "1",
+        "min_quan_unit": "",
+        "max_quan_unit": "1",
         "percent": 14.285714285714286
       },
       "walnut": {
@@ -39890,8 +40058,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 - 3 slice apple (100%)<br/>2 1/2 tablespoon - 1/4 cup pecan (28.57%)<br/>1 tablespoon baking soda (14.29%)<br/>1 1/2 cup ground almond (14.29%)<br/>1 teaspoon ground ginger (14.29%)<br/>3/4 cup - 1 cup flour (14.29%)<br/>3/4 cup - 1 cup raisin (14.29%)<br/>1 1/8 teaspoon cardamom (14.29%)<br/> apple butter (14.29%)<br/>1 tablespoon - 2 tablespoon butter (14.29%)<br/>1 cup walnut (14.29%)<br/>1/2 cup - 1 cup halva (14.29%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>apple (100%)<br/>pecan (28.57%)<br/>baking soda (14.29%)<br/>ground almond (14.29%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 - 3 slice apple (100%)<br/>2 1/2 tablespoon - 1/4 cup pecan (28.57%)<br/>1 teaspoon ground ginger (14.29%)<br/>1 1/2 cup ground almond (14.29%)<br/>1 tablespoon baking soda (14.29%)<br/>3/4 cup - 1 cup raisin (14.29%)<br/>3/4 cup - 1 cup flour (14.29%)<br/>1 1/8 teaspoon cardamom (14.29%)<br/>1 tablespoon - 2 tablespoon butter (14.29%)<br/> apple butter (14.29%)<br/>1 cup walnut (14.29%)<br/>1/2 cup - 1 cup halva (14.29%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>apple (100%)<br/>pecan (28.57%)<br/>ground ginger (14.29%)<br/>ground almond (14.29%)</font>>"
   },
   "4102": {
     "hidden": true,
@@ -40230,18 +40398,18 @@ export const graphDict = {
         "max_quan_unit": "1/4 cup",
         "percent": 20.0
       },
-      "vanilla extract": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 teaspoon",
-        "max_quan_unit": "1/2 teaspoon",
-        "percent": 20.0
-      },
       "cinnamon": {
         "min_quan": "",
         "max_quan": "1/4",
         "min_quan_unit": "teaspoon",
         "max_quan_unit": "1/4 teaspoon",
+        "percent": 20.0
+      },
+      "vanilla extract": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 teaspoon",
+        "max_quan_unit": "1/2 teaspoon",
         "percent": 20.0
       },
       "sugar twin": {
@@ -40251,18 +40419,18 @@ export const graphDict = {
         "max_quan_unit": "3/4 cup",
         "percent": 20.0
       },
-      "milk": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 20.0
-      },
       "brown sugar": {
         "min_quan": "1",
         "max_quan": "1 1/4",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 1/4 cup",
+        "percent": 20.0
+      },
+      "milk": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 20.0
       }
     },
@@ -40272,7 +40440,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup sugar (60.00%)<br/>2 1/4 cup - 2 3/4 cup confectioner sugar (40.00%)<br/>cup - 1/4 cup water (20.00%)<br/>cup - 1/4 cup juice (20.00%)<br/>1/2 teaspoon vanilla extract (20.00%)<br/>teaspoon - 1/4 teaspoon cinnamon (20.00%)<br/>3/4 cup sugar twin (20.00%)<br/>1/4 cup - 1/2 cup milk (20.00%)<br/>1 cup - 1 1/4 cup brown sugar (20.00%)<br/><br/>bowl (20%)</font>>",
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup sugar (60.00%)<br/>2 1/4 cup - 2 3/4 cup confectioner sugar (40.00%)<br/>cup - 1/4 cup water (20.00%)<br/>cup - 1/4 cup juice (20.00%)<br/>teaspoon - 1/4 teaspoon cinnamon (20.00%)<br/>1/2 teaspoon vanilla extract (20.00%)<br/>3/4 cup sugar twin (20.00%)<br/>1 cup - 1 1/4 cup brown sugar (20.00%)<br/>1/4 cup - 1/2 cup milk (20.00%)<br/><br/>bowl (20%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>add</b><br/>sugar (60.00%)<br/>confectioner sugar (40.00%)<br/>water (20.00%)<br/>juice (20.00%)</font>>"
   },
   "4108": {
@@ -40548,18 +40716,18 @@ export const graphDict = {
         "max_quan_unit": "2 teaspoon",
         "percent": 37.5
       },
-      "potato starch": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 12.5
-      },
       "matzo meal": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
         "min_quan_unit": "1 1/2 cup",
         "max_quan_unit": "1 1/2 cup",
+        "percent": 12.5
+      },
+      "potato starch": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 12.5
       },
       "cayenne pepper": {
@@ -40583,13 +40751,6 @@ export const graphDict = {
         "max_quan_unit": "2 1/4 cup",
         "percent": 12.5
       },
-      "vanilla extract": {
-        "min_quan": "2",
-        "max_quan": "2 1/2",
-        "min_quan_unit": "2 teaspoon",
-        "max_quan_unit": "2 1/2 teaspoon",
-        "percent": 12.5
-      },
       "milk": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
@@ -40604,11 +40765,11 @@ export const graphDict = {
         "max_quan_unit": "2 1/4 cup",
         "percent": 12.5
       },
-      "sugar": {
+      "vanilla extract": {
         "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 tablespoon",
-        "max_quan_unit": "2 tablespoon",
+        "max_quan": "2 1/2",
+        "min_quan_unit": "2 teaspoon",
+        "max_quan_unit": "2 1/2 teaspoon",
         "percent": 12.5
       },
       "baking mix": {
@@ -40618,11 +40779,11 @@ export const graphDict = {
         "max_quan_unit": "2 cup",
         "percent": 12.5
       },
-      "cake mix": {
-        "min_quan": "4",
-        "max_quan": "4",
-        "min_quan_unit": "4 package",
-        "max_quan_unit": "4 package",
+      "sugar": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 tablespoon",
+        "max_quan_unit": "2 tablespoon",
         "percent": 12.5
       },
       "pudding mix": {
@@ -40632,11 +40793,11 @@ export const graphDict = {
         "max_quan_unit": "4 package",
         "percent": 12.5
       },
-      "applesauce": {
-        "min_quan": "2 1/2",
-        "max_quan": "2 3/4",
-        "min_quan_unit": "2 1/2 cup",
-        "max_quan_unit": "2 3/4 cup",
+      "cake mix": {
+        "min_quan": "4",
+        "max_quan": "4",
+        "min_quan_unit": "4 package",
+        "max_quan_unit": "4 package",
         "percent": 12.5
       },
       "clove": {
@@ -40644,6 +40805,13 @@ export const graphDict = {
         "max_quan": "3/8",
         "min_quan_unit": "3/8 teaspoon",
         "max_quan_unit": "3/8 teaspoon",
+        "percent": 12.5
+      },
+      "applesauce": {
+        "min_quan": "2 1/2",
+        "max_quan": "2 3/4",
+        "min_quan_unit": "2 1/2 cup",
+        "max_quan_unit": "2 3/4 cup",
         "percent": 12.5
       }
     },
@@ -40658,8 +40826,8 @@ export const graphDict = {
       "end_range": "4",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3/4 teaspoon - 2 1/4 teaspoon cinnamon (100%)<br/>2 teaspoon nutmeg (37.50%)<br/>1/2 cup potato starch (12.50%)<br/>1 1/2 cup matzo meal (12.50%)<br/>1/2 teaspoon cayenne pepper (12.50%)<br/>2 tablespoon water (12.50%)<br/>2 1/4 cup olive oil (12.50%)<br/>2 teaspoon - 2 1/2 teaspoon vanilla extract (12.50%)<br/>1 1/2 cup milk (12.50%)<br/>2 1/4 cup bran flake (12.50%)<br/>2 tablespoon sugar (12.50%)<br/>2 cup baking mix (12.50%)<br/>4 package cake mix (12.50%)<br/>4 package pudding mix (12.50%)<br/>2 1/2 cup - 2 3/4 cup applesauce (12.50%)<br/>3/8 teaspoon clove (12.50%)<br/><br/>bowl (75%)<br/><br/>4 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>cinnamon (100%)<br/>nutmeg (37.50%)<br/>potato starch (12.50%)<br/>matzo meal (12.50%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3/4 teaspoon - 2 1/4 teaspoon cinnamon (100%)<br/>2 teaspoon nutmeg (37.50%)<br/>1 1/2 cup matzo meal (12.50%)<br/>1/2 cup potato starch (12.50%)<br/>1/2 teaspoon cayenne pepper (12.50%)<br/>2 tablespoon water (12.50%)<br/>2 1/4 cup olive oil (12.50%)<br/>1 1/2 cup milk (12.50%)<br/>2 1/4 cup bran flake (12.50%)<br/>2 teaspoon - 2 1/2 teaspoon vanilla extract (12.50%)<br/>2 cup baking mix (12.50%)<br/>2 tablespoon sugar (12.50%)<br/>4 package pudding mix (12.50%)<br/>4 package cake mix (12.50%)<br/>3/8 teaspoon clove (12.50%)<br/>2 1/2 cup - 2 3/4 cup applesauce (12.50%)<br/><br/>bowl (75%)<br/><br/>4 minute</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>cinnamon (100%)<br/>nutmeg (37.50%)<br/>matzo meal (12.50%)<br/>potato starch (12.50%)</font>>"
   },
   "4114": {
     "hidden": true,
@@ -41167,25 +41335,25 @@ export const graphDict = {
         "max_quan_unit": "3/4 cup",
         "percent": 100.0
       },
-      "egg": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2",
-        "max_quan_unit": "2",
-        "percent": 20.0
-      },
       "brown sugar": {
         "min_quan": "3/4",
         "max_quan": "3/4",
         "min_quan_unit": "3/4 cup",
         "max_quan_unit": "3/4 cup",
         "percent": 20.0
+      },
+      "egg": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2",
+        "max_quan_unit": "2",
+        "percent": 20.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup - 3/4 cup sugar (100%)<br/>2 egg (20.00%)<br/>3/4 cup brown sugar (20.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>sugar (100%)<br/>egg (20.00%)<br/>brown sugar (20.00%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup - 3/4 cup sugar (100%)<br/>3/4 cup brown sugar (20.00%)<br/>2 egg (20.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>sugar (100%)<br/>brown sugar (20.00%)<br/>egg (20.00%)</font>>"
   },
   "4118": {
     "hidden": true,
@@ -42028,6 +42196,13 @@ export const graphDict = {
         "max_quan_unit": "1 3/4",
         "percent": 10.0
       },
+      "orange zest": {
+        "min_quan": "",
+        "max_quan": "1",
+        "min_quan_unit": "tablespoon",
+        "max_quan_unit": "1 tablespoon",
+        "percent": 10.0
+      },
       "carrot": {
         "min_quan": "1 1/4",
         "max_quan": "1 1/2",
@@ -42035,11 +42210,11 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 cup",
         "percent": 10.0
       },
-      "orange zest": {
-        "min_quan": "",
-        "max_quan": "1",
-        "min_quan_unit": "tablespoon",
-        "max_quan_unit": "1 tablespoon",
+      "currant": {
+        "min_quan": "1/2",
+        "max_quan": "3/4",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 10.0
       },
       "potato": {
@@ -42049,11 +42224,11 @@ export const graphDict = {
         "max_quan_unit": "1 1/3 cup",
         "percent": 10.0
       },
-      "currant": {
-        "min_quan": "1/2",
-        "max_quan": "3/4",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "3/4 cup",
+      "ham glaze": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1",
+        "max_quan_unit": "1",
         "percent": 10.0
       },
       "salt": {
@@ -42069,13 +42244,6 @@ export const graphDict = {
         "min_quan_unit": "4 slice",
         "max_quan_unit": "4 slice",
         "percent": 10.0
-      },
-      "ham glaze": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1",
-        "max_quan_unit": "1",
-        "percent": 10.0
       }
     },
     "instruments_full_info": {
@@ -42087,7 +42255,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3 - 8 slice apple (100%)<br/>3/4 cup raisin (40.00%)<br/>3/4 cup walnut (20.00%)<br/>1 1/2 - 1 3/4 millet (10.00%)<br/>1 1/4 cup - 1 1/2 cup carrot (10.00%)<br/>tablespoon - 1 tablespoon orange zest (10.00%)<br/>1 cup - 1 1/3 cup potato (10.00%)<br/>1/2 cup - 3/4 cup currant (10.00%)<br/>1/2 teaspoon salt (10.00%)<br/>4 slice sweet potato (10.00%)<br/>1 ham glaze (10.00%)<br/><br/>bowl (20%)<br/>baking dish (10%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3 - 8 slice apple (100%)<br/>3/4 cup raisin (40.00%)<br/>3/4 cup walnut (20.00%)<br/>1 1/2 - 1 3/4 millet (10.00%)<br/>tablespoon - 1 tablespoon orange zest (10.00%)<br/>1 1/4 cup - 1 1/2 cup carrot (10.00%)<br/>1/2 cup - 3/4 cup currant (10.00%)<br/>1 cup - 1 1/3 cup potato (10.00%)<br/>1 ham glaze (10.00%)<br/>1/2 teaspoon salt (10.00%)<br/>4 slice sweet potato (10.00%)<br/><br/>bowl (20%)<br/>baking dish (10%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>apple (100%)<br/>raisin (40.00%)<br/>walnut (20.00%)<br/>millet (10.00%)</font>>"
   },
   "4137": {
@@ -43359,6 +43527,13 @@ export const graphDict = {
         "max_quan_unit": "1 1/4 cup",
         "percent": 20.0
       },
+      "milk": {
+        "min_quan": "1",
+        "max_quan": "1 1/4",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 1/4 cup",
+        "percent": 20.0
+      },
       "soy milk": {
         "min_quan": "2 1/4",
         "max_quan": "2 1/2",
@@ -43379,18 +43554,11 @@ export const graphDict = {
         "min_quan_unit": "1/3 cup",
         "max_quan_unit": "2/3 cup",
         "percent": 20.0
-      },
-      "milk": {
-        "min_quan": "1",
-        "max_quan": "1 1/4",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 1/4 cup",
-        "percent": 20.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 teaspoon - 1 teaspoon cinnamon (100%)<br/>1/4 teaspoon nutmeg (60.00%)<br/>1/2 teaspoon clove (40.00%)<br/>1 teaspoon salt (20.00%)<br/>1 cup - 1 1/4 cup baking mix (20.00%)<br/>2 1/4 cup - 2 1/2 cup soy milk (20.00%)<br/>3/4 cup - 1 cup maple syrup (20.00%)<br/>1/3 cup - 2/3 cup hemp powder (20.00%)<br/>1 cup - 1 1/4 cup milk (20.00%)</font>>",
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 teaspoon - 1 teaspoon cinnamon (100%)<br/>1/4 teaspoon nutmeg (60.00%)<br/>1/2 teaspoon clove (40.00%)<br/>1 teaspoon salt (20.00%)<br/>1 cup - 1 1/4 cup baking mix (20.00%)<br/>1 cup - 1 1/4 cup milk (20.00%)<br/>2 1/4 cup - 2 1/2 cup soy milk (20.00%)<br/>3/4 cup - 1 cup maple syrup (20.00%)<br/>1/3 cup - 2/3 cup hemp powder (20.00%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>add</b><br/>cinnamon (100%)<br/>nutmeg (60.00%)<br/>clove (40.00%)<br/>salt (20.00%)</font>>"
   },
   "4164": {
@@ -43645,18 +43813,18 @@ export const graphDict = {
         "max_quan_unit": "2 cup",
         "percent": 25.0
       },
-      "vanilla extract": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 tablespoon",
-        "percent": 25.0
-      },
       "brown sugar": {
         "min_quan": "1/2",
         "max_quan": "1",
         "min_quan_unit": "1/2 cup",
         "max_quan_unit": "1 cup",
+        "percent": 25.0
+      },
+      "vanilla extract": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 tablespoon",
         "percent": 25.0
       },
       "milk": {
@@ -43685,8 +43853,8 @@ export const graphDict = {
       "end_range": "2",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup - 7 slice butter (100%)<br/>1 1/4 cup - 2 cup sugar (25.00%)<br/>1/4 cup - 2 cup applesauce (25.00%)<br/>1 teaspoon - 1 tablespoon vanilla extract (25.00%)<br/>1/2 cup - 1 cup brown sugar (25.00%)<br/>cup - 2 tablespoon milk (25.00%)<br/>1/2 cup cream (12.50%)<br/><br/>pan (62%)<br/><br/>1 minute - 2 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>butter (100%)<br/>sugar (25.00%)<br/>applesauce (25.00%)<br/>vanilla extract (25.00%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/4 cup - 7 slice butter (100%)<br/>1 1/4 cup - 2 cup sugar (25.00%)<br/>1/4 cup - 2 cup applesauce (25.00%)<br/>1/2 cup - 1 cup brown sugar (25.00%)<br/>1 teaspoon - 1 tablespoon vanilla extract (25.00%)<br/>cup - 2 tablespoon milk (25.00%)<br/>1/2 cup cream (12.50%)<br/><br/>pan (62%)<br/><br/>1 minute - 2 minute</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>butter (100%)<br/>sugar (25.00%)<br/>applesauce (25.00%)<br/>brown sugar (25.00%)</font>>"
   },
   "4171": {
     "hidden": true,
@@ -44109,7 +44277,7 @@ export const graphDict = {
     "summary_abbr": "<<font point-size='18'><b>add</b><br/>flour (95.00%)<br/>applesauce (10.00%)<br/>butter (5.00%)<br/>coconut flour (5.00%)</font>>"
   },
   "4172": {
-    "hidden": false,
+    "hidden": true,
     "marked": false,
     "out_edges": {
       "4004": {
@@ -44118,8 +44286,7 @@ export const graphDict = {
       },
       "4414": {
         "weight": 2,
-        "hidden": false,
-        "pen_width": 1.0
+        "hidden": true
       }
     },
     "in_edges": {
@@ -44129,8 +44296,7 @@ export const graphDict = {
       },
       "4406": {
         "weight": 4,
-        "hidden": false,
-        "pen_width": 1.0705882352941176
+        "hidden": true
       }
     },
     "directions": [
@@ -44519,18 +44685,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 cup",
         "percent": 35.714285714285715
       },
-      "oil": {
-        "min_quan": "1/2",
-        "max_quan": "1 1/4",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1 1/4 cup",
-        "percent": 28.571428571428573
-      },
       "vanilla": {
         "min_quan": "1",
         "max_quan": "2",
         "min_quan_unit": "1 teaspoon",
         "max_quan_unit": "2 teaspoon",
+        "percent": 28.571428571428573
+      },
+      "oil": {
+        "min_quan": "1/2",
+        "max_quan": "1 1/4",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1 1/4 cup",
         "percent": 28.571428571428573
       },
       "brown sugar": {
@@ -44540,18 +44706,18 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 7.142857142857143
       },
-      "vanilla extract": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2 teaspoon",
-        "max_quan_unit": "2 teaspoon",
-        "percent": 7.142857142857143
-      },
       "egg white": {
         "min_quan": "1/4",
         "max_quan": "1/2",
         "min_quan_unit": "1/4 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 7.142857142857143
+      },
+      "vanilla extract": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2 teaspoon",
+        "max_quan_unit": "2 teaspoon",
         "percent": 7.142857142857143
       },
       "sour cream": {
@@ -44582,9 +44748,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 - 3 egg (92.86%)<br/>1 cup - 1 1/2 cup sugar (35.71%)<br/>1/2 cup - 1 1/4 cup oil (28.57%)<br/>1 teaspoon - 2 teaspoon vanilla (28.57%)<br/>1 cup brown sugar (7.14%)<br/>2 teaspoon vanilla extract (7.14%)<br/>1/4 cup - 1/2 cup egg white (7.14%)<br/>1 cup sour cream (7.14%)<br/>cup - 1/4 cup margarine (7.14%)<br/>1/4 cup water (7.14%)<br/><br/>bowl (78%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>egg (92.86%)<br/>sugar (35.71%)<br/>oil (28.57%)<br/>vanilla (28.57%)</font>>",
-    "color": "#fbfbfb"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 - 3 egg (92.86%)<br/>1 cup - 1 1/2 cup sugar (35.71%)<br/>1 teaspoon - 2 teaspoon vanilla (28.57%)<br/>1/2 cup - 1 1/4 cup oil (28.57%)<br/>1 cup brown sugar (7.14%)<br/>1/4 cup - 1/2 cup egg white (7.14%)<br/>2 teaspoon vanilla extract (7.14%)<br/>1 cup sour cream (7.14%)<br/>cup - 1/4 cup margarine (7.14%)<br/>1/4 cup water (7.14%)<br/><br/>bowl (78%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>egg (92.86%)<br/>sugar (35.71%)<br/>vanilla (28.57%)<br/>oil (28.57%)</font>>"
   },
   "4174": {
     "hidden": true,
@@ -45938,13 +46103,6 @@ export const graphDict = {
         "max_quan_unit": "3/4 cup",
         "percent": 28.571428571428573
       },
-      "egg yolk": {
-        "min_quan": "2",
-        "max_quan": "2",
-        "min_quan_unit": "2",
-        "max_quan_unit": "2",
-        "percent": 14.285714285714286
-      },
       "pumpkin puree": {
         "min_quan": "4",
         "max_quan": "4",
@@ -45952,11 +46110,11 @@ export const graphDict = {
         "max_quan_unit": "4 cup",
         "percent": 14.285714285714286
       },
-      "buttermilk": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 cup",
+      "egg yolk": {
+        "min_quan": "2",
+        "max_quan": "2",
+        "min_quan_unit": "2",
+        "max_quan_unit": "2",
         "percent": 14.285714285714286
       },
       "vanilla": {
@@ -45966,11 +46124,11 @@ export const graphDict = {
         "max_quan_unit": "1 tablespoon",
         "percent": 14.285714285714286
       },
-      "coconut milk": {
-        "min_quan": "1/2",
-        "max_quan": "3/4",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "3/4 cup",
+      "buttermilk": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 cup",
         "percent": 14.285714285714286
       },
       "honey": {
@@ -45980,11 +46138,11 @@ export const graphDict = {
         "max_quan_unit": "2 tablespoon",
         "percent": 14.285714285714286
       },
-      "vinegar": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
+      "coconut milk": {
+        "min_quan": "1/2",
+        "max_quan": "3/4",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 14.285714285714286
       },
       "water": {
@@ -45993,11 +46151,18 @@ export const graphDict = {
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 cup",
         "percent": 14.285714285714286
+      },
+      "vinegar": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
+        "percent": 14.285714285714286
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup oil (57.14%)<br/>1/4 cup - 1/2 cup vegetable oil (42.86%)<br/>1 teaspoon vanilla extract (28.57%)<br/>1/2 cup - 3/4 cup applesauce (28.57%)<br/>2 egg yolk (14.29%)<br/>4 cup pumpkin puree (14.29%)<br/>1 cup buttermilk (14.29%)<br/>1 tablespoon vanilla (14.29%)<br/>1/2 cup - 3/4 cup coconut milk (14.29%)<br/>1 tablespoon - 2 tablespoon honey (14.29%)<br/>1 teaspoon vinegar (14.29%)<br/>1 cup water (14.29%)</font>>",
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup oil (57.14%)<br/>1/4 cup - 1/2 cup vegetable oil (42.86%)<br/>1 teaspoon vanilla extract (28.57%)<br/>1/2 cup - 3/4 cup applesauce (28.57%)<br/>4 cup pumpkin puree (14.29%)<br/>2 egg yolk (14.29%)<br/>1 tablespoon vanilla (14.29%)<br/>1 cup buttermilk (14.29%)<br/>1 tablespoon - 2 tablespoon honey (14.29%)<br/>1/2 cup - 3/4 cup coconut milk (14.29%)<br/>1 cup water (14.29%)<br/>1 teaspoon vinegar (14.29%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>add</b><br/>oil (57.14%)<br/>vegetable oil (42.86%)<br/>vanilla extract (28.57%)<br/>applesauce (28.57%)</font>>"
   },
   "4198": {
@@ -46138,13 +46303,6 @@ export const graphDict = {
         "max_quan_unit": "1 1/4 cup",
         "percent": 33.333333333333336
       },
-      "salt": {
-        "min_quan": "12",
-        "max_quan": "12",
-        "min_quan_unit": "12 pinch",
-        "max_quan_unit": "12 pinch",
-        "percent": 33.333333333333336
-      },
       "baking soda": {
         "min_quan": "1 1/2",
         "max_quan": "1 1/2",
@@ -46157,6 +46315,13 @@ export const graphDict = {
         "max_quan": "3",
         "min_quan_unit": "3 cup",
         "max_quan_unit": "3 cup",
+        "percent": 33.333333333333336
+      },
+      "salt": {
+        "min_quan": "12",
+        "max_quan": "12",
+        "min_quan_unit": "12 pinch",
+        "max_quan_unit": "12 pinch",
         "percent": 33.333333333333336
       },
       "flour": {
@@ -46178,7 +46343,7 @@ export const graphDict = {
       "end_range": "10",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>12 tablespoon - 24 tablespoon cocoa powder (66.67%)<br/>36 tablespoon - 3 cup sugar (66.67%)<br/>3 teaspoon baking powder (66.67%)<br/>1 cup - 1 1/4 cup white sugar (33.33%)<br/>12 pinch salt (33.33%)<br/>1 1/2 teaspoon baking soda (33.33%)<br/>3 cup whole wheat flour (33.33%)<br/>48 tablespoon flour (33.33%)<br/><br/>pan (33%)<br/><br/>10 minute</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>12 tablespoon - 24 tablespoon cocoa powder (66.67%)<br/>36 tablespoon - 3 cup sugar (66.67%)<br/>3 teaspoon baking powder (66.67%)<br/>1 cup - 1 1/4 cup white sugar (33.33%)<br/>1 1/2 teaspoon baking soda (33.33%)<br/>3 cup whole wheat flour (33.33%)<br/>12 pinch salt (33.33%)<br/>48 tablespoon flour (33.33%)<br/><br/>pan (33%)<br/><br/>10 minute</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>cocoa powder (66.67%)<br/>sugar (66.67%)<br/>baking powder (66.67%)<br/>white sugar (33.33%)</font>>"
   },
   "4203": {
@@ -47238,18 +47403,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 6.666666666666667
       },
-      "vanilla extract": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 6.666666666666667
-      },
       "white sugar": {
         "min_quan": "1",
         "max_quan": "1",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 cup",
+        "percent": 6.666666666666667
+      },
+      "vanilla extract": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
         "percent": 6.666666666666667
       },
       "milk": {
@@ -47279,7 +47444,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1 - 4 egg (93.33%)<br/>1/4 cup - 1/2 cup butter (33.33%)<br/>1 1/2 teaspoon - 2 teaspoon vanilla (26.67%)<br/>1/2 cup vegetable oil (26.67%)<br/>1 tablespoon - 1/4 cup water (13.33%)<br/>1/4 cup - 1 1/2 cup oil (13.33%)<br/>1/2 cup - 1 cup brown sugar (13.33%)<br/>1 - 5 egg white (13.33%)<br/>4 tablespoon - 5 tablespoon honey (6.67%)<br/>1/4 cup cream (6.67%)<br/>1 1/2 cup white (6.67%)<br/>3 cup pumpkin (6.67%)<br/>1/2 cup applesauce (6.67%)<br/>1 teaspoon vanilla extract (6.67%)<br/>1 cup white sugar (6.67%)<br/>1 cup milk (6.67%)<br/>3/8 teaspoon - 1/2 teaspoon cream tartar (6.67%)<br/><br/>bowl (46%)<br/>oven (6%)<br/>mixer (6%)</font>>",
+    "summary": "<<font point-size='18'><b>beat</b><br/><br/>1 - 4 egg (93.33%)<br/>1/4 cup - 1/2 cup butter (33.33%)<br/>1 1/2 teaspoon - 2 teaspoon vanilla (26.67%)<br/>1/2 cup vegetable oil (26.67%)<br/>1 tablespoon - 1/4 cup water (13.33%)<br/>1/4 cup - 1 1/2 cup oil (13.33%)<br/>1/2 cup - 1 cup brown sugar (13.33%)<br/>1 - 5 egg white (13.33%)<br/>4 tablespoon - 5 tablespoon honey (6.67%)<br/>1/4 cup cream (6.67%)<br/>1 1/2 cup white (6.67%)<br/>3 cup pumpkin (6.67%)<br/>1/2 cup applesauce (6.67%)<br/>1 cup white sugar (6.67%)<br/>1 teaspoon vanilla extract (6.67%)<br/>1 cup milk (6.67%)<br/>3/8 teaspoon - 1/2 teaspoon cream tartar (6.67%)<br/><br/>bowl (46%)<br/>oven (6%)<br/>mixer (6%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>beat</b><br/>egg (93.33%)<br/>butter (33.33%)<br/>vanilla (26.67%)<br/>vegetable oil (26.67%)</font>>"
   },
   "4230": {
@@ -47929,18 +48094,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/4 cup",
         "percent": 5.2631578947368425
       },
-      "butter": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 5.2631578947368425
-      },
       "sour cream": {
         "min_quan": "1",
         "max_quan": "1",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 cup",
+        "percent": 5.2631578947368425
+      },
+      "butter": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 5.2631578947368425
       },
       "pecan": {
@@ -47988,7 +48153,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3/4 cup - 3 1/4 cup flour (100%)<br/>3 egg (21.05%)<br/>1 1/2 cup raisin (21.05%)<br/>3/4 cup - 1 cup cherry (15.79%)<br/>1/2 cup - 1 1/2 cup walnut (10.53%)<br/>1 1/2 cup yogurt (5.26%)<br/>1/4 cup - 1/2 cup milk (5.26%)<br/>1 1/4 cup applesauce (5.26%)<br/>1/2 cup butter (5.26%)<br/>1 cup sour cream (5.26%)<br/>1/2 can - 1 can pecan (5.26%)<br/>can - 1 can pineapple (5.26%)<br/>1 1/2 cup date (5.26%)<br/>1 drop - 2 drop gumdrop (5.26%)<br/>1 1/2 cup brown sugar (5.26%)<br/><br/>bowl (15%)<br/>food processor (5%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>3/4 cup - 3 1/4 cup flour (100%)<br/>3 egg (21.05%)<br/>1 1/2 cup raisin (21.05%)<br/>3/4 cup - 1 cup cherry (15.79%)<br/>1/2 cup - 1 1/2 cup walnut (10.53%)<br/>1 1/2 cup yogurt (5.26%)<br/>1/4 cup - 1/2 cup milk (5.26%)<br/>1 1/4 cup applesauce (5.26%)<br/>1 cup sour cream (5.26%)<br/>1/2 cup butter (5.26%)<br/>1/2 can - 1 can pecan (5.26%)<br/>can - 1 can pineapple (5.26%)<br/>1 1/2 cup date (5.26%)<br/>1 drop - 2 drop gumdrop (5.26%)<br/>1 1/2 cup brown sugar (5.26%)<br/><br/>bowl (15%)<br/>food processor (5%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>flour (100%)<br/>egg (21.05%)<br/>raisin (21.05%)<br/>cherry (15.79%)</font>>"
   },
   "4236": {
@@ -48179,6 +48344,20 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 33.333333333333336
       },
+      "lemon extract": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
+        "percent": 16.666666666666668
+      },
+      "lemon juice": {
+        "min_quan": "1/2",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/2 cup",
+        "max_quan_unit": "1/2 cup",
+        "percent": 16.666666666666668
+      },
       "lemon": {
         "min_quan": "1",
         "max_quan": "1",
@@ -48193,25 +48372,11 @@ export const graphDict = {
         "max_quan_unit": "1/4 teaspoon",
         "percent": 16.666666666666668
       },
-      "lemon extract": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 16.666666666666668
-      },
       "egg white": {
         "min_quan": "3",
         "max_quan": "3",
         "min_quan_unit": "3",
         "max_quan_unit": "3",
-        "percent": 16.666666666666668
-      },
-      "lemon juice": {
-        "min_quan": "1/2",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/2 cup",
-        "max_quan_unit": "1/2 cup",
         "percent": 16.666666666666668
       },
       "vanilla extract": {
@@ -48221,18 +48386,18 @@ export const graphDict = {
         "max_quan_unit": "2 teaspoon",
         "percent": 16.666666666666668
       },
-      "orange juice": {
-        "min_quan": "3/4",
-        "max_quan": "3/4",
-        "min_quan_unit": "3/4 cup",
-        "max_quan_unit": "3/4 cup",
-        "percent": 16.666666666666668
-      },
       "flour": {
         "min_quan": "4 1/2",
         "max_quan": "4 1/2",
         "min_quan_unit": "4 1/2 cup",
         "max_quan_unit": "4 1/2 cup",
+        "percent": 16.666666666666668
+      },
+      "orange juice": {
+        "min_quan": "3/4",
+        "max_quan": "3/4",
+        "min_quan_unit": "3/4 cup",
+        "max_quan_unit": "3/4 cup",
         "percent": 16.666666666666668
       },
       "butter": {
@@ -48257,8 +48422,8 @@ export const graphDict = {
       "end_range": "7",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 - 6 egg (83.33%)<br/>1/2 cup - 1 cup oil (33.33%)<br/>1 lemon (16.67%)<br/>1/4 teaspoon salt (16.67%)<br/>1 teaspoon lemon extract (16.67%)<br/>3 egg white (16.67%)<br/>1/2 cup lemon juice (16.67%)<br/>2 teaspoon vanilla extract (16.67%)<br/>3/4 cup orange juice (16.67%)<br/>4 1/2 cup flour (16.67%)<br/>1 1/2 cup butter (16.67%)<br/><br/>bowl (16%)<br/>mixer (16%)<br/><br/>5 minute - 7 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>egg (83.33%)<br/>oil (33.33%)<br/>lemon (16.67%)<br/>salt (16.67%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>2 - 6 egg (83.33%)<br/>1/2 cup - 1 cup oil (33.33%)<br/>1 teaspoon lemon extract (16.67%)<br/>1/2 cup lemon juice (16.67%)<br/>1 lemon (16.67%)<br/>1/4 teaspoon salt (16.67%)<br/>3 egg white (16.67%)<br/>2 teaspoon vanilla extract (16.67%)<br/>4 1/2 cup flour (16.67%)<br/>3/4 cup orange juice (16.67%)<br/>1 1/2 cup butter (16.67%)<br/><br/>bowl (16%)<br/>mixer (16%)<br/><br/>5 minute - 7 minute</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>egg (83.33%)<br/>oil (33.33%)<br/>lemon extract (16.67%)<br/>lemon juice (16.67%)</font>>"
   },
   "4238": {
     "hidden": true,
@@ -48478,18 +48643,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 cup",
         "percent": 22.22222222222222
       },
-      "brown sugar": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 11.11111111111111
-      },
       "walnut": {
         "min_quan": "1",
         "max_quan": "1",
         "min_quan_unit": "1 cup",
         "max_quan_unit": "1 cup",
+        "percent": 11.11111111111111
+      },
+      "brown sugar": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 11.11111111111111
       },
       "sugar": {
@@ -48502,8 +48667,8 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup - 7 slice butter (100%)<br/>2 tablespoon - 1 1/2 cup buttermilk (22.22%)<br/>1/4 cup - 1/2 cup brown sugar (11.11%)<br/>1 cup walnut (11.11%)<br/>1/2 cup sugar (11.11%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>add</b><br/>butter (100%)<br/>buttermilk (22.22%)<br/>brown sugar (11.11%)<br/>walnut (11.11%)</font>>"
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1/2 cup - 7 slice butter (100%)<br/>2 tablespoon - 1 1/2 cup buttermilk (22.22%)<br/>1 cup walnut (11.11%)<br/>1/4 cup - 1/2 cup brown sugar (11.11%)<br/>1/2 cup sugar (11.11%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>add</b><br/>butter (100%)<br/>buttermilk (22.22%)<br/>walnut (11.11%)<br/>brown sugar (11.11%)</font>>"
   },
   "4243": {
     "hidden": true,
@@ -48668,25 +48833,25 @@ export const graphDict = {
         "max_quan_unit": "4",
         "percent": 75.0
       },
-      "egg": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1",
-        "max_quan_unit": "1",
-        "percent": 25.0
-      },
       "cream": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 cup",
         "max_quan_unit": "1/2 cup",
         "percent": 25.0
+      },
+      "egg": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1",
+        "max_quan_unit": "1",
+        "percent": 25.0
       }
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>roll</b><br/><br/>4 egg white (75.00%)<br/>1 egg (25.00%)<br/>1/2 cup cream (25.00%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>roll</b><br/>egg white (75.00%)<br/>egg (25.00%)<br/>cream (25.00%)</font>>"
+    "summary": "<<font point-size='18'><b>roll</b><br/><br/>4 egg white (75.00%)<br/>1/2 cup cream (25.00%)<br/>1 egg (25.00%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>roll</b><br/>egg white (75.00%)<br/>cream (25.00%)<br/>egg (25.00%)</font>>"
   },
   "4247": {
     "hidden": true,
@@ -49296,18 +49461,18 @@ export const graphDict = {
         "max_quan_unit": "4 package",
         "percent": 11.11111111111111
       },
-      "egg": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1",
-        "max_quan_unit": "1",
-        "percent": 5.555555555555555
-      },
       "cream": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 5.555555555555555
+      },
+      "egg": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1",
+        "max_quan_unit": "1",
         "percent": 5.555555555555555
       },
       "butter": {
@@ -49331,8 +49496,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>pour</b><br/><br/>2 slice - 3 apple (100%)<br/>2 package - 4 package cream cheese (11.11%)<br/>1 egg (5.56%)<br/>1/2 cup cream (5.56%)<br/>1/2 cup butter (5.56%)<br/>3 slice pear (5.56%)<br/><br/>pan (27%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>pour</b><br/>apple (100%)<br/>cream cheese (11.11%)<br/>egg (5.56%)<br/>cream (5.56%)</font>>"
+    "summary": "<<font point-size='18'><b>pour</b><br/><br/>2 slice - 3 apple (100%)<br/>2 package - 4 package cream cheese (11.11%)<br/>1/2 cup cream (5.56%)<br/>1 egg (5.56%)<br/>1/2 cup butter (5.56%)<br/>3 slice pear (5.56%)<br/><br/>pan (27%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>pour</b><br/>apple (100%)<br/>cream cheese (11.11%)<br/>cream (5.56%)<br/>egg (5.56%)</font>>"
   },
   "4251": {
     "hidden": true,
@@ -49500,18 +49665,18 @@ export const graphDict = {
         "max_quan_unit": "1 1/2 teaspoon",
         "percent": 16.666666666666668
       },
-      "rum": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 teaspoon",
-        "max_quan_unit": "1 teaspoon",
-        "percent": 16.666666666666668
-      },
       "margarine": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 16.666666666666668
+      },
+      "rum": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 teaspoon",
+        "max_quan_unit": "1 teaspoon",
         "percent": 16.666666666666668
       },
       "boiling water": {
@@ -49543,8 +49708,8 @@ export const graphDict = {
       "end_range": "20",
       "end_unit": "minute"
     },
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 tablespoon - 1 1/2 cup water (83.33%)<br/>3/4 teaspoon - 1 teaspoon soda (16.67%)<br/>1 1/2 teaspoon lemon juice (16.67%)<br/>1 teaspoon rum (16.67%)<br/>1/2 cup margarine (16.67%)<br/>1 1/4 cup boiling water (16.67%)<br/>1 cup oat (16.67%)<br/><br/>bowl (16%)<br/>pan (16%)<br/><br/>20 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>water (83.33%)<br/>soda (16.67%)<br/>lemon juice (16.67%)<br/>rum (16.67%)</font>>"
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1 tablespoon - 1 1/2 cup water (83.33%)<br/>3/4 teaspoon - 1 teaspoon soda (16.67%)<br/>1 1/2 teaspoon lemon juice (16.67%)<br/>1/2 cup margarine (16.67%)<br/>1 teaspoon rum (16.67%)<br/>1 1/4 cup boiling water (16.67%)<br/>1 cup oat (16.67%)<br/><br/>bowl (16%)<br/>pan (16%)<br/><br/>20 minute</font>>",
+    "summary_abbr": "<<font point-size='18'><b>mix</b><br/>water (83.33%)<br/>soda (16.67%)<br/>lemon juice (16.67%)<br/>margarine (16.67%)</font>>"
   },
   "4254": {
     "hidden": true,
@@ -49930,8 +50095,7 @@ export const graphDict = {
       },
       "4400": {
         "weight": 2,
-        "hidden": false,
-        "pen_width": 1.0
+        "hidden": true
       },
       "4414": {
         "weight": 12,
@@ -50964,20 +51128,6 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 2.380952380952381
       },
-      "carrot pulp": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 cup",
-        "max_quan_unit": "1 1/2 cup",
-        "percent": 2.380952380952381
-      },
-      "yogurt": {
-        "min_quan": "1 1/2",
-        "max_quan": "1 1/2",
-        "min_quan_unit": "1 1/2 cup",
-        "max_quan_unit": "1 1/2 cup",
-        "percent": 2.380952380952381
-      },
       "date": {
         "min_quan": "1/2",
         "max_quan": "1/2",
@@ -50999,11 +51149,18 @@ export const graphDict = {
         "max_quan_unit": "1 cup",
         "percent": 2.380952380952381
       },
-      "egg yolk": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1",
-        "max_quan_unit": "1",
+      "yogurt": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 cup",
+        "max_quan_unit": "1 1/2 cup",
+        "percent": 2.380952380952381
+      },
+      "carrot pulp": {
+        "min_quan": "1 1/2",
+        "max_quan": "1 1/2",
+        "min_quan_unit": "1 1/2 cup",
+        "max_quan_unit": "1 1/2 cup",
         "percent": 2.380952380952381
       },
       "yeast": {
@@ -51011,6 +51168,13 @@ export const graphDict = {
         "max_quan": "1",
         "min_quan_unit": "package",
         "max_quan_unit": "1 package",
+        "percent": 2.380952380952381
+      },
+      "egg yolk": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1",
+        "max_quan_unit": "1",
         "percent": 2.380952380952381
       },
       "molasses": {
@@ -51083,18 +51247,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 cup",
         "percent": 2.380952380952381
       },
-      "butter": {
-        "min_quan": "1/4",
-        "max_quan": "1/2",
-        "min_quan_unit": "1/4 cup",
-        "max_quan_unit": "1/2 cup",
-        "percent": 2.380952380952381
-      },
       "mix": {
         "min_quan": "6",
         "max_quan": "7",
         "min_quan_unit": "6 tablespoon",
         "max_quan_unit": "7 tablespoon",
+        "percent": 2.380952380952381
+      },
+      "butter": {
+        "min_quan": "1/4",
+        "max_quan": "1/2",
+        "min_quan_unit": "1/4 cup",
+        "max_quan_unit": "1/2 cup",
         "percent": 2.380952380952381
       }
     },
@@ -51104,7 +51268,7 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 - 6 egg (97.62%)<br/>1/2 cup - 1 cup oil (11.90%)<br/>1 teaspoon - 2 teaspoon vanilla (9.52%)<br/>1/2 cup - 3/4 cup milk (7.14%)<br/>cup - 1/4 cup applesauce (7.14%)<br/>1/2 cup - 2 cup water (4.76%)<br/>1 tablespoon - 2 tablespoon lime (2.38%)<br/>1/4 cup - 1/2 cup pineapple juice (2.38%)<br/>1 1/2 cup carrot pulp (2.38%)<br/>1 1/2 cup yogurt (2.38%)<br/>1/2 cup date (2.38%)<br/>1/2 cup apple pulp (2.38%)<br/>1 cup maple syrup (2.38%)<br/>1 egg yolk (2.38%)<br/>package - 1 package yeast (2.38%)<br/>1 1/2 tablespoon - 2 tablespoon molasses (2.38%)<br/>5 tablespoon sugar (2.38%)<br/>teaspoon - 1/4 teaspoon almond extract (2.38%)<br/>1 tablespoon - 2 tablespoon honey (2.38%)<br/>1/2 teaspoon - 1 teaspoon vanilla extract (2.38%)<br/>1/2 cup buttermilk (2.38%)<br/>1 cup sour cream (2.38%)<br/>1 cup - 1 1/4 cup flour (2.38%)<br/>2 - 3 egg white (2.38%)<br/>1/2 cup shortening (2.38%)<br/>1/4 cup - 1/2 cup butter (2.38%)<br/>6 tablespoon - 7 tablespoon mix (2.38%)<br/><br/>mixer (4%)</font>>",
+    "summary": "<<font point-size='18'><b>add</b><br/><br/>1 - 6 egg (97.62%)<br/>1/2 cup - 1 cup oil (11.90%)<br/>1 teaspoon - 2 teaspoon vanilla (9.52%)<br/>1/2 cup - 3/4 cup milk (7.14%)<br/>cup - 1/4 cup applesauce (7.14%)<br/>1/2 cup - 2 cup water (4.76%)<br/>1 tablespoon - 2 tablespoon lime (2.38%)<br/>1/4 cup - 1/2 cup pineapple juice (2.38%)<br/>1/2 cup date (2.38%)<br/>1/2 cup apple pulp (2.38%)<br/>1 cup maple syrup (2.38%)<br/>1 1/2 cup yogurt (2.38%)<br/>1 1/2 cup carrot pulp (2.38%)<br/>package - 1 package yeast (2.38%)<br/>1 egg yolk (2.38%)<br/>1 1/2 tablespoon - 2 tablespoon molasses (2.38%)<br/>5 tablespoon sugar (2.38%)<br/>teaspoon - 1/4 teaspoon almond extract (2.38%)<br/>1 tablespoon - 2 tablespoon honey (2.38%)<br/>1/2 teaspoon - 1 teaspoon vanilla extract (2.38%)<br/>1/2 cup buttermilk (2.38%)<br/>1 cup sour cream (2.38%)<br/>1 cup - 1 1/4 cup flour (2.38%)<br/>2 - 3 egg white (2.38%)<br/>1/2 cup shortening (2.38%)<br/>6 tablespoon - 7 tablespoon mix (2.38%)<br/>1/4 cup - 1/2 cup butter (2.38%)<br/><br/>mixer (4%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>add</b><br/>egg (97.62%)<br/>oil (11.90%)<br/>vanilla (9.52%)<br/>milk (7.14%)</font>>",
     "color": "#f3f3f3"
   },
@@ -54688,13 +54852,6 @@ export const graphDict = {
         "max_quan_unit": "7 1/2 slice",
         "percent": 7.142857142857143
       },
-      "buttermilk": {
-        "min_quan": "1",
-        "max_quan": "1 1/4",
-        "min_quan_unit": "1 cup",
-        "max_quan_unit": "1 1/4 cup",
-        "percent": 7.142857142857143
-      },
       "almond extract": {
         "min_quan": "3/4",
         "max_quan": "1",
@@ -54702,14 +54859,14 @@ export const graphDict = {
         "max_quan_unit": "1 teaspoon",
         "percent": 7.142857142857143
       },
-      "water": {
-        "min_quan": "12",
-        "max_quan": "12",
-        "min_quan_unit": "12 tablespoon",
-        "max_quan_unit": "12 tablespoon",
+      "buttermilk": {
+        "min_quan": "1",
+        "max_quan": "1 1/4",
+        "min_quan_unit": "1 cup",
+        "max_quan_unit": "1 1/4 cup",
         "percent": 7.142857142857143
       },
-      "applesauce": {
+      "water": {
         "min_quan": "12",
         "max_quan": "12",
         "min_quan_unit": "12 tablespoon",
@@ -54723,6 +54880,13 @@ export const graphDict = {
         "max_quan_unit": "24 teaspoon",
         "percent": 7.142857142857143
       },
+      "applesauce": {
+        "min_quan": "12",
+        "max_quan": "12",
+        "min_quan_unit": "12 tablespoon",
+        "max_quan_unit": "12 tablespoon",
+        "percent": 7.142857142857143
+      },
       "oil": {
         "min_quan": "3/4",
         "max_quan": "1",
@@ -54733,7 +54897,7 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 teaspoon - 2 teaspoon vanilla (50.00%)<br/>1 teaspoon - 2 teaspoon vanilla extract (42.86%)<br/>2 cup - 2 1/2 cup confectioner sugar (14.29%)<br/>1/2 cup orange juice (14.29%)<br/>12 ounce yogurt (7.14%)<br/>1/2 cup walnut (7.14%)<br/>1 1/2 cup - 1 3/4 cup bean (7.14%)<br/>1/4 teaspoon - 1/2 teaspoon extract (7.14%)<br/>package - 1 package cream cheese (7.14%)<br/>1 teaspoon mayonnaise (7.14%)<br/>7 slice - 7 1/2 slice almond (7.14%)<br/>1 cup - 1 1/4 cup buttermilk (7.14%)<br/>3/4 teaspoon - 1 teaspoon almond extract (7.14%)<br/>12 tablespoon water (7.14%)<br/>12 tablespoon applesauce (7.14%)<br/>24 teaspoon vinegar (7.14%)<br/>3/4 cup - 1 cup oil (7.14%)</font>>",
+    "summary": "<<font point-size='18'><b>mix</b><br/><br/>1/2 teaspoon - 2 teaspoon vanilla (50.00%)<br/>1 teaspoon - 2 teaspoon vanilla extract (42.86%)<br/>2 cup - 2 1/2 cup confectioner sugar (14.29%)<br/>1/2 cup orange juice (14.29%)<br/>12 ounce yogurt (7.14%)<br/>1/2 cup walnut (7.14%)<br/>1 1/2 cup - 1 3/4 cup bean (7.14%)<br/>1/4 teaspoon - 1/2 teaspoon extract (7.14%)<br/>package - 1 package cream cheese (7.14%)<br/>1 teaspoon mayonnaise (7.14%)<br/>7 slice - 7 1/2 slice almond (7.14%)<br/>3/4 teaspoon - 1 teaspoon almond extract (7.14%)<br/>1 cup - 1 1/4 cup buttermilk (7.14%)<br/>12 tablespoon water (7.14%)<br/>24 teaspoon vinegar (7.14%)<br/>12 tablespoon applesauce (7.14%)<br/>3/4 cup - 1 cup oil (7.14%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>mix</b><br/>vanilla (50.00%)<br/>vanilla extract (42.86%)<br/>confectioner sugar (14.29%)<br/>orange juice (14.29%)</font>>"
   },
   "4358": {
@@ -55016,18 +55180,18 @@ export const graphDict = {
         "max_quan_unit": "8 ounce",
         "percent": 92.3076923076923
       },
-      "cream cheese": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 package",
-        "max_quan_unit": "1 package",
-        "percent": 7.6923076923076925
-      },
       "apple": {
         "min_quan": "2",
         "max_quan": "2",
         "min_quan_unit": "2",
         "max_quan_unit": "2",
+        "percent": 7.6923076923076925
+      },
+      "cream cheese": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 package",
+        "max_quan_unit": "1 package",
         "percent": 7.6923076923076925
       },
       "apple butter": {
@@ -55050,8 +55214,8 @@ export const graphDict = {
       }
     },
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>grease</b><br/><br/>1/4 cup - 8 ounce butter (92.31%)<br/>1 package cream cheese (7.69%)<br/>2 apple (7.69%)<br/>3 tablespoon apple butter (7.69%)<br/><br/>pan (84%)<br/>oven (7%)<br/>baking dish (7%)</font>>",
-    "summary_abbr": "<<font point-size='18'><b>grease</b><br/>butter (92.31%)<br/>cream cheese (7.69%)<br/>apple (7.69%)<br/>apple butter (7.69%)</font>>"
+    "summary": "<<font point-size='18'><b>grease</b><br/><br/>1/4 cup - 8 ounce butter (92.31%)<br/>2 apple (7.69%)<br/>1 package cream cheese (7.69%)<br/>3 tablespoon apple butter (7.69%)<br/><br/>pan (84%)<br/>oven (7%)<br/>baking dish (7%)</font>>",
+    "summary_abbr": "<<font point-size='18'><b>grease</b><br/>butter (92.31%)<br/>apple (7.69%)<br/>cream cheese (7.69%)<br/>apple butter (7.69%)</font>>"
   },
   "4359": {
     "hidden": false,
@@ -55965,18 +56129,18 @@ export const graphDict = {
         "max_quan_unit": "1/2 teaspoon",
         "percent": 2.857142857142857
       },
-      "vanilla extract": {
-        "min_quan": "1",
-        "max_quan": "1",
-        "min_quan_unit": "1 tablespoon",
-        "max_quan_unit": "1 tablespoon",
-        "percent": 2.857142857142857
-      },
       "chocolate chip": {
         "min_quan": "1/2",
         "max_quan": "1/2",
         "min_quan_unit": "1/2 cup",
         "max_quan_unit": "1/2 cup",
+        "percent": 2.857142857142857
+      },
+      "vanilla extract": {
+        "min_quan": "1",
+        "max_quan": "1",
+        "min_quan_unit": "1 tablespoon",
+        "max_quan_unit": "1 tablespoon",
         "percent": 2.857142857142857
       },
       "cream": {
@@ -56010,7 +56174,7 @@ export const graphDict = {
     },
     "instruments_full_info": {},
     "time_description_full_info": {},
-    "summary": "<<font point-size='18'><b>roll</b><br/><br/>3 slice - 5 apple (100%)<br/>1/2 cup - 1 cup walnut (42.86%)<br/>1/2 cup raisin (14.29%)<br/>1/2 cup - 3/4 cup banana (5.71%)<br/>2 package cream cheese (5.71%)<br/>1 cup - 1 1/2 cup pecan (5.71%)<br/>1 cup coconut (5.71%)<br/>3/4 cup - 1 cup cherry (2.86%)<br/>teaspoon - 1/2 teaspoon vanilla (2.86%)<br/>1 tablespoon vanilla extract (2.86%)<br/>1/2 cup chocolate chip (2.86%)<br/>1/2 cup cream (2.86%)<br/>2 cup caramel (2.86%)<br/>1 teaspoon cinnamon (2.86%)<br/>2 cup cranberry (2.86%)</font>>",
+    "summary": "<<font point-size='18'><b>roll</b><br/><br/>3 slice - 5 apple (100%)<br/>1/2 cup - 1 cup walnut (42.86%)<br/>1/2 cup raisin (14.29%)<br/>1/2 cup - 3/4 cup banana (5.71%)<br/>2 package cream cheese (5.71%)<br/>1 cup - 1 1/2 cup pecan (5.71%)<br/>1 cup coconut (5.71%)<br/>3/4 cup - 1 cup cherry (2.86%)<br/>teaspoon - 1/2 teaspoon vanilla (2.86%)<br/>1/2 cup chocolate chip (2.86%)<br/>1 tablespoon vanilla extract (2.86%)<br/>1/2 cup cream (2.86%)<br/>2 cup caramel (2.86%)<br/>1 teaspoon cinnamon (2.86%)<br/>2 cup cranberry (2.86%)</font>>",
     "summary_abbr": "<<font point-size='18'><b>roll</b><br/>apple (100%)<br/>walnut (42.86%)<br/>raisin (14.29%)<br/>banana (5.71%)</font>>",
     "color": "#f5f5f5"
   },
@@ -56074,8 +56238,7 @@ export const graphDict = {
       },
       "4413": {
         "weight": 10,
-        "hidden": false,
-        "pen_width": 1.2823529411764705
+        "hidden": true
       },
       "4416": {
         "weight": 70,
@@ -56190,20 +56353,20 @@ export const graphDict = {
       {
         "title": "Bake 10 min.",
         "verb": "bake",
-        "min_time": "",
-        "min_time_unit": "",
-        "max_time": "",
-        "max_time_unit": "",
+        "min_time": "10",
+        "min_time_unit": "minute",
+        "max_time": "10",
+        "max_time_unit": "minute",
         "instruments": [],
         "ingredients": []
       },
       {
         "title": "Bake 50 min.",
         "verb": "bake",
-        "min_time": "",
-        "min_time_unit": "",
-        "max_time": "",
-        "max_time_unit": "",
+        "min_time": "50",
+        "min_time_unit": "minute",
+        "max_time": "50",
+        "max_time_unit": "minute",
         "instruments": [],
         "ingredients": []
       },
@@ -56318,10 +56481,10 @@ export const graphDict = {
       {
         "title": "Bake for 1 1/2 hours in the preheated oven, until firm and lightly browned.",
         "verb": "bake",
-        "min_time": "3/2",
-        "min_time_unit": "hour",
-        "max_time": "3/2",
-        "max_time_unit": "hour",
+        "min_time": "90",
+        "min_time_unit": "minute",
+        "max_time": "90",
+        "max_time_unit": "minute",
         "instruments": [
           "oven"
         ],
@@ -56742,10 +56905,10 @@ export const graphDict = {
       {
         "title": "Bake at 325 degrees f (165 degrees c) for 1 1/2 hrs or until a cake tester inserted in the center comes out clean.",
         "verb": "bake",
-        "min_time": "",
-        "min_time_unit": "",
-        "max_time": "",
-        "max_time_unit": "",
+        "min_time": "90",
+        "min_time_unit": "minute",
+        "max_time": "90",
+        "max_time_unit": "minute",
         "instruments": [],
         "ingredients": []
       },
@@ -57402,10 +57565,10 @@ export const graphDict = {
       {
         "title": "Bake cake in preheated oven until golden brown on top, and a toothpick inserted in the center comes out clean, about 1 1/2 hours.",
         "verb": "bake",
-        "min_time": "3/2",
-        "min_time_unit": "hour",
-        "max_time": "3/2",
-        "max_time_unit": "hour",
+        "min_time": "90",
+        "min_time_unit": "minute",
+        "max_time": "90",
+        "max_time_unit": "minute",
         "instruments": [
           "oven"
         ],
@@ -57713,10 +57876,10 @@ export const graphDict = {
       {
         "title": "Bake in preheated oven until a tester inserted in the center of the cake comes out clean, about 1 1/2 hours.",
         "verb": "bake",
-        "min_time": "3/2",
-        "min_time_unit": "hour",
-        "max_time": "3/2",
-        "max_time_unit": "hour",
+        "min_time": "90",
+        "min_time_unit": "minute",
+        "max_time": "90",
+        "max_time_unit": "minute",
         "instruments": [
           "oven"
         ],
@@ -57725,10 +57888,10 @@ export const graphDict = {
       {
         "title": "Bake in preheated oven for about 1 1/4 hours, or until a tester inserted in the center of the cake comes out clean.",
         "verb": "bake",
-        "min_time": "5/4",
-        "min_time_unit": "hour",
-        "max_time": "5/4",
-        "max_time_unit": "hour",
+        "min_time": "75",
+        "min_time_unit": "minute",
+        "max_time": "75",
+        "max_time_unit": "minute",
         "instruments": [
           "oven"
         ],
@@ -58726,10 +58889,10 @@ export const graphDict = {
       {
         "title": "Reduce temperature to 375 degrees F. continue baking 25 min.",
         "verb": "reduce",
-        "min_time": "",
-        "min_time_unit": "",
-        "max_time": "",
-        "max_time_unit": "",
+        "min_time": "25",
+        "min_time_unit": "minute",
+        "max_time": "25",
+        "max_time_unit": "minute",
         "instruments": [],
         "ingredients": []
       }
@@ -60182,10 +60345,10 @@ export const graphDict = {
       {
         "title": "beat 2 min.",
         "verb": "beat",
-        "min_time": "",
-        "min_time_unit": "",
-        "max_time": "",
-        "max_time_unit": "",
+        "min_time": "2",
+        "min_time_unit": "minute",
+        "max_time": "2",
+        "max_time_unit": "minute",
         "instruments": [],
         "ingredients": []
       },
@@ -60901,8 +61064,7 @@ export const graphDict = {
       },
       "4264": {
         "weight": 2,
-        "hidden": false,
-        "pen_width": 1.0
+        "hidden": true
       },
       "4347": {
         "weight": 2,
@@ -63626,8 +63788,7 @@ export const graphDict = {
       },
       "4172": {
         "weight": 4,
-        "hidden": false,
-        "pen_width": 1.0705882352941176
+        "hidden": true
       },
       "1": {
         "weight": 1,
@@ -63650,8 +63811,7 @@ export const graphDict = {
       },
       "3811": {
         "weight": 6,
-        "hidden": false,
-        "pen_width": 1.1411764705882352
+        "hidden": true
       },
       "3816": {
         "weight": 2,
@@ -64406,7 +64566,7 @@ export const graphDict = {
     "summary_abbr": "<<font point-size='18'><b>bring</b></font>>"
   },
   "4413": {
-    "hidden": false,
+    "hidden": true,
     "marked": false,
     "out_edges": {
       "4164": {
@@ -64423,8 +64583,7 @@ export const graphDict = {
       },
       "4416": {
         "weight": 6,
-        "hidden": false,
-        "pen_width": 1.1411764705882352
+        "hidden": true
       },
       "1": {
         "weight": 2,
@@ -64434,8 +64593,7 @@ export const graphDict = {
     "in_edges": {
       "4366": {
         "weight": 10,
-        "hidden": false,
-        "pen_width": 1.2823529411764705
+        "hidden": true
       },
       "4412": {
         "weight": 2,
@@ -65068,8 +65226,7 @@ export const graphDict = {
       "end_unit": "minute"
     },
     "summary": "<<font point-size='18'><b>remove</b><br/><br/>pan (31%)<br/>oven (29%)<br/>bowl (9%)<br/>baking dish (3%)<br/>plate (3%)<br/>aluminum foil (1%)<br/>baking paper (1%)<br/><br/>15 minute - 30 minute</font>>",
-    "summary_abbr": "<<font point-size='18'><b>remove</b></font>>",
-    "color": "#f0f0f0"
+    "summary_abbr": "<<font point-size='18'><b>remove</b></font>>"
   },
   "4414": {
     "hidden": false,
@@ -65107,7 +65264,8 @@ export const graphDict = {
     "in_edges": {
       "3811": {
         "weight": 2,
-        "hidden": true
+        "hidden": false,
+        "pen_width": 1.0
       },
       "3896": {
         "weight": 4,
@@ -65123,8 +65281,7 @@ export const graphDict = {
       },
       "4172": {
         "weight": 2,
-        "hidden": false,
-        "pen_width": 1.0
+        "hidden": true
       },
       "4264": {
         "weight": 12,
@@ -66007,8 +66164,7 @@ export const graphDict = {
       },
       "4413": {
         "weight": 6,
-        "hidden": false,
-        "pen_width": 1.1411764705882352
+        "hidden": true
       }
     },
     "directions": [
@@ -67008,10 +67164,10 @@ export const graphDict = {
       {
         "title": "Cool for 1/2 hour before removing from pan to cool completely.",
         "verb": "cool",
-        "min_time": "1/2",
-        "min_time_unit": "hour",
-        "max_time": "1/2",
-        "max_time_unit": "hour",
+        "min_time": "30",
+        "min_time_unit": "minute",
+        "max_time": "30",
+        "max_time_unit": "minute",
         "instruments": [
           "pan"
         ],
@@ -67196,10 +67352,10 @@ export const graphDict = {
       {
         "title": "Cool 10 min.",
         "verb": "cool",
-        "min_time": "",
-        "min_time_unit": "",
-        "max_time": "",
-        "max_time_unit": "",
+        "min_time": "10",
+        "min_time_unit": "minute",
+        "max_time": "10",
+        "max_time_unit": "minute",
         "instruments": [],
         "ingredients": []
       },

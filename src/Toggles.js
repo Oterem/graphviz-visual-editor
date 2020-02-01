@@ -124,6 +124,7 @@ class TogglesPanel extends React.Component{
             selectedPreferedTools:[]
         }
         this.findNodesByIngredients = props.findNodesByIngredients.bind(this);
+        this.handleConstraints = props.handleConstraints.bind(this)
     }
 
 
@@ -186,8 +187,6 @@ componentDidUpdate(prevProps, prevState){
         selectedIngredientsToAppear:prevState.selectedIngredientsToAppear,
         selectedUnusedTools:prevState.selectedUnusedTools,
         selectedPreferedTools:prevState.selectedPreferedTools
-
-
     }
     const currentConstraints = {
         timeMinHour:this.state.timeMinHour,
@@ -200,7 +199,7 @@ componentDidUpdate(prevProps, prevState){
         selectedPreferedTools:this.state.selectedPreferedTools
     }
     if(JSON.stringify(prevConstraints) !== JSON.stringify(currentConstraints)){
-        //add some function/logic when there's a change in constraints
+        this.handleConstraints(prevConstraints, currentConstraints) 
     }
 }
 
